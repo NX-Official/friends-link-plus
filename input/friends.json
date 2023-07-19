@@ -1,0 +1,22 @@
+{
+    "friends": [
+        {
+            "name": "戴兜~",
+            "description": "daidr",
+            "url": "https://daidr.me",
+            "rss": "https://daidr.me/feed"
+        },
+        {
+            "name": "Bird",
+            "description": "aFlyBird0",
+            "url": "https://blog.aflybird.cn/",
+            "rss": "https://blog.aflybird.cn/index.xml"
+        },
+        {
+            "name": "NX",
+            "description": "这家伙真勤奋，什么都留下了",
+            "url": "https://nickxu.me/",
+            "rss": "https://nickxu.me/rss2.xml"
+        }
+    ]
+}
