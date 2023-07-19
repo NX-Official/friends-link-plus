@@ -9,6 +9,7 @@ import (
 type Friend struct {
 	Name        string       `json:"name"`
 	Description string       `json:"description"`
+	Avatar      string       `json:"avatar"`
 	URL         string       `json:"url"`
 	RSS         string       `json:"rss"`
 	Feed        *gofeed.Feed `json:"-"` // RSS Content
