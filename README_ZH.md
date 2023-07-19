@@ -6,11 +6,28 @@
 
 ## 理想效果
 
-<img src="./images/demo.v1.png" alt="demo" style="zoom:50%;" />
+<div style="display: flex; justify-content: center;">
+    <img src="./images/demo.v1.png" alt="demo" style="width:50%;" />
+</div>
 
 ## 简要原理
 
-<img src="./images/logic.v1.png" alt="logic" style="zoom:50%;" />
+<div style="display: flex; justify-content: center;">
+    <img src="./images/logic.v1.png" alt="logic" style="width:50%;" />
+</div>
+
+## 开发进度
+
+基本功能
+
+- [X]  基本功能（从 `friends.json` 到 `friends.md` 的处理)
+- [ ]  JSON 的输出
+- [ ]  GitHub Actions Workflow 编写（每次更新自动渲染新结果）
+- [ ]  前端页面开发
+
+进阶功能
+
+- [ ] 更新订阅（每次 Workflow 运行时，自动检索订阅名单，然后发邮件）
 
 ## 可参考项目
 
