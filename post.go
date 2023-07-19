@@ -23,10 +23,16 @@ func GetPosts(friends FriendsData) []Post {
 			// 简化示例，假设item.Published为格式为"2006-01-02T15:04:05Z"的时间字符串
 			publishedTime := item.PublishedParsed.Format("2006-01-02")
 			posts = append(posts, Post{
-				Title:     item.Title,
-				Author:    friend.Name,
-				Date:      publishedTime,
-				Content:   filterPosts(getShortContent(item.Description, Config.ContentLength)),
+				Title:  item.Title,
+				Author: friend.Name,
+				Date:   publishedTime,
+				Content: filterPosts(getShortContent( /*item.Content*/
+					func() string {
+						if item.Content != "" {
+							return item.Content
+						}
+						return item.Description
+					}(), Config.ContentLength)),
 				PostURL:   item.Link,
 				AuthorURL: friend.URL,
 			})
