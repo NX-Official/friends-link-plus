@@ -2,13 +2,19 @@ package main
 
 import (
 	"bytes"
+	"encoding/json"
 	"log"
 	"os"
 	"text/template"
 )
 
-// Render 将朋友信息和最近的文章渲染成Markdown格式
-func Render(friends []*Friend, posts []Post) []byte {
+type RenderStruct struct {
+	Friends []*Friend `json:"friends"`
+	Posts   []Post    `json:"posts"`
+}
+
+// RenderMarkdown 将朋友信息和最近的文章渲染成Markdown格式
+func RenderMarkdown(friends []*Friend, posts []Post) []byte {
 	markdownTemplate, err := os.ReadFile(Config.TemplatePath)
 	if err != nil {
 		log.Fatalf("Failed to read template file: %v", err)
@@ -20,10 +26,7 @@ func Render(friends []*Friend, posts []Post) []byte {
 	}
 
 	var buffer bytes.Buffer
-	data := struct {
-		Friends []*Friend
-		Posts   []Post
-	}{
+	data := RenderStruct{
 		Friends: friends,
 		Posts:   posts,
 	}
@@ -33,4 +36,18 @@ func Render(friends []*Friend, posts []Post) []byte {
 	}
 
 	return buffer.Bytes()
+}
+
+func RenderJson(friends []*Friend, posts []Post) []byte {
+	data := RenderStruct{
+		Friends: friends,
+		Posts:   posts,
+	}
+
+	marshal, err := json.MarshalIndent(data, "", "    ")
+	if err != nil {
+		log.Fatalf("Failed to render template: %v", err)
+	}
+
+	return marshal
 }

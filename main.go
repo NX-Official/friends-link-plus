@@ -48,14 +48,20 @@ func main() {
 		fmt.Println("---------------------")
 	}
 
-	output := Render(friends.Friends, posts)
+	markdownBytes := RenderMarkdown(friends.Friends, posts)
+	jsonBytes := RenderJson(friends.Friends, posts)
+	//fmt.Println(string(markdownBytes))
 
-	//fmt.Println(string(output))
+	err := Write(markdownBytes, Config.OutputMarkdownPath)
+	if err != nil {
+		log.Fatalf("Failed to write file: %v", err)
+	}
+	fmt.Println("Markdown content written to file successfully!")
 
-	err := Write(output, Config.OutputMarkdownPath)
+	err = Write(jsonBytes, Config.OutputJsonPath)
 	if err != nil {
 		log.Fatalf("Failed to write file: %v", err)
 	}
 
-	fmt.Println("Markdown content written to file successfully!")
+	fmt.Println("Json content written to file successfully!")
 }

@@ -20,8 +20,8 @@
 
 基本功能
 
-- [X]  基本功能（从 `friends.json` 到 `friends.md` 的处理)
-- [ ]  JSON 的输出
+- [X]  基本功能（从 `input` 到 `output` 的处理)
+- [X]  JSON 的输出
 - [ ]  GitHub Actions Workflow 编写（每次更新自动渲染新结果）
 - [ ]  前端页面开发
 
