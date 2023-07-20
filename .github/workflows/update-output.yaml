@@ -31,8 +31,9 @@ jobs:
       - name: Check for changes
         id: check_changes
         run: |
-          git diff-index --quiet HEAD || echo "CHANGES=true" >> $GITHUB_ENV
-        continue-on-error: true
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "CHANGES=true" >> $GITHUB_ENV
+          fi
 
       - name: Commit changes
         if: env.CHANGES == 'true'
