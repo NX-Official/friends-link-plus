@@ -37,9 +37,4 @@ jobs:
 
       - name: Commit changes
         if: env.CHANGES == 'true'
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add .
-          git commit -m "Auto commit changes by GitHub Action"
-          git push
+        uses: stefanzweifel/git-auto-commit-action@v4
