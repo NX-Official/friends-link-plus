@@ -1,0 +1,44 @@
+# Auto Run and Commit
+name: Update Output
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  run_and_commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.20'  # 替换为你希望使用的Go版本
+
+      - name: Install dependencies
+        run: go mod tidy
+
+      - name: Run go run .
+        run: go run .
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git diff-index --quiet HEAD || echo "CHANGES=true" >> $GITHUB_ENV
+        continue-on-error: true
+
+      - name: Commit changes
+        if: env.CHANGES == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Auto commit changes by GitHub Action"
+          git push
