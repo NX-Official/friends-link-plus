@@ -75,8 +75,8 @@
             "Title": "『算法拾遗』重学主流排序算法",
             "Author": "NX",
             "Date": "2023-06-13",
-            "Content": "衡量排序算法的好坏时间复杂度包含最好情况、最坏情况和平均情况数据有序度不同的影响空间复杂度是否是原地排序稳定性排序后，相同元素之间的顺序是否会改变主流排序算法冒泡排序（Bubble Sort）过程从待排序的数组中选择第一个元素作为当前元素。将当前元素与其后面的相邻元素进行比较。如果当前元素大于后面的元素，则交换它们的位置。继续比较当前元素与其后面的相邻元素，并进行交换，直到当前元素比后面的元素小或",
-            "PostURL": "https://nickxu.me/posts/279.html",
+            "Content": "衡量排序算法的好坏时间复杂度包含最好情况、最坏情况和平均情况数据有序度不同的影响空间复杂度是否是原地排序稳定性排序后，相同元素之间的顺序是否会改变O( n^2 )冒泡排序（Bubble Sort）依次比较相邻的元素，如果顺序错误，则交换它们。每轮排序将最大（或最小）的元素“冒泡”到正确的位置简单易懂，但效率较低，不适用于大规模数据排序过程初始化待排序数组，设为 arr ，数组长度为 n外层循环：重",
+            "PostURL": "https://nickxu.me/posts/sorting-algorithm.html",
             "AuthorURL": "https://nickxu.me/"
         },
         {
@@ -139,7 +139,7 @@
             "Title": "2023五一总结：近况与将来",
             "Author": "NX",
             "Date": "2023-05-04",
-            "Content": "事情有点多，就简单说几句吧～Your browser does not support the audio tag.最近的事情杭电助手团建          B站热评原视频：【【年更节目】世界读书日，超级干货书单分享！这些书年轻时一定要读！(2023)】OSPP开好头去看了很多 mosn 的文档和视频，对目前的微服务部署架构有更深入地了解【MOSN 子项目 Layotto：开启服务网格+应用运行时",
+            "Content": "事情有点多，就简单说几句吧～Your browser does not support the audio tag.最近的事情杭电助手团建        [{\"url\":\"https://pic-go-img.oss-cn-hangzhou.aliyuncs.com/202305042227317.png\",\"alt\":\"image-20230504222737293\"},{\"url\":\"http",
             "PostURL": "https://nickxu.me/posts/274.html",
             "AuthorURL": "https://nickxu.me/"
         },
