@@ -5,11 +5,15 @@
 - [柏喵Sakura｜过气 emo 师傅](https://baimeow.cn/)
 - [Marlene｜<归零人生>](https://blog.marlene.top/)
 - [ek1ng｜Hidden Gem](https://ek1ng.com/)
+- [Atom｜aka asjdf](https://www.homeboyc.cn/)
 
 # Recent Blogs
 ## [java-sec-code 代码审计靶场题解](https://www.ek1ng.com/java-sec-code.html)  by [ek1ng](https://ek1ng.com/), 2023-07-20
 
 这个靶场包含了各类基本漏洞在java语言上的场景以及java安全特有的JNDI注入，反序列化，表达式注入等等，并且给出了相关的利用手段和修复方案。java-sec-code搭建环境可以用Docker搭建，不过想了想不太熟练java的包管理和web server部署这一套，并且本地起相比于容器也方便调试，于是决定本地起一份。由于我是archlinux，包管理安装的都是最新的jdk版本，靶场的jdk版
+## [分布式系统测试工具 muxy 初探](https://homeboyc.cn/blog/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7-muxy-%E5%88%9D%E6%8E%A2/)  by [Atom](https://www.homeboyc.cn/), 2023-07-17
+
+# 前言 本篇文章主要简单介绍分布式系统测试工具 muxy 工具，在介绍前，我想先谈谈分布式系统测试。# Coding is easier than testing 编程比测试简单。我认为一个程序你把它写出来不是最难的，把它测好才是最难的。真的这么夸张吗？ 我想从一个简单的 HelloWorld 程序来谈谈一个系统的稳定运行所需要的条件。# 一个普通的 HelloWorld 我们需要考虑来自以
 ## [CrewCTF 2023 Web Writeup](https://www.ek1ng.com/2023CrewCTFWP.html)  by [ek1ng](https://ek1ng.com/), 2023-07-14
 
 环境还在，赛后看看题，一共四道Web，都挺有意思的。sequence_galleryDo you like sequences?http://sequence-gallery.chal.crewc.tf:8080/ 123456789101112131415sequence = request.args.get('sequence', None)if sequence is None:    re
@@ -64,6 +68,3 @@ DN11配网第二期，接上文 “使用 Bird2 配置 WireGuard + OSPF 实现�
 ## [阿里云 BrokenSesame RCE漏洞分析](https://www.ek1ng.com/BrokenSesame.html)  by [ek1ng](https://ek1ng.com/), 2023-05-12
 
 学习了Wiz团队发表的文章 https://www.wiz.io/blog/brokensesame-accidental-write-permissions-to-private-registry-allowed-potential-r，有很多巧妙的利用方法可以学习Wiz Research在文章中披露了被命名为BrokenSesame的一系列阿里云数据库服务漏洞，会导致未授权访问阿里云客户的Po
-## [为TailScale部署私有DERP中继服务器](https://blog.aflybird.cn/2023/05/tailscale-derp/)  by [Bird](https://blog.aflybird.cn/), 2023-05-10
-
-什么是 TailScale 后面再补充，先写重点的 TailScale DERP 中继服务器。 关键词：UDP打洞，NAT，点对点连接，大局域网。 好处/场景：待补充 怎么用 TailScale：
