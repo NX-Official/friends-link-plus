@@ -27,6 +27,13 @@
             "avatar": "https://avatars.githubusercontent.com/u/38121125?v=4",
             "url": "https://baimeow.cn/",
             "rss": "https://service-rcg8qv8r-1253828577.sh.apigw.tencentcs.com/release/?url=https://baimeow.cn/index.xml\u0026filter=^(?!.*(?:lives|about|friends)).*$"
+        },
+        {
+            "name": "Marlene",
+            "description": "\u003c归零人生\u003e",
+            "avatar": "https://avatars.hdu-cs.wiki/MarleneJiang",
+            "url": "https://blog.marlene.top/",
+            "rss": "https://www.marlene.top/index.php/feed/rss/category/develop/"
         }
     ],
     "posts": [
@@ -45,6 +52,14 @@
             "Content": "6月26日下午3点，OSPP2023 中选结果正式发布，全球共有 1486 人成功申请，最终中选人数为 504 人鄙人非常荣幸地成为了这 504 个幸运儿的一份子，特撰此文，记录 我与 OSPP 的故事 —— 从听闻到中选当然，我也希望这篇博客能够吸引更多人参与开源，为开源项目做出自己的贡献给「杭电助手」打点小广告本次开源之夏活动，杭州电子科技大学共中选 13 人，其中 8 人来自杭电助手杭助本次",
             "PostURL": "https://nickxu.me/2023/06/my-story-with-OSPP-from-hearing-to-being-selected.html",
             "AuthorURL": "https://nickxu.me/"
+        },
+        {
+            "Title": "开源之旅——OSPP",
+            "Author": "Marlene",
+            "Date": "2023-06-27",
+            "Content": "声明：以下内容仅代表本人观点，具有固有局限性，请辩证看待。任何有问题的地方也恳请指出。开源是什么我一直都认为开源是未来的趋势。用户创作的时代已经到来，作为一名开发者，手里握着强大的武器，个性化的创造自然不在话下。用户创作的目的不是孤芳自赏，而是自媒体式的分享。那么业务、框架的开发与不是自我消化，开源分享或许能够获得更大收益。个人的力量始终有限，我们不是大公司，技术在内部使用也能够逐渐完善。很多内容",
+            "PostURL": "https://www.marlene.top/index.php/develop/85.html",
+            "AuthorURL": "https://blog.marlene.top/"
         },
         {
             "Title": "请还国内开源活动一片净土",
@@ -181,14 +196,6 @@
             "Content": "Model: GPT-4123456789101112131415161718192021222324252627282930func (l *UserDeleteLogic) UserDelete(in *user.UserDeleteRequest) (*user.Empty, error) {tx := l.svcCtx.Dao.Begin()u := tx.Userm := tx.Memb",
             "PostURL": "https://nickxu.me/2023/04/29/ChatGPT%E5%AF%B9%E8%AF%9D%E8%AE%B0%E5%BD%95%EF%BC%88%E5%85%AD%EF%BC%89%EF%BC%9AGORM-%E6%89%8B%E5%8A%A8%E4%BA%8B%E5%8A%A1%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/",
             "AuthorURL": "https://nickxu.me/"
-        },
-        {
-            "Title": "SCSS+WindiCSS实现主题色切换",
-            "Author": "戴兜~",
-            "Date": "2023-04-24",
-            "Content": "最近在给自己写主页（同时也是博客），我做了一个切换主题色的功能。每次进入页面时，会随机选择一套配色，让页面显得灵动一些，就像下面这样：这是如何实现的呢？不妨先从自定义颜色入手WindiCSS 自定义颜色定义一个固定的颜色// windi.config.jsexport default defineConfig({  theme: {    exten",
-            "PostURL": "https://daidr.me/archives/code-1069.html",
-            "AuthorURL": "https://daidr.me"
         }
     ]
 }

@@ -3,6 +3,7 @@
 - [Bird｜aFlyBird0](https://blog.aflybird.cn/)
 - [NX｜这家伙真勤奋，什么都留下了](https://nickxu.me/)
 - [柏喵Sakura｜过气 emo 师傅](https://baimeow.cn/)
+- [Marlene｜<归零人生>](https://blog.marlene.top/)
 
 # Recent Blogs
 ## [使用 GitHub Actions Cache 加快 Workflow](https://blog.aflybird.cn/2023/07/use-github-actions-cache-to-speed-up-workflow/)  by [Bird](https://blog.aflybird.cn/), 2023-07-08
@@ -11,6 +12,9 @@
 ## [『OSPP2023』我与 OSPP 的故事 —— 从听闻到中选](https://nickxu.me/2023/06/my-story-with-OSPP-from-hearing-to-being-selected.html)  by [NX](https://nickxu.me/), 2023-06-30
 
 6月26日下午3点，OSPP2023 中选结果正式发布，全球共有 1486 人成功申请，最终中选人数为 504 人鄙人非常荣幸地成为了这 504 个幸运儿的一份子，特撰此文，记录 我与 OSPP 的故事 —— 从听闻到中选当然，我也希望这篇博客能够吸引更多人参与开源，为开源项目做出自己的贡献给「杭电助手」打点小广告本次开源之夏活动，杭州电子科技大学共中选 13 人，其中 8 人来自杭电助手杭助本次
+## [开源之旅——OSPP](https://www.marlene.top/index.php/develop/85.html)  by [Marlene](https://blog.marlene.top/), 2023-06-27
+
+声明：以下内容仅代表本人观点，具有固有局限性，请辩证看待。任何有问题的地方也恳请指出。开源是什么我一直都认为开源是未来的趋势。用户创作的时代已经到来，作为一名开发者，手里握着强大的武器，个性化的创造自然不在话下。用户创作的目的不是孤芳自赏，而是自媒体式的分享。那么业务、框架的开发与不是自我消化，开源分享或许能够获得更大收益。个人的力量始终有限，我们不是大公司，技术在内部使用也能够逐渐完善。很多内容
 ## [请还国内开源活动一片净土](https://blog.aflybird.cn/2023/06/please-stop-fucking-open-source-activities-in-china/)  by [Bird](https://blog.aflybird.cn/), 2023-06-26
 
 置顶声明：这篇博客我只发在了自己的独立博客、朋友圈和空间，没有发到其他的平台，没想到会有这么多的阅读量，所以必须要写个声明，保护一下好人：我不想文中涉及的社区，尤其是背后的公司受到损失。我同样也不代表任何团体与公司，不受任何利益。如果真的要对这个社区盖棺定论的话，我觉得这个社区的氛围，是非常学生友好，欢迎开源的。真的非常非常没话说，很热情积极与开放。首先是，社区举办了 学生开发者活动，一
@@ -62,6 +66,3 @@ DN11配网第二期，接上文 “使用 Bird2 配置 WireGuard + OSPF 实现�
 ## [ChatGPT对话记录（六）：GORM 手动事务错误处理](https://nickxu.me/2023/04/29/ChatGPT%E5%AF%B9%E8%AF%9D%E8%AE%B0%E5%BD%95%EF%BC%88%E5%85%AD%EF%BC%89%EF%BC%9AGORM-%E6%89%8B%E5%8A%A8%E4%BA%8B%E5%8A%A1%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/)  by [NX](https://nickxu.me/), 2023-04-29
 
 Model: GPT-4123456789101112131415161718192021222324252627282930func (l *UserDeleteLogic) UserDelete(in *user.UserDeleteRequest) (*user.Empty, error) {tx := l.svcCtx.Dao.Begin()u := tx.Userm := tx.Memb
-## [SCSS+WindiCSS实现主题色切换](https://daidr.me/archives/code-1069.html)  by [戴兜~](https://daidr.me), 2023-04-24
-
-最近在给自己写主页（同时也是博客），我做了一个切换主题色的功能。每次进入页面时，会随机选择一套配色，让页面显得灵动一些，就像下面这样：这是如何实现的呢？不妨先从自定义颜色入手WindiCSS 自定义颜色定义一个固定的颜色// windi.config.jsexport default defineConfig({  theme: {    exten
