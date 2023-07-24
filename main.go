@@ -29,8 +29,10 @@ type Post struct {
 }
 
 func main() {
+	// 读取有哪些朋友
 	friends := Read(Config.InputPath)
 
+	// 获取朋友的RSS内容
 	for _, friend := range friends.Friends {
 		err := friend.FetchFeed()
 		if err != nil {
@@ -38,6 +40,7 @@ func main() {
 		}
 	}
 
+	// 从 RSS 中解析文章
 	posts := GetPosts(friends)
 	for _, post := range posts {
 		fmt.Printf("标题：%s\n", post.Title)
@@ -49,10 +52,12 @@ func main() {
 		fmt.Println("---------------------")
 	}
 
+	// 渲染 markdown 和 json
 	markdownBytes := RenderMarkdown(friends.Friends, posts)
 	jsonBytes := RenderJson(friends.Friends, posts)
 	//fmt.Println(string(markdownBytes))
 
+	// 写入文件
 	err := Write(markdownBytes, Config.OutputMarkdownPath)
 	if err != nil {
 		log.Fatalf("Failed to write file: %v", err)
