@@ -2,6 +2,7 @@
 - [戴兜~｜daidr](https://daidr.me)
 - [Bird｜aFlyBird0](https://blog.aflybird.cn/)
 - [NX｜这家伙真勤奋，什么都留下了](https://nickxu.me/)
+- [柏喵Sakura｜过气 emo 师傅](https://baimeow.cn/)
 
 # Recent Blogs
 ## [使用 GitHub Actions Cache 加快 Workflow](https://blog.aflybird.cn/2023/07/use-github-actions-cache-to-speed-up-workflow/)  by [Bird](https://blog.aflybird.cn/), 2023-07-08
@@ -37,6 +38,9 @@
 ## [如何在一个仓库中同时开发前后端项目](https://nickxu.me/posts/276.html)  by [NX](https://nickxu.me/), 2023-06-01
 
 如图，今天在群里问了个小问题TLDR; 直接说结论吧小项目直接开子目录，然后可以分别独立打包或者使用 go embed不同分支的方法应该没必要用如果想做成两个独立项目就用 submodulegpt 对 submodule 的介绍Git 的 Submodule 是一种在一个 Git 仓库中嵌套使用另一个 Git 仓库的机制。它允许你将一个 Git 仓库作为子项目嵌入到另一个 Git 仓库中，并且能够
+## [BGP 组网，DN11 与 VidarNetwork 的并网试验](https://baimeow.cn/posts/dn11/configurebgp/)  by [柏喵Sakura](https://baimeow.cn/), 2023-06-01
+
+DN11配网第二期，接上文 “使用 Bird2 配置 WireGuard + OSPF 实现网络的高可用”，这是一篇用于 DN11 的 BGP 配置教程随着 DN11 的扩大，使用 OSPF 进行集中管理已经变得麻烦起来了，此外还能看到一堆隧道IP污染路由表也有不少人手上有多个内网，不得不打破 DN11 原先一个人使用一个/24网段的约定近期又在考虑和 VidarNetwork 并网的事情，
 ## [『算法拾遗』链表（Linked List）](https://nickxu.me/posts/275.html)  by [NX](https://nickxu.me/), 2023-05-31
 
 这两天在复习链表，我一想，这链表这么简单的东西还有什么复习的，简单过一遍不就行了然而马上打脸，有些题目我居然还写不出来（乐理论基础先来点你肯定知道的东西，简单过一遍是什么如图所示，链表是一种链式结构，以最简单的单链表为例：1234type ListNode struct {    Val  int    Next *ListNode}也就是头节点指向下一个节点，然后下一个节点再指向下一个节点，如果
@@ -49,6 +53,9 @@
 ## [2023五一总结：近况与将来](https://nickxu.me/posts/274.html)  by [NX](https://nickxu.me/), 2023-05-04
 
 事情有点多，就简单说几句吧～Your browser does not support the audio tag.最近的事情杭电助手团建        [{"url":"https://pic-go-img.oss-cn-hangzhou.aliyuncs.com/202305042227317.png","alt":"image-20230504222737293"},{"url":"http
+## [d3go write up](https://baimeow.cn/posts/ctf/d3go/)  by [柏喵Sakura](https://baimeow.cn/), 2023-05-04
+
+目录穿越读取源代码 directory traversal to dump source code go embed * 的错误使用，导致源代码被打包进程序。The incorrect use of go embed * results in the source code being packed into the program.再结合错误的静态文件托管，导致/../路径可以列目录获取源代
 ## [关于软删除的讨论](https://nickxu.me/posts/273.html)  by [NX](https://nickxu.me/), 2023-05-02
 
 别急，先挂着别问我为什么空着就发上来了，我本来是想每一篇都写完再发的，但是后面本地坑挖了很多不想填就直接删了然后发上来至少别人看着我还有动力去填🤣7 月 11 日更：卧槽居然过了这么久了才有空填过了两个月了基本忘光了，翻了翻聊天记录，记起来了一点点其实有个大佬的博客 软删除之痛 已经将前情提要概括了一下，下面就简单补充一下文中写的唯一索引的例子在我们的开发中也遇到了，但是我们有不一样的解决方法就是
@@ -58,9 +65,3 @@ Model: GPT-4123456789101112131415161718192021222324252627282930func (l *UserDele
 ## [SCSS+WindiCSS实现主题色切换](https://daidr.me/archives/code-1069.html)  by [戴兜~](https://daidr.me), 2023-04-24
 
 最近在给自己写主页（同时也是博客），我做了一个切换主题色的功能。每次进入页面时，会随机选择一套配色，让页面显得灵动一些，就像下面这样：这是如何实现的呢？不妨先从自定义颜色入手WindiCSS 自定义颜色定义一个固定的颜色// windi.config.jsexport default defineConfig({  theme: {    exten
-## [Plaid CTF Writeup [Treasure Map/CSS]](https://daidr.me/archives/code-1064.html)  by [戴兜~](https://daidr.me), 2023-04-17
-
-这两道题真是太有趣了！虽然标签是逆向，但是以前端为载体，有很多JS/CSS奇淫巧计，我已经迫不及待地想要和大家分享了。Treasure Map题目地址：http://treasure.chal.pwni.ng/Ready your masts and set sail! Thar be treasure here if we can figure out how to f
-## [从爬虫策略谈到十二因素应用](https://blog.aflybird.cn/2023/04/from-crawler-strategy-to-twelve-factor-app/)  by [Bird](https://blog.aflybird.cn/), 2023-04-14
-
-这篇文章主要根据我对一个千万数据量爬虫的不断的重构的过程，谈谈理论与工程（稳定可靠）的结合，以及在重构过程中折射的十二因素应用(SaaS应用的方法论)思想。

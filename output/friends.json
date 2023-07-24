@@ -20,6 +20,13 @@
             "avatar": "https://nickxu.me/static/favicon.jpg",
             "url": "https://nickxu.me/",
             "rss": "https://nickxu.me/rss2.xml"
+        },
+        {
+            "name": "柏喵Sakura",
+            "description": "过气 emo 师傅",
+            "avatar": "https://avatars.githubusercontent.com/u/38121125?v=4",
+            "url": "https://baimeow.cn/",
+            "rss": "https://service-rcg8qv8r-1253828577.sh.apigw.tencentcs.com/release/?url=https://baimeow.cn/index.xml\u0026filter=^(?!.*(?:lives|about|friends)).*$"
         }
     ],
     "posts": [
@@ -112,6 +119,14 @@
             "AuthorURL": "https://nickxu.me/"
         },
         {
+            "Title": "BGP 组网，DN11 与 VidarNetwork 的并网试验",
+            "Author": "柏喵Sakura",
+            "Date": "2023-06-01",
+            "Content": "DN11配网第二期，接上文 “使用 Bird2 配置 WireGuard + OSPF 实现网络的高可用”，这是一篇用于 DN11 的 BGP 配置教程随着 DN11 的扩大，使用 OSPF 进行集中管理已经变得麻烦起来了，此外还能看到一堆隧道IP污染路由表也有不少人手上有多个内网，不得不打破 DN11 原先一个人使用一个/24网段的约定近期又在考虑和 VidarNetwork 并网的事情，",
+            "PostURL": "https://baimeow.cn/posts/dn11/configurebgp/",
+            "AuthorURL": "https://baimeow.cn/"
+        },
+        {
             "Title": "『算法拾遗』链表（Linked List）",
             "Author": "NX",
             "Date": "2023-05-31",
@@ -144,6 +159,14 @@
             "AuthorURL": "https://nickxu.me/"
         },
         {
+            "Title": "d3go write up",
+            "Author": "柏喵Sakura",
+            "Date": "2023-05-04",
+            "Content": "目录穿越读取源代码 directory traversal to dump source code go embed * 的错误使用，导致源代码被打包进程序。The incorrect use of go embed * results in the source code being packed into the program.再结合错误的静态文件托管，导致/../路径可以列目录获取源代",
+            "PostURL": "https://baimeow.cn/posts/ctf/d3go/",
+            "AuthorURL": "https://baimeow.cn/"
+        },
+        {
             "Title": "关于软删除的讨论",
             "Author": "NX",
             "Date": "2023-05-02",
@@ -166,22 +189,6 @@
             "Content": "最近在给自己写主页（同时也是博客），我做了一个切换主题色的功能。每次进入页面时，会随机选择一套配色，让页面显得灵动一些，就像下面这样：这是如何实现的呢？不妨先从自定义颜色入手WindiCSS 自定义颜色定义一个固定的颜色// windi.config.jsexport default defineConfig({  theme: {    exten",
             "PostURL": "https://daidr.me/archives/code-1069.html",
             "AuthorURL": "https://daidr.me"
-        },
-        {
-            "Title": "Plaid CTF Writeup [Treasure Map/CSS]",
-            "Author": "戴兜~",
-            "Date": "2023-04-17",
-            "Content": "这两道题真是太有趣了！虽然标签是逆向，但是以前端为载体，有很多JS/CSS奇淫巧计，我已经迫不及待地想要和大家分享了。Treasure Map题目地址：http://treasure.chal.pwni.ng/Ready your masts and set sail! Thar be treasure here if we can figure out how to f",
-            "PostURL": "https://daidr.me/archives/code-1064.html",
-            "AuthorURL": "https://daidr.me"
-        },
-        {
-            "Title": "从爬虫策略谈到十二因素应用",
-            "Author": "Bird",
-            "Date": "2023-04-14",
-            "Content": "这篇文章主要根据我对一个千万数据量爬虫的不断的重构的过程，谈谈理论与工程（稳定可靠）的结合，以及在重构过程中折射的十二因素应用(SaaS应用的方法论)思想。",
-            "PostURL": "https://blog.aflybird.cn/2023/04/from-crawler-strategy-to-twelve-factor-app/",
-            "AuthorURL": "https://blog.aflybird.cn/"
         }
     ]
 }
