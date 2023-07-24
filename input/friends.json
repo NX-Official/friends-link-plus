@@ -41,6 +41,13 @@
             "avatar": "https://avatars.hdu-cs.wiki/ek1ng",
             "url": "https://ek1ng.com/",
             "rss": "https://ek1ng.com/atom.xml"
-        }
+        },
+        {
+            "name": "Atom",
+            "description": "aka asjdf",
+            "avatar": "https://avatars.githubusercontent.com/u/22193008?v=4",
+            "url": "https://www.homeboyc.cn/",
+            "rss": "https://homeboyc.cn/index.xml"
+        },
     ]
 }
