@@ -20,6 +20,13 @@
             "avatar": "https://nickxu.me/static/favicon.jpg",
             "url": "https://nickxu.me/",
             "rss": "https://nickxu.me/rss2.xml"
+        },
+        {
+            "name": "柏喵Sakura",
+            "description": "过气 emo 师傅",
+            "avatar": "https://avatars.githubusercontent.com/u/38121125?v=4",
+            "url": "https://baimeow.cn/",
+            "rss": "https://service-rcg8qv8r-1253828577.sh.apigw.tencentcs.com/release/?url=https://baimeow.cn/index.xml&filter=^(?!.*(?:lives|about|friends)).*$"
         }
     ]
 }
