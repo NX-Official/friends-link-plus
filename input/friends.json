@@ -27,6 +27,13 @@
             "avatar": "https://avatars.githubusercontent.com/u/38121125?v=4",
             "url": "https://baimeow.cn/",
             "rss": "https://service-rcg8qv8r-1253828577.sh.apigw.tencentcs.com/release/?url=https://baimeow.cn/index.xml&filter=^(?!.*(?:lives|about|friends)).*$"
+        },
+        {
+            "name": "Marlene",
+            "description": "<归零人生>",
+            "avatar": "https://avatars.hdu-cs.wiki/MarleneJiang",
+            "url": "https://blog.marlene.top/",
+            "rss": "https://www.marlene.top/index.php/feed/rss/category/develop/"
         }
     ]
 }
