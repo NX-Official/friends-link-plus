@@ -4,14 +4,24 @@
 - [NX｜这家伙真勤奋，什么都留下了](https://nickxu.me/)
 - [柏喵Sakura｜过气 emo 师傅](https://baimeow.cn/)
 - [Marlene｜<归零人生>](https://blog.marlene.top/)
+- [ek1ng｜Hidden Gem](https://ek1ng.com/)
 
 # Recent Blogs
+## [java-sec-code 代码审计靶场题解](https://www.ek1ng.com/java-sec-code.html)  by [ek1ng](https://ek1ng.com/), 2023-07-20
+
+这个靶场包含了各类基本漏洞在java语言上的场景以及java安全特有的JNDI注入，反序列化，表达式注入等等，并且给出了相关的利用手段和修复方案。java-sec-code搭建环境可以用Docker搭建，不过想了想不太熟练java的包管理和web server部署这一套，并且本地起相比于容器也方便调试，于是决定本地起一份。由于我是archlinux，包管理安装的都是最新的jdk版本，靶场的jdk版
+## [CrewCTF 2023 Web Writeup](https://www.ek1ng.com/2023CrewCTFWP.html)  by [ek1ng](https://ek1ng.com/), 2023-07-14
+
+环境还在，赛后看看题，一共四道Web，都挺有意思的。sequence_galleryDo you like sequences?http://sequence-gallery.chal.crewc.tf:8080/ 123456789101112131415sequence = request.args.get('sequence', None)if sequence is None:    re
 ## [使用 GitHub Actions Cache 加快 Workflow](https://blog.aflybird.cn/2023/07/use-github-actions-cache-to-speed-up-workflow/)  by [Bird](https://blog.aflybird.cn/), 2023-07-08
 
 简单讲讲 GitHub Actions 的 Cache 功能，使用方式，以及探讨浅层的设计思想。虽然本文是我博客中为数不多的「教程」类文章，但我还是会侧重逻辑与思考的角度来讲述。详细教程请查看，GitHub Actions Cache 官方文档。
 ## [『OSPP2023』我与 OSPP 的故事 —— 从听闻到中选](https://nickxu.me/2023/06/my-story-with-OSPP-from-hearing-to-being-selected.html)  by [NX](https://nickxu.me/), 2023-06-30
 
 6月26日下午3点，OSPP2023 中选结果正式发布，全球共有 1486 人成功申请，最终中选人数为 504 人鄙人非常荣幸地成为了这 504 个幸运儿的一份子，特撰此文，记录 我与 OSPP 的故事 —— 从听闻到中选当然，我也希望这篇博客能够吸引更多人参与开源，为开源项目做出自己的贡献给「杭电助手」打点小广告本次开源之夏活动，杭州电子科技大学共中选 13 人，其中 8 人来自杭电助手杭助本次
+## [云原生安全分享会材料](https://www.ek1ng.com/cloudsecurity.html)  by [ek1ng](https://ek1ng.com/), 2023-06-28
+
+这是一篇用于给协会小学弟们分享的文章，粗略从各个角度讲了一讲，有任何问题都欢迎联系我交流，email：ek1ng@qq.com。基础知识🧀在开始之前，你需要能够基本掌握Docker和Kubernetes的使用。基本使用推荐看官方文档，配合一些教程动手尝试。https://www.docker.com/Docker 能区分镜像/容器，能基本使用命令，能写Dockerfile，粗略了解原理即可。htt
 ## [开源之旅——OSPP](https://blog.marlene.top/index.php/develop/85.html)  by [Marlene](https://blog.marlene.top/), 2023-06-27
 
 声明：以下内容仅代表本人观点，具有固有局限性，请辩证看待。任何有问题的地方也恳请指出。开源是什么我一直都认为开源是未来的趋势。用户创作的时代已经到来，作为一名开发者，手里握着强大的武器，个性化的创造自然不在话下。用户创作的目的不是孤芳自赏，而是自媒体式的分享。那么业务、框架的开发与不是自我消化，开源分享或许能够获得更大收益。个人的力量始终有限，我们不是大公司，技术在内部使用也能够逐渐完善。很多内容
@@ -51,18 +61,9 @@ DN11配网第二期，接上文 “使用 Bird2 配置 WireGuard + OSPF 实现�
 ## [24岁的我，在思考着什么](https://blog.aflybird.cn/2023/05/contemplating-at-24/)  by [Bird](https://blog.aflybird.cn/), 2023-05-21
 
 引言 自大学以来，我的焦虑大概经历了这样几个阶段： 起初源于同辈间的不自觉的比较，毕竟人都是好强的。但永远，天外有天，人外有人。 大概持续了三年多
+## [阿里云 BrokenSesame RCE漏洞分析](https://www.ek1ng.com/BrokenSesame.html)  by [ek1ng](https://ek1ng.com/), 2023-05-12
+
+学习了Wiz团队发表的文章 https://www.wiz.io/blog/brokensesame-accidental-write-permissions-to-private-registry-allowed-potential-r，有很多巧妙的利用方法可以学习Wiz Research在文章中披露了被命名为BrokenSesame的一系列阿里云数据库服务漏洞，会导致未授权访问阿里云客户的Po
 ## [为TailScale部署私有DERP中继服务器](https://blog.aflybird.cn/2023/05/tailscale-derp/)  by [Bird](https://blog.aflybird.cn/), 2023-05-10
 
 什么是 TailScale 后面再补充，先写重点的 TailScale DERP 中继服务器。 关键词：UDP打洞，NAT，点对点连接，大局域网。 好处/场景：待补充 怎么用 TailScale：
-## [2023五一总结：近况与将来](https://nickxu.me/posts/274.html)  by [NX](https://nickxu.me/), 2023-05-04
-
-事情有点多，就简单说几句吧～Your browser does not support the audio tag.最近的事情杭电助手团建        [{"url":"https://pic-go-img.oss-cn-hangzhou.aliyuncs.com/202305042227317.png","alt":"image-20230504222737293"},{"url":"http
-## [d3go write up](https://baimeow.cn/posts/ctf/d3go/)  by [柏喵Sakura](https://baimeow.cn/), 2023-05-04
-
-目录穿越读取源代码 directory traversal to dump source code go embed * 的错误使用，导致源代码被打包进程序。The incorrect use of go embed * results in the source code being packed into the program.再结合错误的静态文件托管，导致/../路径可以列目录获取源代
-## [关于软删除的讨论](https://nickxu.me/posts/273.html)  by [NX](https://nickxu.me/), 2023-05-02
-
-别急，先挂着别问我为什么空着就发上来了，我本来是想每一篇都写完再发的，但是后面本地坑挖了很多不想填就直接删了然后发上来至少别人看着我还有动力去填🤣7 月 11 日更：卧槽居然过了这么久了才有空填过了两个月了基本忘光了，翻了翻聊天记录，记起来了一点点其实有个大佬的博客 软删除之痛 已经将前情提要概括了一下，下面就简单补充一下文中写的唯一索引的例子在我们的开发中也遇到了，但是我们有不一样的解决方法就是
-## [ChatGPT对话记录（六）：GORM 手动事务错误处理](https://nickxu.me/2023/04/29/ChatGPT%E5%AF%B9%E8%AF%9D%E8%AE%B0%E5%BD%95%EF%BC%88%E5%85%AD%EF%BC%89%EF%BC%9AGORM-%E6%89%8B%E5%8A%A8%E4%BA%8B%E5%8A%A1%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/)  by [NX](https://nickxu.me/), 2023-04-29
-
-Model: GPT-4123456789101112131415161718192021222324252627282930func (l *UserDeleteLogic) UserDelete(in *user.UserDeleteRequest) (*user.Empty, error) {tx := l.svcCtx.Dao.Begin()u := tx.Userm := tx.Memb

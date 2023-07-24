@@ -34,9 +34,32 @@
             "avatar": "https://avatars.hdu-cs.wiki/MarleneJiang",
             "url": "https://blog.marlene.top/",
             "rss": "https://blog.marlene.top/index.php/feed/rss/category/develop/"
+        },
+        {
+            "name": "ek1ng",
+            "description": "Hidden Gem",
+            "avatar": "https://avatars.hdu-cs.wiki/ek1ng",
+            "url": "https://ek1ng.com/",
+            "rss": "https://ek1ng.com/atom.xml"
         }
     ],
     "posts": [
+        {
+            "Title": "java-sec-code 代码审计靶场题解",
+            "Author": "ek1ng",
+            "Date": "2023-07-20",
+            "Content": "这个靶场包含了各类基本漏洞在java语言上的场景以及java安全特有的JNDI注入，反序列化，表达式注入等等，并且给出了相关的利用手段和修复方案。java-sec-code搭建环境可以用Docker搭建，不过想了想不太熟练java的包管理和web server部署这一套，并且本地起相比于容器也方便调试，于是决定本地起一份。由于我是archlinux，包管理安装的都是最新的jdk版本，靶场的jdk版",
+            "PostURL": "https://www.ek1ng.com/java-sec-code.html",
+            "AuthorURL": "https://ek1ng.com/"
+        },
+        {
+            "Title": "CrewCTF 2023 Web Writeup",
+            "Author": "ek1ng",
+            "Date": "2023-07-14",
+            "Content": "环境还在，赛后看看题，一共四道Web，都挺有意思的。sequence_galleryDo you like sequences?http://sequence-gallery.chal.crewc.tf:8080/ 123456789101112131415sequence = request.args.get('sequence', None)if sequence is None:    re",
+            "PostURL": "https://www.ek1ng.com/2023CrewCTFWP.html",
+            "AuthorURL": "https://ek1ng.com/"
+        },
         {
             "Title": "使用 GitHub Actions Cache 加快 Workflow",
             "Author": "Bird",
@@ -52,6 +75,14 @@
             "Content": "6月26日下午3点，OSPP2023 中选结果正式发布，全球共有 1486 人成功申请，最终中选人数为 504 人鄙人非常荣幸地成为了这 504 个幸运儿的一份子，特撰此文，记录 我与 OSPP 的故事 —— 从听闻到中选当然，我也希望这篇博客能够吸引更多人参与开源，为开源项目做出自己的贡献给「杭电助手」打点小广告本次开源之夏活动，杭州电子科技大学共中选 13 人，其中 8 人来自杭电助手杭助本次",
             "PostURL": "https://nickxu.me/2023/06/my-story-with-OSPP-from-hearing-to-being-selected.html",
             "AuthorURL": "https://nickxu.me/"
+        },
+        {
+            "Title": "云原生安全分享会材料",
+            "Author": "ek1ng",
+            "Date": "2023-06-28",
+            "Content": "这是一篇用于给协会小学弟们分享的文章，粗略从各个角度讲了一讲，有任何问题都欢迎联系我交流，email：ek1ng@qq.com。基础知识🧀在开始之前，你需要能够基本掌握Docker和Kubernetes的使用。基本使用推荐看官方文档，配合一些教程动手尝试。https://www.docker.com/Docker 能区分镜像/容器，能基本使用命令，能写Dockerfile，粗略了解原理即可。htt",
+            "PostURL": "https://www.ek1ng.com/cloudsecurity.html",
+            "AuthorURL": "https://ek1ng.com/"
         },
         {
             "Title": "开源之旅——OSPP",
@@ -158,44 +189,20 @@
             "AuthorURL": "https://blog.aflybird.cn/"
         },
         {
+            "Title": "阿里云 BrokenSesame RCE漏洞分析",
+            "Author": "ek1ng",
+            "Date": "2023-05-12",
+            "Content": "学习了Wiz团队发表的文章 https://www.wiz.io/blog/brokensesame-accidental-write-permissions-to-private-registry-allowed-potential-r，有很多巧妙的利用方法可以学习Wiz Research在文章中披露了被命名为BrokenSesame的一系列阿里云数据库服务漏洞，会导致未授权访问阿里云客户的Po",
+            "PostURL": "https://www.ek1ng.com/BrokenSesame.html",
+            "AuthorURL": "https://ek1ng.com/"
+        },
+        {
             "Title": "为TailScale部署私有DERP中继服务器",
             "Author": "Bird",
             "Date": "2023-05-10",
             "Content": "什么是 TailScale 后面再补充，先写重点的 TailScale DERP 中继服务器。 关键词：UDP打洞，NAT，点对点连接，大局域网。 好处/场景：待补充 怎么用 TailScale：",
             "PostURL": "https://blog.aflybird.cn/2023/05/tailscale-derp/",
             "AuthorURL": "https://blog.aflybird.cn/"
-        },
-        {
-            "Title": "2023五一总结：近况与将来",
-            "Author": "NX",
-            "Date": "2023-05-04",
-            "Content": "事情有点多，就简单说几句吧～Your browser does not support the audio tag.最近的事情杭电助手团建        [{\"url\":\"https://pic-go-img.oss-cn-hangzhou.aliyuncs.com/202305042227317.png\",\"alt\":\"image-20230504222737293\"},{\"url\":\"http",
-            "PostURL": "https://nickxu.me/posts/274.html",
-            "AuthorURL": "https://nickxu.me/"
-        },
-        {
-            "Title": "d3go write up",
-            "Author": "柏喵Sakura",
-            "Date": "2023-05-04",
-            "Content": "目录穿越读取源代码 directory traversal to dump source code go embed * 的错误使用，导致源代码被打包进程序。The incorrect use of go embed * results in the source code being packed into the program.再结合错误的静态文件托管，导致/../路径可以列目录获取源代",
-            "PostURL": "https://baimeow.cn/posts/ctf/d3go/",
-            "AuthorURL": "https://baimeow.cn/"
-        },
-        {
-            "Title": "关于软删除的讨论",
-            "Author": "NX",
-            "Date": "2023-05-02",
-            "Content": "别急，先挂着别问我为什么空着就发上来了，我本来是想每一篇都写完再发的，但是后面本地坑挖了很多不想填就直接删了然后发上来至少别人看着我还有动力去填🤣7 月 11 日更：卧槽居然过了这么久了才有空填过了两个月了基本忘光了，翻了翻聊天记录，记起来了一点点其实有个大佬的博客 软删除之痛 已经将前情提要概括了一下，下面就简单补充一下文中写的唯一索引的例子在我们的开发中也遇到了，但是我们有不一样的解决方法就是",
-            "PostURL": "https://nickxu.me/posts/273.html",
-            "AuthorURL": "https://nickxu.me/"
-        },
-        {
-            "Title": "ChatGPT对话记录（六）：GORM 手动事务错误处理",
-            "Author": "NX",
-            "Date": "2023-04-29",
-            "Content": "Model: GPT-4123456789101112131415161718192021222324252627282930func (l *UserDeleteLogic) UserDelete(in *user.UserDeleteRequest) (*user.Empty, error) {tx := l.svcCtx.Dao.Begin()u := tx.Userm := tx.Memb",
-            "PostURL": "https://nickxu.me/2023/04/29/ChatGPT%E5%AF%B9%E8%AF%9D%E8%AE%B0%E5%BD%95%EF%BC%88%E5%85%AD%EF%BC%89%EF%BC%9AGORM-%E6%89%8B%E5%8A%A8%E4%BA%8B%E5%8A%A1%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/",
-            "AuthorURL": "https://nickxu.me/"
         }
     ]
 }
