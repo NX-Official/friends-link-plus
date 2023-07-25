@@ -8,6 +8,12 @@
 - [Atom｜aka asjdf](https://www.homeboyc.cn/)
 
 # Recent Blogs
+## [Golang 性能调优速查笔记](https://homeboyc.cn/blog/golang-%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98%E9%80%9F%E6%9F%A5%E7%AC%94%E8%AE%B0/)  by [Atom](https://www.homeboyc.cn/), 2023-07-24
+
+# 技巧 unsafe转换字符串/字节切片的技巧 字符串 -> 字节切片：*(*[]byte)(unsafe.Pointer(&s)) 缓冲区不能修改，否则 go 会panic！ 字节切片 -> 字符串：*(*string)(unsafe.Pointer(&buf)) 重用缓冲区 复位缓冲器 bytes.Buffer.Reset buf = buf[:0] 尽可能直接分配所需大小的数组 清空Map
+## [把“用VSCode打开”按钮加入MacOS右键菜单](https://homeboyc.cn/blog/%E6%8A%8A%E7%94%A8vscode%E6%89%93%E5%BC%80%E6%8C%89%E9%92%AE%E5%8A%A0%E5%85%A5macos%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95/)  by [Atom](https://www.homeboyc.cn/), 2023-07-24
+
+打开自动操作新建文稿选择快速操作设置“工作流程收到当前”为文件或文件夹在左上方搜索栏搜索“运行” -》 找到“运行 Shell 脚本” 并将其拖入右侧 -》 将下方脚本填入文本框for f in "$@"; do open -a 'Visual Studio Code' "$f" done Copy 设置“传递输入”为作为自变量保存为Open in Visual Studio Code
 ## [java-sec-code 代码审计靶场题解](https://www.ek1ng.com/java-sec-code.html)  by [ek1ng](https://ek1ng.com/), 2023-07-20
 
 这个靶场包含了各类基本漏洞在java语言上的场景以及java安全特有的JNDI注入，反序列化，表达式注入等等，并且给出了相关的利用手段和修复方案。java-sec-code搭建环境可以用Docker搭建，不过想了想不太熟练java的包管理和web server部署这一套，并且本地起相比于容器也方便调试，于是决定本地起一份。由于我是archlinux，包管理安装的都是最新的jdk版本，靶场的jdk版
@@ -62,9 +68,3 @@ DN11配网第二期，接上文 “使用 Bird2 配置 WireGuard + OSPF 实现�
 ## [『算法拾遗』链表（Linked List）](https://nickxu.me/posts/275.html)  by [NX](https://nickxu.me/), 2023-05-31
 
 这两天在复习链表，我一想，这链表这么简单的东西还有什么复习的，简单过一遍不就行了然而马上打脸，有些题目我居然还写不出来（乐理论基础先来点你肯定知道的东西，简单过一遍是什么如图所示，链表是一种链式结构，以最简单的单链表为例：1234type ListNode struct {    Val  int    Next *ListNode}也就是头节点指向下一个节点，然后下一个节点再指向下一个节点，如果
-## [24岁的我，在思考着什么](https://blog.aflybird.cn/2023/05/contemplating-at-24/)  by [Bird](https://blog.aflybird.cn/), 2023-05-21
-
-引言 自大学以来，我的焦虑大概经历了这样几个阶段： 起初源于同辈间的不自觉的比较，毕竟人都是好强的。但永远，天外有天，人外有人。 大概持续了三年多
-## [阿里云 BrokenSesame RCE漏洞分析](https://www.ek1ng.com/BrokenSesame.html)  by [ek1ng](https://ek1ng.com/), 2023-05-12
-
-学习了Wiz团队发表的文章 https://www.wiz.io/blog/brokensesame-accidental-write-permissions-to-private-registry-allowed-potential-r，有很多巧妙的利用方法可以学习Wiz Research在文章中披露了被命名为BrokenSesame的一系列阿里云数据库服务漏洞，会导致未授权访问阿里云客户的Po
