@@ -1,5 +1,5 @@
 # My Friends
-- [戴兜~｜daidr](https://daidr.me)
+- [戴兜｜Coding the world.](https://im.daidr.me)
 - [Bird｜aFlyBird0](https://blog.aflybird.cn/)
 - [NX｜这家伙真勤奋，什么都留下了](https://nickxu.me/)
 - [柏喵Sakura｜过气 emo 师傅](https://baimeow.cn/)
@@ -8,6 +8,9 @@
 - [Atom｜aka asjdf](https://www.homeboyc.cn/)
 
 # Recent Blogs
+## [重学 Java 反射机制](https://www.ek1ng.com/java-reflect-learning.html)  by [ek1ng](https://ek1ng.com/), 2023-07-25
+
+近期跟一些java的最新漏洞，发现自己的语言基础太差了，跟着p牛的java安全漫谈重新学一下反射，p牛的文章确实是讲复杂的东西讲的浅显易懂。反射的定义对象可以通过反射获取对应的类，类可以通过反射获取所有方法，拿到的方法可以调用，这种机制就是反射。反射机制在安全方面的意义例如我们要完成RCE，但代码中绝大多数时候并没有Runtime，ProcessBuilder等常见的用于命令执行的类来让我们调用。
 ## [Golang 性能调优速查笔记](https://homeboyc.cn/blog/golang-%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98%E9%80%9F%E6%9F%A5%E7%AC%94%E8%AE%B0/)  by [Atom](https://www.homeboyc.cn/), 2023-07-24
 
 # 技巧 unsafe转换字符串/字节切片的技巧 字符串 -> 字节切片：*(*[]byte)(unsafe.Pointer(&s)) 缓冲区不能修改，否则 go 会panic！ 字节切片 -> 字符串：*(*string)(unsafe.Pointer(&buf)) 重用缓冲区 复位缓冲器 bytes.Buffer.Reset buf = buf[:0] 尽可能直接分配所需大小的数组 清空Map
@@ -65,6 +68,3 @@
 ## [BGP 组网，DN11 与 VidarNetwork 的并网试验](https://baimeow.cn/posts/dn11/configurebgp/)  by [柏喵Sakura](https://baimeow.cn/), 2023-06-01
 
 DN11配网第二期，接上文 “使用 Bird2 配置 WireGuard + OSPF 实现网络的高可用”，这是一篇用于 DN11 的 BGP 配置教程随着 DN11 的扩大，使用 OSPF 进行集中管理已经变得麻烦起来了，此外还能看到一堆隧道IP污染路由表也有不少人手上有多个内网，不得不打破 DN11 原先一个人使用一个/24网段的约定近期又在考虑和 VidarNetwork 并网的事情，
-## [『算法拾遗』链表（Linked List）](https://nickxu.me/posts/275.html)  by [NX](https://nickxu.me/), 2023-05-31
-
-这两天在复习链表，我一想，这链表这么简单的东西还有什么复习的，简单过一遍不就行了然而马上打脸，有些题目我居然还写不出来（乐理论基础先来点你肯定知道的东西，简单过一遍是什么如图所示，链表是一种链式结构，以最简单的单链表为例：1234type ListNode struct {    Val  int    Next *ListNode}也就是头节点指向下一个节点，然后下一个节点再指向下一个节点，如果

@@ -1,10 +1,10 @@
 {
     "friends": [
         {
-            "name": "戴兜~",
-            "description": "daidr",
+            "name": "戴兜",
+            "description": "Coding the world.",
             "avatar": "https://avatars.githubusercontent.com/u/18638914?v=4",
-            "url": "https://daidr.me",
+            "url": "https://im.daidr.me",
             "rss": "https://daidr.me/feed"
         },
         {
@@ -51,6 +51,14 @@
         }
     ],
     "posts": [
+        {
+            "Title": "重学 Java 反射机制",
+            "Author": "ek1ng",
+            "Date": "2023-07-25",
+            "Content": "近期跟一些java的最新漏洞，发现自己的语言基础太差了，跟着p牛的java安全漫谈重新学一下反射，p牛的文章确实是讲复杂的东西讲的浅显易懂。反射的定义对象可以通过反射获取对应的类，类可以通过反射获取所有方法，拿到的方法可以调用，这种机制就是反射。反射机制在安全方面的意义例如我们要完成RCE，但代码中绝大多数时候并没有Runtime，ProcessBuilder等常见的用于命令执行的类来让我们调用。",
+            "PostURL": "https://www.ek1ng.com/java-reflect-learning.html",
+            "AuthorURL": "https://ek1ng.com/"
+        },
         {
             "Title": "Golang 性能调优速查笔记",
             "Author": "Atom",
@@ -202,14 +210,6 @@
             "Content": "DN11配网第二期，接上文 “使用 Bird2 配置 WireGuard + OSPF 实现网络的高可用”，这是一篇用于 DN11 的 BGP 配置教程随着 DN11 的扩大，使用 OSPF 进行集中管理已经变得麻烦起来了，此外还能看到一堆隧道IP污染路由表也有不少人手上有多个内网，不得不打破 DN11 原先一个人使用一个/24网段的约定近期又在考虑和 VidarNetwork 并网的事情，",
             "PostURL": "https://baimeow.cn/posts/dn11/configurebgp/",
             "AuthorURL": "https://baimeow.cn/"
-        },
-        {
-            "Title": "『算法拾遗』链表（Linked List）",
-            "Author": "NX",
-            "Date": "2023-05-31",
-            "Content": "这两天在复习链表，我一想，这链表这么简单的东西还有什么复习的，简单过一遍不就行了然而马上打脸，有些题目我居然还写不出来（乐理论基础先来点你肯定知道的东西，简单过一遍是什么如图所示，链表是一种链式结构，以最简单的单链表为例：1234type ListNode struct {    Val  int    Next *ListNode}也就是头节点指向下一个节点，然后下一个节点再指向下一个节点，如果",
-            "PostURL": "https://nickxu.me/posts/275.html",
-            "AuthorURL": "https://nickxu.me/"
         }
     ]
 }
