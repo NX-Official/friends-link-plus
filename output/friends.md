@@ -8,6 +8,9 @@
 - [Atom｜aka asjdf](https://www.homeboyc.cn/)
 
 # Recent Blogs
+## [LLM Agent之结构化输出](https://blog.marlene.top/index.php/develop/88.html)  by [Marlene](https://blog.marlene.top/), 2023-07-26
+
+引言自去年年底以来，GPT的迅速发展诞生了一系列大模型。出现了更新、更大、更强的GPT-4。OpenAI不断推出GPT-4，ChatGPT Plugins，代码解释器，Function calling,图片处理等等。7月的WAIC上，笔者也有幸见到了国内一众企业相继展示自家的大模型。在这段时间里，LLM从最初的PE工程走向智能体交互。而笔者从最开始考虑LLM能不能多人协作，思考”一个专家完成所有任
 ## [重学 Java 反射机制](https://www.ek1ng.com/java-reflect-learning.html)  by [ek1ng](https://ek1ng.com/), 2023-07-25
 
 近期跟一些java的最新漏洞，发现自己的语言基础太差了，跟着p牛的java安全漫谈重新学一下反射，p牛的文章确实是讲复杂的东西讲的浅显易懂。反射的定义对象可以通过反射获取对应的类，类可以通过反射获取所有方法，拿到的方法可以调用，这种机制就是反射。反射机制在安全方面的意义例如我们要完成RCE，但代码中绝大多数时候并没有Runtime，ProcessBuilder等常见的用于命令执行的类来让我们调用。
@@ -65,6 +68,3 @@
 ## [如何在一个仓库中同时开发前后端项目](https://nickxu.me/posts/276.html)  by [NX](https://nickxu.me/), 2023-06-01
 
 如图，今天在群里问了个小问题TLDR; 直接说结论吧小项目直接开子目录，然后可以分别独立打包或者使用 go embed不同分支的方法应该没必要用如果想做成两个独立项目就用 submodulegpt 对 submodule 的介绍Git 的 Submodule 是一种在一个 Git 仓库中嵌套使用另一个 Git 仓库的机制。它允许你将一个 Git 仓库作为子项目嵌入到另一个 Git 仓库中，并且能够
-## [BGP 组网，DN11 与 VidarNetwork 的并网试验](https://baimeow.cn/posts/dn11/configurebgp/)  by [柏喵Sakura](https://baimeow.cn/), 2023-06-01
-
-DN11配网第二期，接上文 “使用 Bird2 配置 WireGuard + OSPF 实现网络的高可用”，这是一篇用于 DN11 的 BGP 配置教程随着 DN11 的扩大，使用 OSPF 进行集中管理已经变得麻烦起来了，此外还能看到一堆隧道IP污染路由表也有不少人手上有多个内网，不得不打破 DN11 原先一个人使用一个/24网段的约定近期又在考虑和 VidarNetwork 并网的事情，
