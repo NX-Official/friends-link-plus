@@ -48,6 +48,13 @@
             "avatar": "https://avatars.githubusercontent.com/u/22193008?v=4",
             "url": "https://www.homeboyc.cn/",
             "rss": "https://homeboyc.cn/index.xml"
+        },
+        {
+            "name": "xyxsw",
+            "description": "大相的问题",
+            "avatar": "https://avatars.hdu-cs.wiki/camera-2018",
+            "url": "https://xyxsw.ltd/",
+            "rss": "https://xyxsw.ltd/rss.xml"
         }
     ]
 }
