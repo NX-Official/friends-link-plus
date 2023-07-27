@@ -6,14 +6,21 @@
 - [Marlene｜<归零人生>](https://blog.marlene.top/)
 - [ek1ng｜Hidden Gem](https://ek1ng.com/)
 - [Atom｜aka asjdf](https://www.homeboyc.cn/)
+- [xyxsw｜大相的问题](https://xyxsw.ltd/)
 
 # Recent Blogs
 ## [LLM Agent之结构化输出](https://blog.marlene.top/index.php/develop/88.html)  by [Marlene](https://blog.marlene.top/), 2023-07-26
 
 引言自去年年底以来，GPT的迅速发展诞生了一系列大模型。出现了更新、更大、更强的GPT-4。OpenAI不断推出GPT-4，ChatGPT Plugins，代码解释器，Function calling,图片处理等等。7月的WAIC上，笔者也有幸见到了国内一众企业相继展示自家的大模型。在这段时间里，LLM从最初的PE工程走向智能体交互。而笔者从最开始考虑LLM能不能多人协作，思考”一个专家完成所有任
+## [Java RMI 攻击梳理总结](https://www.ek1ng.com/java-rmi.html)  by [ek1ng](https://ek1ng.com/), 2023-07-26
+
+RMI 是什么定义RMI（Remote Method Invocation）是远程方法调用，类似RPC（Remote Procedure Calls）。RPC是打包和传送数据结构，而在Java中，通常传递一个完整的对象，包含数据和操作数据的方法。通过RMI，能够让客户端JVM上的对象，像调用本地对象一样调用服务端JVM上的对象。RMI引入了 Stubs（客户端存根）和 Skeletons（服务端骨
 ## [重学 Java 反射机制](https://www.ek1ng.com/java-reflect-learning.html)  by [ek1ng](https://ek1ng.com/), 2023-07-25
 
 近期跟一些java的最新漏洞，发现自己的语言基础太差了，跟着p牛的java安全漫谈重新学一下反射，p牛的文章确实是讲复杂的东西讲的浅显易懂。反射的定义对象可以通过反射获取对应的类，类可以通过反射获取所有方法，拿到的方法可以调用，这种机制就是反射。反射机制在安全方面的意义例如我们要完成RCE，但代码中绝大多数时候并没有Runtime，ProcessBuilder等常见的用于命令执行的类来让我们调用。
+## [go语言三个小项目 ｜ 青训营笔记](https://xyxsw.ltd/2023/07/25/go%E8%AF%AD%E8%A8%80%E4%B8%89%E4%B8%AA%E5%B0%8F%E9%A1%B9%E7%9B%AE%20%EF%BD%9C%20%E9%9D%92%E8%AE%AD%E8%90%A5%E7%AC%94%E8%AE%B0/)  by [xyxsw](https://xyxsw.ltd/), 2023-07-25
+
+猜数字猜数字这个项目非常简单，它涉及到随机数的生成和用户输入操作。我们使用了bufio库来处理输入数据。reader := bufio.NewReader(os.Stdin)input, _ := reader.ReadString('\n')简单字典标准库strconv它主要用于字符和其他类型之间的转换。strconv.Atoi(s string) int 标准库stringsstrings.T
 ## [Golang 性能调优速查笔记](https://homeboyc.cn/blog/golang-%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98%E9%80%9F%E6%9F%A5%E7%AC%94%E8%AE%B0/)  by [Atom](https://www.homeboyc.cn/), 2023-07-24
 
 # 技巧 unsafe转换字符串/字节切片的技巧 字符串 -> 字节切片：*(*[]byte)(unsafe.Pointer(&s)) 缓冲区不能修改，否则 go 会panic！ 字节切片 -> 字符串：*(*string)(unsafe.Pointer(&buf)) 重用缓冲区 复位缓冲器 bytes.Buffer.Reset buf = buf[:0] 尽可能直接分配所需大小的数组 清空Map
@@ -62,9 +69,3 @@
 ## [后端层与层传递结构体时自动转换类型](https://nickxu.me/posts/278.html)  by [NX](https://nickxu.me/), 2023-06-02
 
 未完成7 月 11 日更：在后端层与层传递的时候，很多情况下都需要手动把一个结构体的内容搬到另一个结构体里面，也可能会做一下简单的转换这时候就可以用 jinzhu 的 https://github.com/jinzhu/copier我很早就听说了这个东西，但是一直没敢用，毕竟小项目东西也不多，然后自己手动搬一下比较稳妥，怕会有什么问题但是后面变大了之后感觉适合 copier 的场景更多了，比如一个
-## [后端发送 lua 脚本给 Redis 执行](https://nickxu.me/posts/277.html)  by [NX](https://nickxu.me/), 2023-06-02
-
-未完成7 月 11 日更：之前在交流的时候发现了一个很巧的方法，就是在执行复杂 Redis 操作的时候，可以发一个 lua 脚本过去细节记不清了，大概就是你一句一句写的话，效率是不及直接发一个脚本过去高的具体的我还没试，等试了之后再看看👀
-## [如何在一个仓库中同时开发前后端项目](https://nickxu.me/posts/276.html)  by [NX](https://nickxu.me/), 2023-06-01
-
-如图，今天在群里问了个小问题TLDR; 直接说结论吧小项目直接开子目录，然后可以分别独立打包或者使用 go embed不同分支的方法应该没必要用如果想做成两个独立项目就用 submodulegpt 对 submodule 的介绍Git 的 Submodule 是一种在一个 Git 仓库中嵌套使用另一个 Git 仓库的机制。它允许你将一个 Git 仓库作为子项目嵌入到另一个 Git 仓库中，并且能够
