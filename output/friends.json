@@ -91,6 +91,14 @@
             "AuthorURL": "https://xyxsw.ltd/"
         },
         {
+            "Title": "『LeetCode-HOT-100』T1～T10",
+            "Author": "NX",
+            "Date": "2023-07-24",
+            "Content": "1. 两数之和暴力枚举暴力枚举 i 和 j ，没什么好说的12345678910func twoSum(nums []int, target int) []int {for i, _ := range nums {for j := i + 1; j \u003c len(nums); j++ {if nums[i]+nums[j] == target {return []int{i, j}}}}return",
+            "PostURL": "https://nickxu.me/post/leetcode-hot-100-t1-t10.html",
+            "AuthorURL": "https://nickxu.me/"
+        },
+        {
             "Title": "Golang 性能调优速查笔记",
             "Author": "Atom",
             "Date": "2023-07-24",
@@ -171,28 +179,12 @@
             "AuthorURL": "https://blog.aflybird.cn/"
         },
         {
-            "Title": "『算法拾遗』二叉树（Binary Tree）",
-            "Author": "NX",
-            "Date": "2023-06-17",
-            "Content": "大概复习了一遍只能等期末考试后再好好整理了（",
-            "PostURL": "https://nickxu.me/posts/281.html",
-            "AuthorURL": "https://nickxu.me/"
-        },
-        {
             "Title": "Go语言整体替换式Map的Lock-Free实现",
             "Author": "Bird",
             "Date": "2023-06-16",
             "Content": "今天来分享一个写业务过程中，一种特殊场景下的 Lock-Free Map 的实现。 来，我们先抛开看了三遍可能都还看不懂的题目，讲讲故事的背景。 背景/需求 假设我们需要一",
             "PostURL": "https://blog.aflybird.cn/2023/06/go-lock-free-map-with-replace/",
             "AuthorURL": "https://blog.aflybird.cn/"
-        },
-        {
-            "Title": "『算法拾遗』跳表（Skip List）",
-            "Author": "NX",
-            "Date": "2023-06-13",
-            "Content": "别急，这周内会写哇我感觉事情有点多，然后我现在主要是要准备面试的内容这东西只能说有空再写了",
-            "PostURL": "https://nickxu.me/posts/280.html",
-            "AuthorURL": "https://nickxu.me/"
         },
         {
             "Title": "『算法拾遗』重学主流排序算法",
@@ -216,6 +208,14 @@
             "Date": "2023-06-02",
             "Content": "未完成7 月 11 日更：在后端层与层传递的时候，很多情况下都需要手动把一个结构体的内容搬到另一个结构体里面，也可能会做一下简单的转换这时候就可以用 jinzhu 的 https://github.com/jinzhu/copier我很早就听说了这个东西，但是一直没敢用，毕竟小项目东西也不多，然后自己手动搬一下比较稳妥，怕会有什么问题但是后面变大了之后感觉适合 copier 的场景更多了，比如一个",
             "PostURL": "https://nickxu.me/posts/278.html",
+            "AuthorURL": "https://nickxu.me/"
+        },
+        {
+            "Title": "后端发送 lua 脚本给 Redis 执行",
+            "Author": "NX",
+            "Date": "2023-06-02",
+            "Content": "未完成7 月 11 日更：之前在交流的时候发现了一个很巧的方法，就是在执行复杂 Redis 操作的时候，可以发一个 lua 脚本过去细节记不清了，大概就是你一句一句写的话，效率是不及直接发一个脚本过去高的具体的我还没试，等试了之后再看看👀",
+            "PostURL": "https://nickxu.me/posts/277.html",
             "AuthorURL": "https://nickxu.me/"
         }
     ]

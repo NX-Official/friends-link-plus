@@ -21,6 +21,9 @@ RMI 是什么定义RMI（Remote Method Invocation）是远程方法调用，类�
 ## [go语言三个小项目 ｜ 青训营笔记](https://xyxsw.ltd/2023/07/25/go%E8%AF%AD%E8%A8%80%E4%B8%89%E4%B8%AA%E5%B0%8F%E9%A1%B9%E7%9B%AE%20%EF%BD%9C%20%E9%9D%92%E8%AE%AD%E8%90%A5%E7%AC%94%E8%AE%B0/)  by [xyxsw](https://xyxsw.ltd/), 2023-07-25
 
 猜数字猜数字这个项目非常简单，它涉及到随机数的生成和用户输入操作。我们使用了bufio库来处理输入数据。reader := bufio.NewReader(os.Stdin)input, _ := reader.ReadString('\n')简单字典标准库strconv它主要用于字符和其他类型之间的转换。strconv.Atoi(s string) int 标准库stringsstrings.T
+## [『LeetCode-HOT-100』T1～T10](https://nickxu.me/post/leetcode-hot-100-t1-t10.html)  by [NX](https://nickxu.me/), 2023-07-24
+
+1. 两数之和暴力枚举暴力枚举 i 和 j ，没什么好说的12345678910func twoSum(nums []int, target int) []int {for i, _ := range nums {for j := i + 1; j < len(nums); j++ {if nums[i]+nums[j] == target {return []int{i, j}}}}return
 ## [Golang 性能调优速查笔记](https://homeboyc.cn/blog/golang-%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98%E9%80%9F%E6%9F%A5%E7%AC%94%E8%AE%B0/)  by [Atom](https://www.homeboyc.cn/), 2023-07-24
 
 # 技巧 unsafe转换字符串/字节切片的技巧 字符串 -> 字节切片：*(*[]byte)(unsafe.Pointer(&s)) 缓冲区不能修改，否则 go 会panic！ 字节切片 -> 字符串：*(*string)(unsafe.Pointer(&buf)) 重用缓冲区 复位缓冲器 bytes.Buffer.Reset buf = buf[:0] 尽可能直接分配所需大小的数组 清空Map
@@ -51,15 +54,9 @@ RMI 是什么定义RMI（Remote Method Invocation）是远程方法调用，类�
 ## [请还国内开源活动一片净土](https://blog.aflybird.cn/2023/06/please-stop-fucking-open-source-activities-in-china/)  by [Bird](https://blog.aflybird.cn/), 2023-06-26
 
 置顶声明：这篇博客我只发在了自己的独立博客、朋友圈和空间，没有发到其他的平台，没想到会有这么多的阅读量，所以必须要写个声明，保护一下好人：我不想文中涉及的社区，尤其是背后的公司受到损失。我同样也不代表任何团体与公司，不受任何利益。如果真的要对这个社区盖棺定论的话，我觉得这个社区的氛围，是非常学生友好，欢迎开源的。真的非常非常没话说，很热情积极与开放。首先是，社区举办了 学生开发者活动，一
-## [『算法拾遗』二叉树（Binary Tree）](https://nickxu.me/posts/281.html)  by [NX](https://nickxu.me/), 2023-06-17
-
-大概复习了一遍只能等期末考试后再好好整理了（
 ## [Go语言整体替换式Map的Lock-Free实现](https://blog.aflybird.cn/2023/06/go-lock-free-map-with-replace/)  by [Bird](https://blog.aflybird.cn/), 2023-06-16
 
 今天来分享一个写业务过程中，一种特殊场景下的 Lock-Free Map 的实现。 来，我们先抛开看了三遍可能都还看不懂的题目，讲讲故事的背景。 背景/需求 假设我们需要一
-## [『算法拾遗』跳表（Skip List）](https://nickxu.me/posts/280.html)  by [NX](https://nickxu.me/), 2023-06-13
-
-别急，这周内会写哇我感觉事情有点多，然后我现在主要是要准备面试的内容这东西只能说有空再写了
 ## [『算法拾遗』重学主流排序算法](https://nickxu.me/posts/sorting-algorithm.html)  by [NX](https://nickxu.me/), 2023-06-13
 
 衡量排序算法的好坏时间复杂度包含最好情况、最坏情况和平均情况数据有序度不同的影响空间复杂度是否是原地排序稳定性排序后，相同元素之间的顺序是否会改变O( n^2 )冒泡排序（Bubble Sort）依次比较相邻的元素，如果顺序错误，则交换它们。每轮排序将最大（或最小）的元素“冒泡”到正确的位置简单易懂，但效率较低，不适用于大规模数据排序过程初始化待排序数组，设为 arr ，数组长度为 n外层循环：重
@@ -69,3 +66,6 @@ RMI 是什么定义RMI（Remote Method Invocation）是远程方法调用，类�
 ## [后端层与层传递结构体时自动转换类型](https://nickxu.me/posts/278.html)  by [NX](https://nickxu.me/), 2023-06-02
 
 未完成7 月 11 日更：在后端层与层传递的时候，很多情况下都需要手动把一个结构体的内容搬到另一个结构体里面，也可能会做一下简单的转换这时候就可以用 jinzhu 的 https://github.com/jinzhu/copier我很早就听说了这个东西，但是一直没敢用，毕竟小项目东西也不多，然后自己手动搬一下比较稳妥，怕会有什么问题但是后面变大了之后感觉适合 copier 的场景更多了，比如一个
+## [后端发送 lua 脚本给 Redis 执行](https://nickxu.me/posts/277.html)  by [NX](https://nickxu.me/), 2023-06-02
+
+未完成7 月 11 日更：之前在交流的时候发现了一个很巧的方法，就是在执行复杂 Redis 操作的时候，可以发一个 lua 脚本过去细节记不清了，大概就是你一句一句写的话，效率是不及直接发一个脚本过去高的具体的我还没试，等试了之后再看看👀
