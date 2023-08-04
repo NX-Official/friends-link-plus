@@ -9,6 +9,12 @@
 - [xyxsw｜大相的问题](https://xyxsw.ltd/)
 
 # Recent Blogs
+## [『LeetCode-HOT-100』T21～T30](https://nickxu.me/post/leetcode-hot-100-t21-t30.html)  by [NX](https://nickxu.me/), 2023-08-03
+
+全排列板子题，不解释123456789101112131415161718func permute(nums []int) (ans [][]int) {var dfs func(begain, end int)dfs = func(begain, end int) {if begain == end {// 切片是引用类型，需要深拷贝一下tmp := make([]int, len(nums))
+## [『LeetCode-HOT-100』T11～T20](https://nickxu.me/post/leetcode-hot-100-t11-t20.html)  by [NX](https://nickxu.me/), 2023-07-30
+
+有效的括号栈的经典题目了属于是12345678910111213141516171819202122232425262728293031323334353637383940func isValid(s string) bool {stack := ""for k := 0; k < len(s); k++ {i := s[k]switch i {case '(':stack = stack + s
 ## [LLM Agent之结构化输出](https://blog.marlene.top/index.php/develop/88.html)  by [Marlene](https://blog.marlene.top/), 2023-07-26
 
 引言自去年年底以来，GPT的迅速发展诞生了一系列大模型。出现了更新、更大、更强的GPT-4。OpenAI不断推出GPT-4，ChatGPT Plugins，代码解释器，Function calling,图片处理等等。7月的WAIC上，笔者也有幸见到了国内一众企业相继展示自家的大模型。在这段时间里，LLM从最初的PE工程走向智能体交互。而笔者从最开始考虑LLM能不能多人协作，思考”一个专家完成所有任
@@ -23,7 +29,7 @@ RMI 是什么定义RMI（Remote Method Invocation）是远程方法调用，类�
 猜数字猜数字这个项目非常简单，它涉及到随机数的生成和用户输入操作。我们使用了bufio库来处理输入数据。reader := bufio.NewReader(os.Stdin)input, _ := reader.ReadString('\n')简单字典标准库strconv它主要用于字符和其他类型之间的转换。strconv.Atoi(s string) int 标准库stringsstrings.T
 ## [『LeetCode-HOT-100』T1～T10](https://nickxu.me/post/leetcode-hot-100-t1-t10.html)  by [NX](https://nickxu.me/), 2023-07-24
 
-1. 两数之和暴力枚举暴力枚举 i 和 j ，没什么好说的12345678910func twoSum(nums []int, target int) []int {for i, _ := range nums {for j := i + 1; j < len(nums); j++ {if nums[i]+nums[j] == target {return []int{i, j}}}}return
+两数之和暴力枚举暴力枚举 i 和 j ，没什么好说的12345678910func twoSum(nums []int, target int) []int {for i, _ := range nums {for j := i + 1; j < len(nums); j++ {if nums[i]+nums[j] == target {return []int{i, j}}}}return ni
 ## [Golang 性能调优速查笔记](https://homeboyc.cn/blog/golang-%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98%E9%80%9F%E6%9F%A5%E7%AC%94%E8%AE%B0/)  by [Atom](https://www.homeboyc.cn/), 2023-07-24
 
 # 技巧 unsafe转换字符串/字节切片的技巧 字符串 -> 字节切片：*(*[]byte)(unsafe.Pointer(&s)) 缓冲区不能修改，否则 go 会panic！ 字节切片 -> 字符串：*(*string)(unsafe.Pointer(&buf)) 重用缓冲区 复位缓冲器 bytes.Buffer.Reset buf = buf[:0] 尽可能直接分配所需大小的数组 清空Map
@@ -63,9 +69,3 @@ RMI 是什么定义RMI（Remote Method Invocation）是远程方法调用，类�
 ## [开源之夏2023申请书——优化CubeFS容器化部署](https://blog.aflybird.cn/2023/06/ospp-2023-proposal-cubefs/)  by [Bird](https://blog.aflybird.cn/), 2023-06-03
 
 因为没确定的细节太多了，以及主要的精力放在了和 Mentor 沟通上。所以申请书写得很粗糙和仓促，后续有机会尽量再写个新版。 以下申请书正文： 一、课题背景与
-## [后端层与层传递结构体时自动转换类型](https://nickxu.me/posts/278.html)  by [NX](https://nickxu.me/), 2023-06-02
-
-未完成7 月 11 日更：在后端层与层传递的时候，很多情况下都需要手动把一个结构体的内容搬到另一个结构体里面，也可能会做一下简单的转换这时候就可以用 jinzhu 的 https://github.com/jinzhu/copier我很早就听说了这个东西，但是一直没敢用，毕竟小项目东西也不多，然后自己手动搬一下比较稳妥，怕会有什么问题但是后面变大了之后感觉适合 copier 的场景更多了，比如一个
-## [后端发送 lua 脚本给 Redis 执行](https://nickxu.me/posts/277.html)  by [NX](https://nickxu.me/), 2023-06-02
-
-未完成7 月 11 日更：之前在交流的时候发现了一个很巧的方法，就是在执行复杂 Redis 操作的时候，可以发一个 lua 脚本过去细节记不清了，大概就是你一句一句写的话，效率是不及直接发一个脚本过去高的具体的我还没试，等试了之后再看看👀
