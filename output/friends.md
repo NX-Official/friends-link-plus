@@ -9,6 +9,9 @@
 - [xyxsw｜大相的问题](https://xyxsw.ltd/)
 
 # Recent Blogs
+## [源码分析——Go语言依赖注入库 samber/do](https://blog.aflybird.cn/2023/08/read-open-source-go-dependency-injection-library-samber-do/)  by [Bird](https://blog.aflybird.cn/), 2023-08-05
+
+琢磨设计模式与抽象，可以说是我的最爱之一了。刚学 Go 的时候，我就陶醉于其的 interface 设计。这次，我们来聊聊 Go 语言的依赖注入（DI）库 samber/do。本文不是一行行分析源码，而是尝试一步步复现作者的设计思路。
 ## [『LeetCode-HOT-100』T21～T30](https://nickxu.me/post/leetcode-hot-100-t21-t30.html)  by [NX](https://nickxu.me/), 2023-08-03
 
 全排列板子题，不解释123456789101112131415161718func permute(nums []int) (ans [][]int) {var dfs func(begain, end int)dfs = func(begain, end int) {if begain == end {// 切片是引用类型，需要深拷贝一下tmp := make([]int, len(nums))
@@ -66,6 +69,3 @@ RMI 是什么定义RMI（Remote Method Invocation）是远程方法调用，类�
 ## [『算法拾遗』重学主流排序算法](https://nickxu.me/posts/sorting-algorithm.html)  by [NX](https://nickxu.me/), 2023-06-13
 
 衡量排序算法的好坏时间复杂度包含最好情况、最坏情况和平均情况数据有序度不同的影响空间复杂度是否是原地排序稳定性排序后，相同元素之间的顺序是否会改变O( n^2 )冒泡排序（Bubble Sort）依次比较相邻的元素，如果顺序错误，则交换它们。每轮排序将最大（或最小）的元素“冒泡”到正确的位置简单易懂，但效率较低，不适用于大规模数据排序过程初始化待排序数组，设为 arr ，数组长度为 n外层循环：重
-## [开源之夏2023申请书——优化CubeFS容器化部署](https://blog.aflybird.cn/2023/06/ospp-2023-proposal-cubefs/)  by [Bird](https://blog.aflybird.cn/), 2023-06-03
-
-因为没确定的细节太多了，以及主要的精力放在了和 Mentor 沟通上。所以申请书写得很粗糙和仓促，后续有机会尽量再写个新版。 以下申请书正文： 一、课题背景与
