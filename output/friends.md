@@ -3,7 +3,7 @@
 - [Bird｜aFlyBird0](https://blog.aflybird.cn/)
 - [NX｜这家伙真勤奋，什么都留下了](https://nickxu.me/)
 - [柏喵Sakura｜过气 emo 师傅](https://baimeow.cn/)
-- [Marlene｜<归零人生>](https://blog.marlene.top/)
+- [Marlene｜去不了异世界也要拿出真本事~](https://blog.marlene.top/)
 - [ek1ng｜Hidden Gem](https://ek1ng.com/)
 - [Atom｜aka asjdf](https://www.homeboyc.cn/)
 - [xyxsw｜大相的问题](https://xyxsw.ltd/)
