@@ -67,6 +67,14 @@
             "AuthorURL": "https://blog.aflybird.cn/"
         },
         {
+            "Title": "『LeetCode-HOT-100』T31～T40",
+            "Author": "NX",
+            "Date": "2023-08-05",
+            "Content": "颜色分类这真的是 Medium 吗，哈哈哈😂123456789101112131415161718192021222324func sortColors(nums []int) {var red, white, blue intfor i := 0; i \u003c len(nums); i++ {switch nums[i] {case 0:red++case 1:white++case 2:blue+",
+            "PostURL": "https://nickxu.me/post/leetcode-hot-100-t31-t40.html",
+            "AuthorURL": "https://nickxu.me/"
+        },
+        {
             "Title": "『LeetCode-HOT-100』T21～T30",
             "Author": "NX",
             "Date": "2023-08-03",
@@ -209,14 +217,6 @@
             "Content": "今天来分享一个写业务过程中，一种特殊场景下的 Lock-Free Map 的实现。 来，我们先抛开看了三遍可能都还看不懂的题目，讲讲故事的背景。 背景/需求 假设我们需要一",
             "PostURL": "https://blog.aflybird.cn/2023/06/go-lock-free-map-with-replace/",
             "AuthorURL": "https://blog.aflybird.cn/"
-        },
-        {
-            "Title": "『算法拾遗』重学主流排序算法",
-            "Author": "NX",
-            "Date": "2023-06-13",
-            "Content": "衡量排序算法的好坏时间复杂度包含最好情况、最坏情况和平均情况数据有序度不同的影响空间复杂度是否是原地排序稳定性排序后，相同元素之间的顺序是否会改变O( n^2 )冒泡排序（Bubble Sort）依次比较相邻的元素，如果顺序错误，则交换它们。每轮排序将最大（或最小）的元素“冒泡”到正确的位置简单易懂，但效率较低，不适用于大规模数据排序过程初始化待排序数组，设为 arr ，数组长度为 n外层循环：重",
-            "PostURL": "https://nickxu.me/posts/sorting-algorithm.html",
-            "AuthorURL": "https://nickxu.me/"
         }
     ]
 }
