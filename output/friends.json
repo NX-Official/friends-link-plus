@@ -55,6 +55,13 @@
             "avatar": "https://avatars.hdu-cs.wiki/camera-2018",
             "url": "https://xyxsw.ltd/",
             "rss": "https://xyxsw.ltd/rss.xml"
+        },
+        {
+            "name": "hakuya",
+            "description": "恋恋真可爱，嘿嘿嘿。。。🤤🤤🤤。。。",
+            "avatar": "https://www.hakuya.work/avatar.png",
+            "url": "https://www.hakuya.work",
+            "rss": "https://www.hakuya.work/feed"
         }
     ],
     "posts": [

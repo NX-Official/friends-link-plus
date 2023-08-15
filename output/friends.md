@@ -7,6 +7,7 @@
 - [ek1ng｜Hidden Gem](https://ek1ng.com/)
 - [Atom｜aka asjdf](https://www.homeboyc.cn/)
 - [xyxsw｜大相的问题](https://xyxsw.ltd/)
+- [hakuya｜恋恋真可爱，嘿嘿嘿。。。🤤🤤🤤。。。](https://www.hakuya.work)
 
 # Recent Blogs
 ## [『LeetCode-HOT-100』T41～T50](https://nickxu.me/post/leetcode-hot-100-t41-t50.html)  by [NX](https://nickxu.me/), 2023-08-13
