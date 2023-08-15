@@ -59,6 +59,14 @@
     ],
     "posts": [
         {
+            "Title": "『LeetCode-HOT-100』T41～T50",
+            "Author": "NX",
+            "Date": "2023-08-13",
+            "Content": "二叉树的层序遍历简单的 BFS 练习12345678910111213141516171819202122232425262728293031func levelOrder(root *TreeNode) [][]int {    ans := [][]int{}    if root == nil {        return ans    }    queue := []TreeNode{}",
+            "PostURL": "https://nickxu.me/post/leetcode-hot-100-t41-t50.html",
+            "AuthorURL": "https://nickxu.me/"
+        },
+        {
             "Title": "源码分析——Go语言依赖注入库 samber/do",
             "Author": "Bird",
             "Date": "2023-08-05",
@@ -70,7 +78,7 @@
             "Title": "『LeetCode-HOT-100』T31～T40",
             "Author": "NX",
             "Date": "2023-08-05",
-            "Content": "颜色分类这真的是 Medium 吗，哈哈哈😂123456789101112131415161718192021222324func sortColors(nums []int) {var red, white, blue intfor i := 0; i \u003c len(nums); i++ {switch nums[i] {case 0:red++case 1:white++case 2:blue+",
+            "Content": "颜色分类这真的是 Medium 吗，哈哈哈😂123456789101112131415161718192021222324func sortColors(nums []int) {    var red, white, blue int    for i := 0; i \u003c len(nums); i++ {        switch nums[i] {        case 0:",
             "PostURL": "https://nickxu.me/post/leetcode-hot-100-t31-t40.html",
             "AuthorURL": "https://nickxu.me/"
         },
@@ -78,7 +86,7 @@
             "Title": "『LeetCode-HOT-100』T21～T30",
             "Author": "NX",
             "Date": "2023-08-03",
-            "Content": "全排列板子题，不解释123456789101112131415161718func permute(nums []int) (ans [][]int) {var dfs func(begain, end int)dfs = func(begain, end int) {if begain == end {// 切片是引用类型，需要深拷贝一下tmp := make([]int, len(nums))",
+            "Content": "全排列板子题，不解释123456789101112131415161718func permute(nums []int) (ans [][]int) {    var dfs func(begain, end int)    dfs = func(begain, end int) {        if begain == end {            // 切片是引用类型，需要深拷贝一下",
             "PostURL": "https://nickxu.me/post/leetcode-hot-100-t21-t30.html",
             "AuthorURL": "https://nickxu.me/"
         },
@@ -86,7 +94,7 @@
             "Title": "『LeetCode-HOT-100』T11～T20",
             "Author": "NX",
             "Date": "2023-07-30",
-            "Content": "有效的括号栈的经典题目了属于是12345678910111213141516171819202122232425262728293031323334353637383940func isValid(s string) bool {stack := \"\"for k := 0; k \u003c len(s); k++ {i := s[k]switch i {case '(':stack = stack + s",
+            "Content": "有效的括号栈的经典题目了属于是12345678910111213141516171819202122232425262728293031323334353637383940func isValid(s string) bool {    stack := \"\"    for k := 0; k \u003c len(s); k++ {        i := s[k]        switch i {",
             "PostURL": "https://nickxu.me/post/leetcode-hot-100-t11-t20.html",
             "AuthorURL": "https://nickxu.me/"
         },
@@ -126,7 +134,7 @@
             "Title": "『LeetCode-HOT-100』T1～T10",
             "Author": "NX",
             "Date": "2023-07-24",
-            "Content": "两数之和暴力枚举暴力枚举 i 和 j ，没什么好说的12345678910func twoSum(nums []int, target int) []int {for i, _ := range nums {for j := i + 1; j \u003c len(nums); j++ {if nums[i]+nums[j] == target {return []int{i, j}}}}return ni",
+            "Content": "两数之和暴力枚举暴力枚举 i 和 j ，没什么好说的12345678910func twoSum(nums []int, target int) []int {    for i, _ := range nums {        for j := i + 1; j \u003c len(nums); j++ {            if nums[i]+nums[j] == target {",
             "PostURL": "https://nickxu.me/post/leetcode-hot-100-t1-t10.html",
             "AuthorURL": "https://nickxu.me/"
         },
@@ -208,14 +216,6 @@
             "Date": "2023-06-26",
             "Content": "置顶声明：这篇博客我只发在了自己的独立博客、朋友圈和空间，没有发到其他的平台，没想到会有这么多的阅读量，所以必须要写个声明，保护一下好人：我不想文中涉及的社区，尤其是背后的公司受到损失。我同样也不代表任何团体与公司，不受任何利益。如果真的要对这个社区盖棺定论的话，我觉得这个社区的氛围，是非常学生友好，欢迎开源的。真的非常非常没话说，很热情积极与开放。首先是，社区举办了 学生开发者活动，一",
             "PostURL": "https://blog.aflybird.cn/2023/06/please-stop-fucking-open-source-activities-in-china/",
-            "AuthorURL": "https://blog.aflybird.cn/"
-        },
-        {
-            "Title": "Go语言整体替换式Map的Lock-Free实现",
-            "Author": "Bird",
-            "Date": "2023-06-16",
-            "Content": "今天来分享一个写业务过程中，一种特殊场景下的 Lock-Free Map 的实现。 来，我们先抛开看了三遍可能都还看不懂的题目，讲讲故事的背景。 背景/需求 假设我们需要一",
-            "PostURL": "https://blog.aflybird.cn/2023/06/go-lock-free-map-with-replace/",
             "AuthorURL": "https://blog.aflybird.cn/"
         }
     ]
