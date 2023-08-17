@@ -10,6 +10,9 @@
 - [hakuya｜恋恋真可爱，嘿嘿嘿。。。🤤🤤🤤。。。](https://www.hakuya.work)
 
 # Recent Blogs
+## [自我觉察与追寻内心宁静的碎碎念](https://blog.aflybird.cn/2023/08/the-pursuit-of-self-awareness-and-inner-peace/)  by [Bird](https://blog.aflybird.cn/), 2023-08-16
+
+很久没有认真地去做一次自我觉察了。本篇文章更多的是我与自己的对话，如果读者也能从中获得一些启发，无论是增添了几分决心、还是悟到了一些觉察、改变的方式，我倍感荣幸。
 ## [『LeetCode-HOT-100』T41～T50](https://nickxu.me/post/leetcode-hot-100-t41-t50.html)  by [NX](https://nickxu.me/), 2023-08-13
 
 二叉树的层序遍历简单的 BFS 练习12345678910111213141516171819202122232425262728293031func levelOrder(root *TreeNode) [][]int {    ans := [][]int{}    if root == nil {        return ans    }    queue := []TreeNode{}
@@ -67,6 +70,3 @@ RMI 是什么定义RMI（Remote Method Invocation）是远程方法调用，类�
 ## [开源之旅——OSPP](https://blog.marlene.top/index.php/develop/85.html)  by [Marlene](https://blog.marlene.top/), 2023-06-27
 
 声明：以下内容仅代表本人观点，具有固有局限性，请辩证看待。任何有问题的地方也恳请指出。开源是什么我一直都认为开源是未来的趋势。用户创作的时代已经到来，作为一名开发者，手里握着强大的武器，个性化的创造自然不在话下。用户创作的目的不是孤芳自赏，而是自媒体式的分享。那么业务、框架的开发与不是自我消化，开源分享或许能够获得更大收益。个人的力量始终有限，我们不是大公司，技术在内部使用也能够逐渐完善。很多内容
-## [请还国内开源活动一片净土](https://blog.aflybird.cn/2023/06/please-stop-fucking-open-source-activities-in-china/)  by [Bird](https://blog.aflybird.cn/), 2023-06-26
-
-置顶声明：这篇博客我只发在了自己的独立博客、朋友圈和空间，没有发到其他的平台，没想到会有这么多的阅读量，所以必须要写个声明，保护一下好人：我不想文中涉及的社区，尤其是背后的公司受到损失。我同样也不代表任何团体与公司，不受任何利益。如果真的要对这个社区盖棺定论的话，我觉得这个社区的氛围，是非常学生友好，欢迎开源的。真的非常非常没话说，很热情积极与开放。首先是，社区举办了 学生开发者活动，一
