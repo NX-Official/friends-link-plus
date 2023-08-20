@@ -66,14 +66,6 @@
     ],
     "posts": [
         {
-            "Title": "『Golang』并发编程之通道（Channel）",
-            "Author": "NX",
-            "Date": "2023-08-17",
-            "Content": "通道（Channel）通道是什么，为什么使用通道「不要通过共享内存来通信，而应该通过通信来共享内存」通道可以在多个 goroutine 之间传递数据一个通道相当于一个先进先出（FIFO）的队列。也就是说，通道中的各个元素值都是严格地按照发送的顺序排列的，先被发送通道的元素值一定会先被接收。元素值的发送和接收都需要用到操作符 \u003c-。我们也可以叫它接送操作符。一个左尖括号紧接着一个减号形象地代表了元素",
-            "PostURL": "https://nickxu.me/post/golang-concurrent-programming-channel.html",
-            "AuthorURL": "https://nickxu.me/"
-        },
-        {
             "Title": "组合为何优于继承",
             "Author": "Atom",
             "Date": "2023-08-17",
@@ -90,44 +82,12 @@
             "AuthorURL": "https://blog.aflybird.cn/"
         },
         {
-            "Title": "『LeetCode-HOT-100』T41～T50",
-            "Author": "NX",
-            "Date": "2023-08-13",
-            "Content": "二叉树的层序遍历简单的 BFS 练习12345678910111213141516171819202122232425262728293031func levelOrder(root *TreeNode) [][]int {    ans := [][]int{}    if root == nil {        return ans    }    queue := []TreeNode{}",
-            "PostURL": "https://nickxu.me/post/leetcode-hot-100-t41-t50.html",
-            "AuthorURL": "https://nickxu.me/"
-        },
-        {
             "Title": "源码分析——Go语言依赖注入库 samber/do",
             "Author": "Bird",
             "Date": "2023-08-05",
             "Content": "琢磨设计模式与抽象，可以说是我的最爱之一了。刚学 Go 的时候，我就陶醉于其的 interface 设计。这次，我们来聊聊 Go 语言的依赖注入（DI）库 samber/do。本文不是一行行分析源码，而是尝试一步步复现作者的设计思路。",
             "PostURL": "https://blog.aflybird.cn/2023/08/read-open-source-go-dependency-injection-library-samber-do/",
             "AuthorURL": "https://blog.aflybird.cn/"
-        },
-        {
-            "Title": "『LeetCode-HOT-100』T31～T40",
-            "Author": "NX",
-            "Date": "2023-08-05",
-            "Content": "颜色分类这真的是 Medium 吗，哈哈哈😂123456789101112131415161718192021222324func sortColors(nums []int) {    var red, white, blue int    for i := 0; i \u003c len(nums); i++ {        switch nums[i] {        case 0:",
-            "PostURL": "https://nickxu.me/post/leetcode-hot-100-t31-t40.html",
-            "AuthorURL": "https://nickxu.me/"
-        },
-        {
-            "Title": "『LeetCode-HOT-100』T21～T30",
-            "Author": "NX",
-            "Date": "2023-08-03",
-            "Content": "全排列板子题，不解释123456789101112131415161718func permute(nums []int) (ans [][]int) {    var dfs func(begain, end int)    dfs = func(begain, end int) {        if begain == end {            // 切片是引用类型，需要深拷贝一下",
-            "PostURL": "https://nickxu.me/post/leetcode-hot-100-t21-t30.html",
-            "AuthorURL": "https://nickxu.me/"
-        },
-        {
-            "Title": "『LeetCode-HOT-100』T11～T20",
-            "Author": "NX",
-            "Date": "2023-07-30",
-            "Content": "有效的括号栈的经典题目了属于是12345678910111213141516171819202122232425262728293031323334353637383940func isValid(s string) bool {    stack := \"\"    for k := 0; k \u003c len(s); k++ {        i := s[k]        switch i {",
-            "PostURL": "https://nickxu.me/post/leetcode-hot-100-t11-t20.html",
-            "AuthorURL": "https://nickxu.me/"
         },
         {
             "Title": "解决 gRPC 中 oneof 类型未导出的问题",
@@ -168,14 +128,6 @@
             "Content": "猜数字猜数字这个项目非常简单，它涉及到随机数的生成和用户输入操作。我们使用了bufio库来处理输入数据。reader := bufio.NewReader(os.Stdin)input, _ := reader.ReadString('\\n')简单字典标准库strconv它主要用于字符和其他类型之间的转换。strconv.Atoi(s string) int 标准库stringsstrings.T",
             "PostURL": "https://xyxsw.ltd/2023/07/25/go%E8%AF%AD%E8%A8%80%E4%B8%89%E4%B8%AA%E5%B0%8F%E9%A1%B9%E7%9B%AE%20%EF%BD%9C%20%E9%9D%92%E8%AE%AD%E8%90%A5%E7%AC%94%E8%AE%B0/",
             "AuthorURL": "https://xyxsw.ltd/"
-        },
-        {
-            "Title": "『LeetCode-HOT-100』T1～T10",
-            "Author": "NX",
-            "Date": "2023-07-24",
-            "Content": "两数之和暴力枚举暴力枚举 i 和 j ，没什么好说的12345678910func twoSum(nums []int, target int) []int {    for i, _ := range nums {        for j := i + 1; j \u003c len(nums); j++ {            if nums[i]+nums[j] == target {",
-            "PostURL": "https://nickxu.me/post/leetcode-hot-100-t1-t10.html",
-            "AuthorURL": "https://nickxu.me/"
         },
         {
             "Title": "Golang 性能调优速查笔记",
@@ -224,6 +176,54 @@
             "Content": "简单讲讲 GitHub Actions 的 Cache 功能，使用方式，以及探讨浅层的设计思想。虽然本文是我博客中为数不多的「教程」类文章，但我还是会侧重逻辑与思考的角度来讲述。详细教程请查看，GitHub Actions Cache 官方文档。",
             "PostURL": "https://blog.aflybird.cn/2023/07/use-github-actions-cache-to-speed-up-workflow/",
             "AuthorURL": "https://blog.aflybird.cn/"
+        },
+        {
+            "Title": "云原生安全分享会材料",
+            "Author": "ek1ng",
+            "Date": "2023-06-28",
+            "Content": "这是一篇用于给协会小学弟们分享的文章，粗略从各个角度讲了一讲，有任何问题都欢迎联系我交流，email：ek1ng@qq.com。基础知识🧀在开始之前，你需要能够基本掌握Docker和Kubernetes的使用。基本使用推荐看官方文档，配合一些教程动手尝试。https://www.docker.com/Docker 能区分镜像/容器，能基本使用命令，能写Dockerfile，粗略了解原理即可。htt",
+            "PostURL": "https://www.ek1ng.com/cloudsecurity.html",
+            "AuthorURL": "https://ek1ng.com/"
+        },
+        {
+            "Title": "开源之旅——OSPP",
+            "Author": "Marlene",
+            "Date": "2023-06-27",
+            "Content": "声明：以下内容仅代表本人观点，具有固有局限性，请辩证看待。任何有问题的地方也恳请指出。开源是什么我一直都认为开源是未来的趋势。用户创作的时代已经到来，作为一名开发者，手里握着强大的武器，个性化的创造自然不在话下。用户创作的目的不是孤芳自赏，而是自媒体式的分享。那么业务、框架的开发与不是自我消化，开源分享或许能够获得更大收益。个人的力量始终有限，我们不是大公司，技术在内部使用也能够逐渐完善。很多内容",
+            "PostURL": "https://blog.marlene.top/index.php/develop/85.html",
+            "AuthorURL": "https://blog.marlene.top/"
+        },
+        {
+            "Title": "请还国内开源活动一片净土",
+            "Author": "Bird",
+            "Date": "2023-06-26",
+            "Content": "置顶声明：这篇博客我只发在了自己的独立博客、朋友圈和空间，没有发到其他的平台，没想到会有这么多的阅读量，所以必须要写个声明，保护一下好人：我不想文中涉及的社区，尤其是背后的公司受到损失。我同样也不代表任何团体与公司，不受任何利益。如果真的要对这个社区盖棺定论的话，我觉得这个社区的氛围，是非常学生友好，欢迎开源的。真的非常非常没话说，很热情积极与开放。首先是，社区举办了 学生开发者活动，一",
+            "PostURL": "https://blog.aflybird.cn/2023/06/please-stop-fucking-open-source-activities-in-china/",
+            "AuthorURL": "https://blog.aflybird.cn/"
+        },
+        {
+            "Title": "Go语言整体替换式Map的Lock-Free实现",
+            "Author": "Bird",
+            "Date": "2023-06-16",
+            "Content": "今天来分享一个写业务过程中，一种特殊场景下的 Lock-Free Map 的实现。 来，我们先抛开看了三遍可能都还看不懂的题目，讲讲故事的背景。 背景/需求 假设我们需要一",
+            "PostURL": "https://blog.aflybird.cn/2023/06/go-lock-free-map-with-replace/",
+            "AuthorURL": "https://blog.aflybird.cn/"
+        },
+        {
+            "Title": "开源之夏2023申请书——优化CubeFS容器化部署",
+            "Author": "Bird",
+            "Date": "2023-06-03",
+            "Content": "因为没确定的细节太多了，以及主要的精力放在了和 Mentor 沟通上。所以申请书写得很粗糙和仓促，后续有机会尽量再写个新版。 以下申请书正文： 一、课题背景与",
+            "PostURL": "https://blog.aflybird.cn/2023/06/ospp-2023-proposal-cubefs/",
+            "AuthorURL": "https://blog.aflybird.cn/"
+        },
+        {
+            "Title": "BGP 组网，DN11 与 VidarNetwork 的并网试验",
+            "Author": "柏喵Sakura",
+            "Date": "2023-06-01",
+            "Content": "DN11配网第二期，接上文 “使用 Bird2 配置 WireGuard + OSPF 实现网络的高可用”，这是一篇用于 DN11 的 BGP 配置教程随着 DN11 的扩大，使用 OSPF 进行集中管理已经变得麻烦起来了，此外还能看到一堆隧道IP污染路由表也有不少人手上有多个内网，不得不打破 DN11 原先一个人使用一个/24网段的约定近期又在考虑和 VidarNetwork 并网的事情，",
+            "PostURL": "https://baimeow.cn/posts/dn11/configurebgp/",
+            "AuthorURL": "https://baimeow.cn/"
         }
     ]
 }
