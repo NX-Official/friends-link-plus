@@ -10,15 +10,33 @@
 - [hakuya｜恋恋真可爱，嘿嘿嘿。。。🤤🤤🤤。。。](https://www.hakuya.work)
 
 # Recent Blogs
+## [阿里云OSS被刷，我交了1000RMB学费！](https://nickxu.me/post/aliyun-oss-brushed-1000rmb-fees.html)  by [NX](https://nickxu.me/), 2023-08-19
+
+大致经过垂死病中惊坐起😱事情发生在 8 月 8 日凌晨，凌晨三点我突然看见手机上的消息我一开始是疑惑的，我的 OSS 是用来当做图床的，一个月也用不了几个钱账号里记得还有 20 多块钱，怎么会这么快用完然后我进阿里云一看，哇，我被人刷了？最后发现被刷了 3.57 TB，请求了 138 万次哇，我从没想到过这种事情会发生在我的身上而且我停机之后他还一直在刷，根本不带停的（我想，算了，300 块交学费
+## [『Golang』并发编程之通道（Channel）](https://nickxu.me/post/golang-concurrent-programming-channel.html)  by [NX](https://nickxu.me/), 2023-08-17
+
+通道（Channel）通道是什么，为什么使用通道「不要通过共享内存来通信，而应该通过通信来共享内存」通道可以在多个 goroutine 之间传递数据一个通道相当于一个先进先出（FIFO）的队列。也就是说，通道中的各个元素值都是严格地按照发送的顺序排列的，先被发送通道的元素值一定会先被接收。元素值的发送和接收都需要用到操作符 <-。我们也可以叫它接送操作符。一个左尖括号紧接着一个减号形象地代表了元素
 ## [组合为何优于继承](https://homeboyc.cn/blog/%E7%BB%84%E5%90%88%E4%B8%BA%E4%BD%95%E4%BC%98%E4%BA%8E%E7%BB%A7%E6%89%BF/)  by [Atom](https://www.homeboyc.cn/), 2023-08-17
 
 # 前言 你可能听过“组合优于继承”这个观点，但是这个说法可能有点笼统，所以我想通过这篇文章详细解释一下：组合和继承分别是什么？为什么前者优于后者？# 继承和组合分别是什么 组合和继承都是为了解决同一个问题——“代码复用”。# 继承是什么 当一个类中有你想要复用的功能时，继承便会发生。我们通常会创建一个子类来扩张基类的功能，然后通过注入新的方法来拓展或重写基类的部件。// 基类 abstra
 ## [自我觉察与追寻内心宁静的碎碎念](https://blog.aflybird.cn/2023/08/the-pursuit-of-self-awareness-and-inner-peace/)  by [Bird](https://blog.aflybird.cn/), 2023-08-16
 
 很久没有认真地去做一次自我觉察了。本篇文章更多的是我与自己的对话，如果读者也能从中获得一些启发，无论是增添了几分决心、还是悟到了一些觉察、改变的方式，我倍感荣幸。
+## [『LeetCode-HOT-100』T41～T50](https://nickxu.me/post/leetcode-hot-100-t41-t50.html)  by [NX](https://nickxu.me/), 2023-08-13
+
+二叉树的层序遍历简单的 BFS 练习12345678910111213141516171819202122232425262728293031func levelOrder(root *TreeNode) [][]int {    ans := [][]int{}    if root == nil {        return ans    }    queue := []TreeNode{}
 ## [源码分析——Go语言依赖注入库 samber/do](https://blog.aflybird.cn/2023/08/read-open-source-go-dependency-injection-library-samber-do/)  by [Bird](https://blog.aflybird.cn/), 2023-08-05
 
 琢磨设计模式与抽象，可以说是我的最爱之一了。刚学 Go 的时候，我就陶醉于其的 interface 设计。这次，我们来聊聊 Go 语言的依赖注入（DI）库 samber/do。本文不是一行行分析源码，而是尝试一步步复现作者的设计思路。
+## [『LeetCode-HOT-100』T31～T40](https://nickxu.me/post/leetcode-hot-100-t31-t40.html)  by [NX](https://nickxu.me/), 2023-08-05
+
+颜色分类这真的是 Medium 吗，哈哈哈😂123456789101112131415161718192021222324func sortColors(nums []int) {    var red, white, blue int    for i := 0; i < len(nums); i++ {        switch nums[i] {        case 0:
+## [『LeetCode-HOT-100』T21～T30](https://nickxu.me/post/leetcode-hot-100-t21-t30.html)  by [NX](https://nickxu.me/), 2023-08-03
+
+全排列板子题，不解释123456789101112131415161718func permute(nums []int) (ans [][]int) {    var dfs func(begain, end int)    dfs = func(begain, end int) {        if begain == end {            // 切片是引用类型，需要深拷贝一下
+## [『LeetCode-HOT-100』T11～T20](https://nickxu.me/post/leetcode-hot-100-t11-t20.html)  by [NX](https://nickxu.me/), 2023-07-30
+
+有效的括号栈的经典题目了属于是12345678910111213141516171819202122232425262728293031323334353637383940func isValid(s string) bool {    stack := ""    for k := 0; k < len(s); k++ {        i := s[k]        switch i {
 ## [解决 gRPC 中 oneof 类型未导出的问题](https://homeboyc.cn/blog/%E8%A7%A3%E5%86%B3-grpc-%E4%B8%AD-oneof-%E7%B1%BB%E5%9E%8B%E6%9C%AA%E5%AF%BC%E5%87%BA%E7%9A%84%E9%97%AE%E9%A2%98/)  by [Atom](https://www.homeboyc.cn/), 2023-07-30
 
 # 场景 proto 中有个项是 oneof，但是最新的 gRPC generator并没有将此字段的接口导出。Proto:message Setting { string item_id = 1; // 设置项的内部唯一id string item_label = 2; // 设置项的名称 SettingItemType item_type = 3; // 设置项的类型 oneof attr
@@ -34,6 +52,9 @@ RMI 是什么定义RMI（Remote Method Invocation）是远程方法调用，类�
 ## [go语言三个小项目 ｜ 青训营笔记](https://xyxsw.ltd/2023/07/25/go%E8%AF%AD%E8%A8%80%E4%B8%89%E4%B8%AA%E5%B0%8F%E9%A1%B9%E7%9B%AE%20%EF%BD%9C%20%E9%9D%92%E8%AE%AD%E8%90%A5%E7%AC%94%E8%AE%B0/)  by [xyxsw](https://xyxsw.ltd/), 2023-07-25
 
 猜数字猜数字这个项目非常简单，它涉及到随机数的生成和用户输入操作。我们使用了bufio库来处理输入数据。reader := bufio.NewReader(os.Stdin)input, _ := reader.ReadString('\n')简单字典标准库strconv它主要用于字符和其他类型之间的转换。strconv.Atoi(s string) int 标准库stringsstrings.T
+## [『LeetCode-HOT-100』T1～T10](https://nickxu.me/post/leetcode-hot-100-t1-t10.html)  by [NX](https://nickxu.me/), 2023-07-24
+
+两数之和暴力枚举暴力枚举 i 和 j ，没什么好说的12345678910func twoSum(nums []int, target int) []int {    for i, _ := range nums {        for j := i + 1; j < len(nums); j++ {            if nums[i]+nums[j] == target {
 ## [Golang 性能调优速查笔记](https://homeboyc.cn/blog/golang-%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98%E9%80%9F%E6%9F%A5%E7%AC%94%E8%AE%B0/)  by [Atom](https://www.homeboyc.cn/), 2023-07-24
 
 # 技巧 unsafe转换字符串/字节切片的技巧 字符串 -> 字节切片：*(*[]byte)(unsafe.Pointer(&s)) 缓冲区不能修改，否则 go 会panic！ 字节切片 -> 字符串：*(*string)(unsafe.Pointer(&buf)) 重用缓冲区 复位缓冲器 bytes.Buffer.Reset buf = buf[:0] 尽可能直接分配所需大小的数组 清空Map
@@ -49,24 +70,3 @@ RMI 是什么定义RMI（Remote Method Invocation）是远程方法调用，类�
 ## [CrewCTF 2023 Web Writeup](https://www.ek1ng.com/2023CrewCTFWP.html)  by [ek1ng](https://ek1ng.com/), 2023-07-14
 
 环境还在，赛后看看题，一共四道Web，都挺有意思的。sequence_galleryDo you like sequences?http://sequence-gallery.chal.crewc.tf:8080/ 123456789101112131415sequence = request.args.get('sequence', None)if sequence is None:    re
-## [使用 GitHub Actions Cache 加快 Workflow](https://blog.aflybird.cn/2023/07/use-github-actions-cache-to-speed-up-workflow/)  by [Bird](https://blog.aflybird.cn/), 2023-07-08
-
-简单讲讲 GitHub Actions 的 Cache 功能，使用方式，以及探讨浅层的设计思想。虽然本文是我博客中为数不多的「教程」类文章，但我还是会侧重逻辑与思考的角度来讲述。详细教程请查看，GitHub Actions Cache 官方文档。
-## [云原生安全分享会材料](https://www.ek1ng.com/cloudsecurity.html)  by [ek1ng](https://ek1ng.com/), 2023-06-28
-
-这是一篇用于给协会小学弟们分享的文章，粗略从各个角度讲了一讲，有任何问题都欢迎联系我交流，email：ek1ng@qq.com。基础知识🧀在开始之前，你需要能够基本掌握Docker和Kubernetes的使用。基本使用推荐看官方文档，配合一些教程动手尝试。https://www.docker.com/Docker 能区分镜像/容器，能基本使用命令，能写Dockerfile，粗略了解原理即可。htt
-## [开源之旅——OSPP](https://blog.marlene.top/index.php/develop/85.html)  by [Marlene](https://blog.marlene.top/), 2023-06-27
-
-声明：以下内容仅代表本人观点，具有固有局限性，请辩证看待。任何有问题的地方也恳请指出。开源是什么我一直都认为开源是未来的趋势。用户创作的时代已经到来，作为一名开发者，手里握着强大的武器，个性化的创造自然不在话下。用户创作的目的不是孤芳自赏，而是自媒体式的分享。那么业务、框架的开发与不是自我消化，开源分享或许能够获得更大收益。个人的力量始终有限，我们不是大公司，技术在内部使用也能够逐渐完善。很多内容
-## [请还国内开源活动一片净土](https://blog.aflybird.cn/2023/06/please-stop-fucking-open-source-activities-in-china/)  by [Bird](https://blog.aflybird.cn/), 2023-06-26
-
-置顶声明：这篇博客我只发在了自己的独立博客、朋友圈和空间，没有发到其他的平台，没想到会有这么多的阅读量，所以必须要写个声明，保护一下好人：我不想文中涉及的社区，尤其是背后的公司受到损失。我同样也不代表任何团体与公司，不受任何利益。如果真的要对这个社区盖棺定论的话，我觉得这个社区的氛围，是非常学生友好，欢迎开源的。真的非常非常没话说，很热情积极与开放。首先是，社区举办了 学生开发者活动，一
-## [Go语言整体替换式Map的Lock-Free实现](https://blog.aflybird.cn/2023/06/go-lock-free-map-with-replace/)  by [Bird](https://blog.aflybird.cn/), 2023-06-16
-
-今天来分享一个写业务过程中，一种特殊场景下的 Lock-Free Map 的实现。 来，我们先抛开看了三遍可能都还看不懂的题目，讲讲故事的背景。 背景/需求 假设我们需要一
-## [开源之夏2023申请书——优化CubeFS容器化部署](https://blog.aflybird.cn/2023/06/ospp-2023-proposal-cubefs/)  by [Bird](https://blog.aflybird.cn/), 2023-06-03
-
-因为没确定的细节太多了，以及主要的精力放在了和 Mentor 沟通上。所以申请书写得很粗糙和仓促，后续有机会尽量再写个新版。 以下申请书正文： 一、课题背景与
-## [BGP 组网，DN11 与 VidarNetwork 的并网试验](https://baimeow.cn/posts/dn11/configurebgp/)  by [柏喵Sakura](https://baimeow.cn/), 2023-06-01
-
-DN11配网第二期，接上文 “使用 Bird2 配置 WireGuard + OSPF 实现网络的高可用”，这是一篇用于 DN11 的 BGP 配置教程随着 DN11 的扩大，使用 OSPF 进行集中管理已经变得麻烦起来了，此外还能看到一堆隧道IP污染路由表也有不少人手上有多个内网，不得不打破 DN11 原先一个人使用一个/24网段的约定近期又在考虑和 VidarNetwork 并网的事情，
