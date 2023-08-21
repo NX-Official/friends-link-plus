@@ -106,22 +106,6 @@
             "AuthorURL": "https://blog.marlene.top/"
         },
         {
-            "Title": "Java RMI 攻击梳理总结",
-            "Author": "ek1ng",
-            "Date": "2023-07-26",
-            "Content": "RMI 是什么定义RMI（Remote Method Invocation）是远程方法调用，类似RPC（Remote Procedure Calls）。RPC是打包和传送数据结构，而在Java中，通常传递一个完整的对象，包含数据和操作数据的方法。通过RMI，能够让客户端JVM上的对象，像调用本地对象一样调用服务端JVM上的对象。RMI引入了 Stubs（客户端存根）和 Skeletons（服务端骨",
-            "PostURL": "https://www.ek1ng.com/java-rmi.html",
-            "AuthorURL": "https://ek1ng.com/"
-        },
-        {
-            "Title": "重学 Java 反射机制",
-            "Author": "ek1ng",
-            "Date": "2023-07-25",
-            "Content": "近期跟一些java的最新漏洞，发现自己的语言基础太差了，跟着p牛的java安全漫谈重新学一下反射，p牛的文章确实是讲复杂的东西讲的浅显易懂。反射的定义对象可以通过反射获取对应的类，类可以通过反射获取所有方法，拿到的方法可以调用，这种机制就是反射。反射机制在安全方面的意义例如我们要完成RCE，但代码中绝大多数时候并没有Runtime，ProcessBuilder等常见的用于命令执行的类来让我们调用。",
-            "PostURL": "https://www.ek1ng.com/java-reflect-learning.html",
-            "AuthorURL": "https://ek1ng.com/"
-        },
-        {
             "Title": "go语言三个小项目 ｜ 青训营笔记",
             "Author": "xyxsw",
             "Date": "2023-07-25",
@@ -146,14 +130,6 @@
             "AuthorURL": "https://www.homeboyc.cn/"
         },
         {
-            "Title": "java-sec-code 代码审计靶场题解",
-            "Author": "ek1ng",
-            "Date": "2023-07-20",
-            "Content": "这个靶场包含了各类基本漏洞在java语言上的场景以及java安全特有的JNDI注入，反序列化，表达式注入等等，并且给出了相关的利用手段和修复方案。java-sec-code搭建环境可以用Docker搭建，不过想了想不太熟练java的包管理和web server部署这一套，并且本地起相比于容器也方便调试，于是决定本地起一份。由于我是archlinux，包管理安装的都是最新的jdk版本，靶场的jdk版",
-            "PostURL": "https://www.ek1ng.com/java-sec-code.html",
-            "AuthorURL": "https://ek1ng.com/"
-        },
-        {
             "Title": "分布式系统测试工具 muxy 初探",
             "Author": "Atom",
             "Date": "2023-07-17",
@@ -162,28 +138,12 @@
             "AuthorURL": "https://www.homeboyc.cn/"
         },
         {
-            "Title": "CrewCTF 2023 Web Writeup",
-            "Author": "ek1ng",
-            "Date": "2023-07-14",
-            "Content": "环境还在，赛后看看题，一共四道Web，都挺有意思的。sequence_galleryDo you like sequences?http://sequence-gallery.chal.crewc.tf:8080/ 123456789101112131415sequence = request.args.get('sequence', None)if sequence is None:    re",
-            "PostURL": "https://www.ek1ng.com/2023CrewCTFWP.html",
-            "AuthorURL": "https://ek1ng.com/"
-        },
-        {
             "Title": "使用 GitHub Actions Cache 加快 Workflow",
             "Author": "Bird",
             "Date": "2023-07-08",
             "Content": "简单讲讲 GitHub Actions 的 Cache 功能，使用方式，以及探讨浅层的设计思想。虽然本文是我博客中为数不多的「教程」类文章，但我还是会侧重逻辑与思考的角度来讲述。详细教程请查看，GitHub Actions Cache 官方文档。",
             "PostURL": "https://blog.aflybird.cn/2023/07/use-github-actions-cache-to-speed-up-workflow/",
             "AuthorURL": "https://blog.aflybird.cn/"
-        },
-        {
-            "Title": "云原生安全分享会材料",
-            "Author": "ek1ng",
-            "Date": "2023-06-28",
-            "Content": "这是一篇用于给协会小学弟们分享的文章，粗略从各个角度讲了一讲，有任何问题都欢迎联系我交流，email：ek1ng@qq.com。基础知识🧀在开始之前，你需要能够基本掌握Docker和Kubernetes的使用。基本使用推荐看官方文档，配合一些教程动手尝试。https://www.docker.com/Docker 能区分镜像/容器，能基本使用命令，能写Dockerfile，粗略了解原理即可。htt",
-            "PostURL": "https://www.ek1ng.com/cloudsecurity.html",
-            "AuthorURL": "https://ek1ng.com/"
         },
         {
             "Title": "开源之旅——OSPP",
@@ -224,6 +184,46 @@
             "Content": "DN11配网第二期，接上文 “使用 Bird2 配置 WireGuard + OSPF 实现网络的高可用”，这是一篇用于 DN11 的 BGP 配置教程随着 DN11 的扩大，使用 OSPF 进行集中管理已经变得麻烦起来了，此外还能看到一堆隧道IP污染路由表也有不少人手上有多个内网，不得不打破 DN11 原先一个人使用一个/24网段的约定近期又在考虑和 VidarNetwork 并网的事情，",
             "PostURL": "https://baimeow.cn/posts/dn11/configurebgp/",
             "AuthorURL": "https://baimeow.cn/"
+        },
+        {
+            "Title": "24岁的我，在思考着什么",
+            "Author": "Bird",
+            "Date": "2023-05-21",
+            "Content": "引言 自大学以来，我的焦虑大概经历了这样几个阶段： 起初源于同辈间的不自觉的比较，毕竟人都是好强的。但永远，天外有天，人外有人。 大概持续了三年多",
+            "PostURL": "https://blog.aflybird.cn/2023/05/contemplating-at-24/",
+            "AuthorURL": "https://blog.aflybird.cn/"
+        },
+        {
+            "Title": "为TailScale部署私有DERP中继服务器",
+            "Author": "Bird",
+            "Date": "2023-05-10",
+            "Content": "什么是 TailScale 后面再补充，先写重点的 TailScale DERP 中继服务器。 关键词：UDP打洞，NAT，点对点连接，大局域网。 好处/场景：待补充 怎么用 TailScale：",
+            "PostURL": "https://blog.aflybird.cn/2023/05/tailscale-derp/",
+            "AuthorURL": "https://blog.aflybird.cn/"
+        },
+        {
+            "Title": "LINUX 挑战：用户和组管理",
+            "Author": "xyxsw",
+            "Date": "2023-05-08",
+            "Content": "LINUX 挑战：用户和组管理wget https://labfile.oss.aliyuncs.com/courses/2585/06.tar.gztar -xzf 06.tar.gzchmod 700 ./06.sh./06.shsudo userdel guest2sudo userdel guest3sudo userdel guest4sudo userdel guest5sudo rm",
+            "PostURL": "https://xyxsw.ltd/2023/05/08/%E6%8C%91%E6%88%98%EF%BC%9A%E7%94%A8%E6%88%B7%E5%92%8C%E7%BB%84%E7%AE%A1%E7%90%86/",
+            "AuthorURL": "https://xyxsw.ltd/"
+        },
+        {
+            "Title": "d3go write up",
+            "Author": "柏喵Sakura",
+            "Date": "2023-05-04",
+            "Content": "目录穿越读取源代码 directory traversal to dump source code go embed * 的错误使用，导致源代码被打包进程序。The incorrect use of go embed * results in the source code being packed into the program.再结合错误的静态文件托管，导致/../路径可以列目录获取源代",
+            "PostURL": "https://baimeow.cn/posts/ctf/d3go/",
+            "AuthorURL": "https://baimeow.cn/"
+        },
+        {
+            "Title": "SCSS+WindiCSS实现主题色切换",
+            "Author": "戴兜",
+            "Date": "2023-04-24",
+            "Content": "最近在给自己写主页（同时也是博客），我做了一个切换主题色的功能。每次进入页面时，会随机选择一套配色，让页面显得灵动一些，就像下面这样：这是如何实现的呢？不妨先从自定义颜色入手WindiCSS 自定义颜色定义一个固定的颜色// windi.config.jsexport default defineConfig({  theme: {    exten",
+            "PostURL": "https://daidr.me/archives/code-1069.html",
+            "AuthorURL": "https://im.daidr.me"
         }
     ]
 }
