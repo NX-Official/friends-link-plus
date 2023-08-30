@@ -10,6 +10,9 @@
 - [hakuya｜恋恋真可爱，嘿嘿嘿。。。🤤🤤🤤。。。](https://www.hakuya.work)
 
 # Recent Blogs
+## [渗透基本思路总结](https://www.ek1ng.com/Summary%20of%20penetration%20ideas.html)  by [ek1ng](https://ek1ng.com/), 2023-08-29
+
+最近做了一阵子攻防相关的事，正好最近国护结束，做个总结，简单写一下渗透的基本思路（Check List）。不同的标题间内容并不完全独立，在实战中，比如先钓鱼获取到一台个人PC，但这台PC并不在办公网。而后通过收集个人PC的信息，能够登陆外网其他站点的后台，配合一个后台RCE进入办公网/生产网。这其中就有钓鱼，也有外网打点的部分。资产收集资产搜集通俗说就是“了解目标有什么东西”，讲究一个越全越好。路
 ## [组合为何优于继承](https://homeboyc.cn/blog/%E7%BB%84%E5%90%88%E4%B8%BA%E4%BD%95%E4%BC%98%E4%BA%8E%E7%BB%A7%E6%89%BF/)  by [Atom](https://www.homeboyc.cn/), 2023-08-17
 
 # 前言 你可能听过“组合优于继承”这个观点，但是这个说法可能有点笼统，所以我想通过这篇文章详细解释一下：组合和继承分别是什么？为什么前者优于后者？# 继承和组合分别是什么 组合和继承都是为了解决同一个问题——“代码复用”。# 继承是什么 当一个类中有你想要复用的功能时，继承便会发生。我们通常会创建一个子类来扩张基类的功能，然后通过注入新的方法来拓展或重写基类的部件。// 基类 abstra
@@ -22,7 +25,7 @@
 ## [解决 gRPC 中 oneof 类型未导出的问题](https://homeboyc.cn/blog/%E8%A7%A3%E5%86%B3-grpc-%E4%B8%AD-oneof-%E7%B1%BB%E5%9E%8B%E6%9C%AA%E5%AF%BC%E5%87%BA%E7%9A%84%E9%97%AE%E9%A2%98/)  by [Atom](https://www.homeboyc.cn/), 2023-07-30
 
 # 场景 proto 中有个项是 oneof，但是最新的 gRPC generator并没有将此字段的接口导出。Proto:message Setting { string item_id = 1; // 设置项的内部唯一id string item_label = 2; // 设置项的名称 SettingItemType item_type = 3; // 设置项的类型 oneof attr
-## [Java RMI 攻击梳理总结](https://www.ek1ng.com/java-rmi.html)  by [ek1ng](https://ek1ng.com/), 2023-07-26
+## [Java RMI 攻击梳理总结](https://www.ek1ng.com/java-rmi-attack.html)  by [ek1ng](https://ek1ng.com/), 2023-07-26
 
 RMI 是什么定义RMI（Remote Method Invocation）是远程方法调用，类似RPC（Remote Procedure Calls）。RPC是打包和传送数据结构，而在Java中，通常传递一个完整的对象，包含数据和操作数据的方法。通过RMI，能够让客户端JVM上的对象，像调用本地对象一样调用服务端JVM上的对象。RMI引入了 Stubs（客户端存根）和 Skeletons（服务端骨
 ## [重学 Java 反射机制](https://www.ek1ng.com/java-reflect-learning.html)  by [ek1ng](https://ek1ng.com/), 2023-07-25
@@ -67,6 +70,3 @@ DN11配网第二期，接上文 “使用 Bird2 配置 WireGuard + OSPF 实现�
 ## [24岁的我，在思考着什么](https://blog.aflybird.cn/2023/05/contemplating-at-24/)  by [Bird](https://blog.aflybird.cn/), 2023-05-21
 
 引言 自大学以来，我的焦虑大概经历了这样几个阶段： 起初源于同辈间的不自觉的比较，毕竟人都是好强的。但永远，天外有天，人外有人。 大概持续了三年多
-## [阿里云 BrokenSesame RCE漏洞分析](https://www.ek1ng.com/BrokenSesame.html)  by [ek1ng](https://ek1ng.com/), 2023-05-12
-
-学习了Wiz团队发表的文章 https://www.wiz.io/blog/brokensesame-accidental-write-permissions-to-private-registry-allowed-potential-r，有很多巧妙的利用方法可以学习Wiz Research在文章中披露了被命名为BrokenSesame的一系列阿里云数据库服务漏洞，会导致未授权访问阿里云客户的Po
