@@ -106,6 +106,14 @@
             "AuthorURL": "https://www.homeboyc.cn/"
         },
         {
+            "Title": "LLM Agent之结构化输出",
+            "Author": "Marlene",
+            "Date": "2023-07-26",
+            "Content": "引言自去年年底以来，GPT的迅速发展诞生了一系列大模型。出现了更新、更大、更强的GPT-4。OpenAI不断推出GPT-4，ChatGPT Plugins，代码解释器，Function calling,图片处理等等。7月的WAIC上，笔者也有幸见到了国内一众企业相继展示自家的大模型。在这段时间里，LLM从最初的PE工程走向智能体交互。而笔者从最开始考虑LLM能不能多人协作，思考”一个专家完成所有任",
+            "PostURL": "https://blog.marlene.top/index.php/develop/88.html",
+            "AuthorURL": "https://blog.marlene.top/"
+        },
+        {
             "Title": "Java RMI 攻击梳理总结",
             "Author": "ek1ng",
             "Date": "2023-07-26",
@@ -186,6 +194,14 @@
             "AuthorURL": "https://ek1ng.com/"
         },
         {
+            "Title": "开源之旅——OSPP",
+            "Author": "Marlene",
+            "Date": "2023-06-27",
+            "Content": "声明：以下内容仅代表本人观点，具有固有局限性，请辩证看待。任何有问题的地方也恳请指出。开源是什么我一直都认为开源是未来的趋势。用户创作的时代已经到来，作为一名开发者，手里握着强大的武器，个性化的创造自然不在话下。用户创作的目的不是孤芳自赏，而是自媒体式的分享。那么业务、框架的开发与不是自我消化，开源分享或许能够获得更大收益。个人的力量始终有限，我们不是大公司，技术在内部使用也能够逐渐完善。很多内容",
+            "PostURL": "https://blog.marlene.top/index.php/develop/85.html",
+            "AuthorURL": "https://blog.marlene.top/"
+        },
+        {
             "Title": "请还国内开源活动一片净土",
             "Author": "Bird",
             "Date": "2023-06-26",
@@ -207,22 +223,6 @@
             "Date": "2023-06-03",
             "Content": "因为没确定的细节太多了，以及主要的精力放在了和 Mentor 沟通上。所以申请书写得很粗糙和仓促，后续有机会尽量再写个新版。 以下申请书正文： 一、课题背景与",
             "PostURL": "https://blog.aflybird.cn/2023/06/ospp-2023-proposal-cubefs/",
-            "AuthorURL": "https://blog.aflybird.cn/"
-        },
-        {
-            "Title": "BGP 组网，DN11 与 VidarNetwork 的并网试验",
-            "Author": "柏喵Sakura",
-            "Date": "2023-06-01",
-            "Content": "DN11配网第二期，接上文 “使用 Bird2 配置 WireGuard + OSPF 实现网络的高可用”，这是一篇用于 DN11 的 BGP 配置教程随着 DN11 的扩大，使用 OSPF 进行集中管理已经变得麻烦起来了，此外还能看到一堆隧道IP污染路由表也有不少人手上有多个内网，不得不打破 DN11 原先一个人使用一个/24网段的约定近期又在考虑和 VidarNetwork 并网的事情，",
-            "PostURL": "https://baimeow.cn/posts/dn11/configurebgp/",
-            "AuthorURL": "https://baimeow.cn/"
-        },
-        {
-            "Title": "24岁的我，在思考着什么",
-            "Author": "Bird",
-            "Date": "2023-05-21",
-            "Content": "引言 自大学以来，我的焦虑大概经历了这样几个阶段： 起初源于同辈间的不自觉的比较，毕竟人都是好强的。但永远，天外有天，人外有人。 大概持续了三年多",
-            "PostURL": "https://blog.aflybird.cn/2023/05/contemplating-at-24/",
             "AuthorURL": "https://blog.aflybird.cn/"
         }
     ]
