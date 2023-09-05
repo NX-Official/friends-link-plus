@@ -10,6 +10,9 @@
 - [hakuya｜恋恋真可爱，嘿嘿嘿。。。🤤🤤🤤。。。](https://www.hakuya.work)
 
 # Recent Blogs
+## [Google Summer of Code & Chrome Extensions](https://daidr.me/archives/code-1086.html)  by [戴兜](https://im.daidr.me), 2023-09-04
+
+Original PostI’m a sophomore from China passionate about web development. In my first year, I joined a technical club at our college. This club was my introduction to coding and open source. In th
 ## [渗透基本思路总结](https://www.ek1ng.com/Summary%20of%20penetration%20ideas.html)  by [ek1ng](https://ek1ng.com/), 2023-08-29
 
 最近做了一阵子攻防相关的事，正好最近国护结束，做个总结，简单写一下渗透的基本思路（Check List）。不同的标题间内容并不完全独立，在实战中，比如先钓鱼获取到一台个人PC，但这台PC并不在办公网。而后通过收集个人PC的信息，能够登陆外网其他站点的后台，配合一个后台RCE进入办公网/生产网。这其中就有钓鱼，也有外网打点的部分。资产收集资产搜集通俗说就是“了解目标有什么东西”，讲究一个越全越好。路
@@ -67,6 +70,3 @@ RMI 是什么定义RMI（Remote Method Invocation）是远程方法调用，类�
 ## [Go语言整体替换式Map的Lock-Free实现](https://blog.aflybird.cn/2023/06/go-lock-free-map-with-replace/)  by [Bird](https://blog.aflybird.cn/), 2023-06-16
 
 今天来分享一个写业务过程中，一种特殊场景下的 Lock-Free Map 的实现。 来，我们先抛开看了三遍可能都还看不懂的题目，讲讲故事的背景。 背景/需求 假设我们需要一
-## [开源之夏2023申请书——优化CubeFS容器化部署](https://blog.aflybird.cn/2023/06/ospp-2023-proposal-cubefs/)  by [Bird](https://blog.aflybird.cn/), 2023-06-03
-
-因为没确定的细节太多了，以及主要的精力放在了和 Mentor 沟通上。所以申请书写得很粗糙和仓促，后续有机会尽量再写个新版。 以下申请书正文： 一、课题背景与

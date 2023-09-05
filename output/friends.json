@@ -66,6 +66,14 @@
     ],
     "posts": [
         {
+            "Title": "Google Summer of Code \u0026 Chrome Extensions",
+            "Author": "戴兜",
+            "Date": "2023-09-04",
+            "Content": "Original PostI’m a sophomore from China passionate about web development. In my first year, I joined a technical club at our college. This club was my introduction to coding and open source. In th",
+            "PostURL": "https://daidr.me/archives/code-1086.html",
+            "AuthorURL": "https://im.daidr.me"
+        },
+        {
             "Title": "渗透基本思路总结",
             "Author": "ek1ng",
             "Date": "2023-08-29",
@@ -215,14 +223,6 @@
             "Date": "2023-06-16",
             "Content": "今天来分享一个写业务过程中，一种特殊场景下的 Lock-Free Map 的实现。 来，我们先抛开看了三遍可能都还看不懂的题目，讲讲故事的背景。 背景/需求 假设我们需要一",
             "PostURL": "https://blog.aflybird.cn/2023/06/go-lock-free-map-with-replace/",
-            "AuthorURL": "https://blog.aflybird.cn/"
-        },
-        {
-            "Title": "开源之夏2023申请书——优化CubeFS容器化部署",
-            "Author": "Bird",
-            "Date": "2023-06-03",
-            "Content": "因为没确定的细节太多了，以及主要的精力放在了和 Mentor 沟通上。所以申请书写得很粗糙和仓促，后续有机会尽量再写个新版。 以下申请书正文： 一、课题背景与",
-            "PostURL": "https://blog.aflybird.cn/2023/06/ospp-2023-proposal-cubefs/",
             "AuthorURL": "https://blog.aflybird.cn/"
         }
     ]
