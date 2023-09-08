@@ -66,6 +66,14 @@
     ],
     "posts": [
         {
+            "Title": "Zeabur CLI 从设计到实现",
+            "Author": "Bird",
+            "Date": "2023-09-07",
+            "Content": "What is Zeabur? Why We use Zeabur? 也许你像我一样，热爱编程。用技术改变世界是多么酷的事情！ 但是，我们又不得不花大把时间在服务部署上，无论是配置基础设施，还是频繁",
+            "PostURL": "https://blog.aflybird.cn/2023/09/zeabur-cli/",
+            "AuthorURL": "https://blog.aflybird.cn/"
+        },
+        {
             "Title": "Google Summer of Code \u0026 Chrome Extensions",
             "Author": "戴兜",
             "Date": "2023-09-04",
@@ -215,14 +223,6 @@
             "Date": "2023-06-26",
             "Content": "置顶声明：这篇博客我只发在了自己的独立博客、朋友圈和空间，没有发到其他的平台，没想到会有这么多的阅读量，所以必须要写个声明，保护一下好人：我不想文中涉及的社区，尤其是背后的公司受到损失。我同样也不代表任何团体与公司，不受任何利益。如果真的要对这个社区盖棺定论的话，我觉得这个社区的氛围，是非常学生友好，欢迎开源的。真的非常非常没话说，很热情积极与开放。首先是，社区举办了 学生开发者活动，一",
             "PostURL": "https://blog.aflybird.cn/2023/06/please-stop-fucking-open-source-activities-in-china/",
-            "AuthorURL": "https://blog.aflybird.cn/"
-        },
-        {
-            "Title": "Go语言整体替换式Map的Lock-Free实现",
-            "Author": "Bird",
-            "Date": "2023-06-16",
-            "Content": "今天来分享一个写业务过程中，一种特殊场景下的 Lock-Free Map 的实现。 来，我们先抛开看了三遍可能都还看不懂的题目，讲讲故事的背景。 背景/需求 假设我们需要一",
-            "PostURL": "https://blog.aflybird.cn/2023/06/go-lock-free-map-with-replace/",
             "AuthorURL": "https://blog.aflybird.cn/"
         }
     ]
