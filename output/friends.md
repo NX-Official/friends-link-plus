@@ -16,6 +16,9 @@
 ## [Zeabur CLI 从设计到实现](https://blog.aflybird.cn/2023/09/zeabur-cli/)  by [Bird](https://blog.aflybird.cn/), 2023-09-07
 
 What is Zeabur? Why We use Zeabur? 也许你像我一样，热爱编程。用技术改变世界是多么酷的事情！ 但是，我们又不得不花大把时间在服务部署上，无论是配置基础设施，还是频繁
+## [字节二面挂，还是人太菜了](https://nickxu.me/post/bytedance-interview-failed-2023-09.html)  by [NX](https://nickxu.me/), 2023-09-07
+
+字节一面自我介绍简单介绍字节青训营项目是组队的吗项目耗时项目收获的点ELK 是你们搭建的吗ELK 的软件安装数据流大概是怎样的是通过什么写到 Logstash 里的Logstash 的功能你们用的的 fail2ban 是什么traceID 介绍微服务框架用的什么traceID 在框架中是怎么传递的对于异步的请求怎么处理的这个项目的挑战和难点Golang 的 Panic 关键字Panic 怎么恢复不
 ## [浅谈代码模块化设计](https://homeboyc.cn/blog/%E6%B5%85%E8%B0%88%E4%BB%A3%E7%A0%81%E6%A8%A1%E5%9D%97%E5%8C%96%E8%AE%BE%E8%AE%A1/)  by [Atom](https://www.homeboyc.cn/), 2023-09-07
 
 # 前言 最近遇到了一些开发者使用团队内部框架时不太能够接受代码模块化设计理念的问题，因此特此开一篇文章浅谈在软件架构设计中，一些模块化的设计以及复用原则，以便于开发者更好的了解框架模块化设计的思想。# What‘s 模块？ 模块（module）也可以理解为组件，是系统中可服用的功能逻辑封装单位。在不同的架构设计中，模块的概念可能会有所不同。在Golang中，我们通常将一个package称为一个
@@ -25,15 +28,36 @@ Original PostI’m a sophomore from China passionate about web development. In m
 ## [渗透基本思路总结](https://www.ek1ng.com/Summary%20of%20penetration%20ideas.html)  by [ek1ng](https://ek1ng.com/), 2023-08-29
 
 最近做了一阵子攻防相关的事，正好最近国护结束，做个总结，简单写一下渗透的基本思路（Check List）。不同的标题间内容并不完全独立，在实战中，比如先钓鱼获取到一台个人PC，但这台PC并不在办公网。而后通过收集个人PC的信息，能够登陆外网其他站点的后台，配合一个后台RCE进入办公网/生产网。这其中就有钓鱼，也有外网打点的部分。资产收集资产搜集通俗说就是“了解目标有什么东西”，讲究一个越全越好。路
+## [🌟 你可能感兴趣的文章｜Posts you might be interested in](https://nickxu.me/posts-you-might-be-interested-in.html)  by [NX](https://nickxu.me/), 2023-08-21
+
+Latest Resume｜最近在找实习哦Junior｜大三即将到来的生活，充满未知与期待Sophomore｜大二阿里云OSS被刷，我交了1000RMB学费！『OSPP2023』我与 OSPP 的故事 —— 从听闻到中选2023五一总结：近况与将来告别ELK！轻量级日志收集系统Grafana Loki初上手第五届字节跳动青训营项目总结写在大二下开学之初『CI/CD』结合GitHub Actions
+## [阿里云OSS被刷，我交了1000RMB学费！](https://nickxu.me/post/aliyun-oss-brushed-1000rmb-fees.html)  by [NX](https://nickxu.me/), 2023-08-19
+
+大致经过垂死病中惊坐起😱事情发生在 8 月 8 日凌晨，凌晨三点我突然看见手机上的消息我一开始是疑惑的，我的 OSS 是用来当做图床的，一个月也用不了几个钱账号里记得还有 20 多块钱，怎么会这么快用完然后我进阿里云一看，哇，我被人刷了？最后发现被刷了 3.57 TB，请求了 138 万次哇，我从没想到过这种事情会发生在我的身上而且我停机之后他还一直在刷，根本不带停的（我想，算了，300 块交学费
+## [『Golang』并发编程之通道（Channel）](https://nickxu.me/post/golang-concurrent-programming-channel.html)  by [NX](https://nickxu.me/), 2023-08-17
+
+通道（Channel）通道是什么，为什么使用通道「不要通过共享内存来通信，而应该通过通信来共享内存」通道可以在多个 goroutine 之间传递数据一个通道相当于一个先进先出（FIFO）的队列。也就是说，通道中的各个元素值都是严格地按照发送的顺序排列的，先被发送通道的元素值一定会先被接收。元素值的发送和接收都需要用到操作符 <-。我们也可以叫它接送操作符。一个左尖括号紧接着一个减号形象地代表了元素
 ## [组合优于继承](https://homeboyc.cn/blog/%E7%BB%84%E5%90%88%E4%BC%98%E4%BA%8E%E7%BB%A7%E6%89%BF/)  by [Atom](https://www.homeboyc.cn/), 2023-08-17
 
 # 前言 你可能听过“组合优于继承”这个观点，但是这个说法可能有点笼统，所以我想通过这篇文章详细解释一下：组合和继承分别是什么？为什么前者优于后者？# 继承和组合分别是什么 组合和继承都是为了解决同一个问题——“代码复用”。# 继承是什么 当一个类中有你想要复用的功能时，继承便会发生。我们通常会创建一个子类来扩张基类的功能，然后通过注入新的方法来拓展或重写基类的部件。// 基类 abstra
 ## [自我觉察与追寻内心宁静的碎碎念](https://blog.aflybird.cn/2023/08/the-pursuit-of-self-awareness-and-inner-peace/)  by [Bird](https://blog.aflybird.cn/), 2023-08-16
 
 很久没有认真地去做一次自我觉察了。本篇文章更多的是我与自己的对话，如果读者也能从中获得一些启发，无论是增添了几分决心、还是悟到了一些觉察、改变的方式，我倍感荣幸。
+## [『LeetCode-HOT-100』T41～T50](https://nickxu.me/post/leetcode-hot-100-t41-t50.html)  by [NX](https://nickxu.me/), 2023-08-13
+
+二叉树的层序遍历简单的 BFS 练习12345678910111213141516171819202122232425262728293031func levelOrder(root *TreeNode) [][]int {    ans := [][]int{}    if root == nil {        return ans    }    queue := []TreeNode{}
 ## [源码分析——Go语言依赖注入库 samber/do](https://blog.aflybird.cn/2023/08/read-open-source-go-dependency-injection-library-samber-do/)  by [Bird](https://blog.aflybird.cn/), 2023-08-05
 
 琢磨设计模式与抽象，可以说是我的最爱之一了。刚学 Go 的时候，我就陶醉于其的 interface 设计。这次，我们来聊聊 Go 语言的依赖注入（DI）库 samber/do。本文不是一行行分析源码，而是尝试一步步复现作者的设计思路。
+## [『LeetCode-HOT-100』T31～T40](https://nickxu.me/post/leetcode-hot-100-t31-t40.html)  by [NX](https://nickxu.me/), 2023-08-05
+
+颜色分类这真的是 Medium 吗，哈哈哈😂123456789101112131415161718192021222324func sortColors(nums []int) {    var red, white, blue int    for i := 0; i < len(nums); i++ {        switch nums[i] {        case 0:
+## [『LeetCode-HOT-100』T21～T30](https://nickxu.me/post/leetcode-hot-100-t21-t30.html)  by [NX](https://nickxu.me/), 2023-08-03
+
+全排列板子题，不解释123456789101112131415161718func permute(nums []int) (ans [][]int) {    var dfs func(begain, end int)    dfs = func(begain, end int) {        if begain == end {            // 切片是引用类型，需要深拷贝一下
+## [『LeetCode-HOT-100』T11～T20](https://nickxu.me/post/leetcode-hot-100-t11-t20.html)  by [NX](https://nickxu.me/), 2023-07-30
+
+有效的括号栈的经典题目了属于是12345678910111213141516171819202122232425262728293031323334353637383940func isValid(s string) bool {    stack := ""    for k := 0; k < len(s); k++ {        i := s[k]        switch i {
 ## [解决 gRPC 中 oneof 类型未导出的问题](https://homeboyc.cn/blog/%E8%A7%A3%E5%86%B3-grpc-%E4%B8%AD-oneof-%E7%B1%BB%E5%9E%8B%E6%9C%AA%E5%AF%BC%E5%87%BA%E7%9A%84%E9%97%AE%E9%A2%98/)  by [Atom](https://www.homeboyc.cn/), 2023-07-30
 
 # 场景 proto 中有个项是 oneof，但是最新的 gRPC generator并没有将此字段的接口导出。Proto:message Setting { string item_id = 1; // 设置项的内部唯一id string item_label = 2; // 设置项的名称 SettingItemType item_type = 3; // 设置项的类型 oneof attr
@@ -46,27 +70,3 @@ RMI 是什么定义RMI（Remote Method Invocation）是远程方法调用，类�
 ## [重学 Java 反射机制](https://www.ek1ng.com/java-reflect-learning.html)  by [ek1ng](https://ek1ng.com/), 2023-07-25
 
 近期跟一些java的最新漏洞，发现自己的语言基础太差了，跟着p牛的java安全漫谈重新学一下反射，p牛的文章确实是讲复杂的东西讲的浅显易懂。反射的定义对象可以通过反射获取对应的类，类可以通过反射获取所有方法，拿到的方法可以调用，这种机制就是反射。反射机制在安全方面的意义例如我们要完成RCE，但代码中绝大多数时候并没有Runtime，ProcessBuilder等常见的用于命令执行的类来让我们调用。
-## [go语言三个小项目 ｜ 青训营笔记](https://xyxsw.ltd/2023/07/25/go%E8%AF%AD%E8%A8%80%E4%B8%89%E4%B8%AA%E5%B0%8F%E9%A1%B9%E7%9B%AE%20%EF%BD%9C%20%E9%9D%92%E8%AE%AD%E8%90%A5%E7%AC%94%E8%AE%B0/)  by [xyxsw](https://xyxsw.ltd/), 2023-07-25
-
-猜数字猜数字这个项目非常简单，它涉及到随机数的生成和用户输入操作。我们使用了bufio库来处理输入数据。reader := bufio.NewReader(os.Stdin)input, _ := reader.ReadString('\n')简单字典标准库strconv它主要用于字符和其他类型之间的转换。strconv.Atoi(s string) int 标准库stringsstrings.T
-## [Golang 性能调优速查笔记](https://homeboyc.cn/blog/golang-%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98%E9%80%9F%E6%9F%A5%E7%AC%94%E8%AE%B0/)  by [Atom](https://www.homeboyc.cn/), 2023-07-24
-
-# 技巧 unsafe转换字符串/字节切片的技巧 字符串 -> 字节切片：*(*[]byte)(unsafe.Pointer(&s)) 缓冲区不能修改，否则 go 会panic！ 字节切片 -> 字符串：*(*string)(unsafe.Pointer(&buf)) 重用缓冲区 复位缓冲器 bytes.Buffer.Reset buf = buf[:0] 尽可能直接分配所需大小的数组 清空Map
-## [把“用VSCode打开”按钮加入MacOS右键菜单](https://homeboyc.cn/blog/%E6%8A%8A%E7%94%A8vscode%E6%89%93%E5%BC%80%E6%8C%89%E9%92%AE%E5%8A%A0%E5%85%A5macos%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95/)  by [Atom](https://www.homeboyc.cn/), 2023-07-24
-
-打开自动操作新建文稿选择快速操作设置“工作流程收到当前”为文件或文件夹在左上方搜索栏搜索“运行” -》 找到“运行 Shell 脚本” 并将其拖入右侧 -》 将下方脚本填入文本框for f in "$@"; do open -a 'Visual Studio Code' "$f" done Copy 设置“传递输入”为作为自变量保存为Open in Visual Studio Code
-## [java-sec-code 代码审计靶场题解](https://www.ek1ng.com/java-sec-code.html)  by [ek1ng](https://ek1ng.com/), 2023-07-20
-
-这个靶场包含了各类基本漏洞在java语言上的场景以及java安全特有的JNDI注入，反序列化，表达式注入等等，并且给出了相关的利用手段和修复方案。java-sec-code搭建环境可以用Docker搭建，不过想了想不太熟练java的包管理和web server部署这一套，并且本地起相比于容器也方便调试，于是决定本地起一份。由于我是archlinux，包管理安装的都是最新的jdk版本，靶场的jdk版
-## [分布式系统测试工具 muxy 初探](https://homeboyc.cn/blog/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7-muxy-%E5%88%9D%E6%8E%A2/)  by [Atom](https://www.homeboyc.cn/), 2023-07-17
-
-# 前言 本篇文章主要简单介绍分布式系统测试工具 muxy 工具，在介绍前，我想先谈谈分布式系统测试。# Coding is easier than testing 编程比测试简单。我认为一个程序你把它写出来不是最难的，把它测好才是最难的。真的这么夸张吗？ 我想从一个简单的 HelloWorld 程序来谈谈一个系统的稳定运行所需要的条件。# 一个普通的 HelloWorld 我们需要考虑来自以
-## [CrewCTF 2023 Web Writeup](https://www.ek1ng.com/2023CrewCTFWP.html)  by [ek1ng](https://ek1ng.com/), 2023-07-14
-
-环境还在，赛后看看题，一共四道Web，都挺有意思的。sequence_galleryDo you like sequences?http://sequence-gallery.chal.crewc.tf:8080/ 123456789101112131415sequence = request.args.get('sequence', None)if sequence is None:    re
-## [使用 GitHub Actions Cache 加快 Workflow](https://blog.aflybird.cn/2023/07/use-github-actions-cache-to-speed-up-workflow/)  by [Bird](https://blog.aflybird.cn/), 2023-07-08
-
-简单讲讲 GitHub Actions 的 Cache 功能，使用方式，以及探讨浅层的设计思想。虽然本文是我博客中为数不多的「教程」类文章，但我还是会侧重逻辑与思考的角度来讲述。详细教程请查看，GitHub Actions Cache 官方文档。
-## [云原生安全分享会材料](https://www.ek1ng.com/cloudsecurity.html)  by [ek1ng](https://ek1ng.com/), 2023-06-28
-
-这是一篇用于给协会小学弟们分享的文章，粗略从各个角度讲了一讲，有任何问题都欢迎联系我交流，email：ek1ng@qq.com。基础知识🧀在开始之前，你需要能够基本掌握Docker和Kubernetes的使用。基本使用推荐看官方文档，配合一些教程动手尝试。https://www.docker.com/Docker 能区分镜像/容器，能基本使用命令，能写Dockerfile，粗略了解原理即可。htt
