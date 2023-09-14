@@ -66,6 +66,14 @@
     ],
     "posts": [
         {
+            "Title": "Markdown Editor CVE  - Marktext",
+            "Author": "ek1ng",
+            "Date": "2023-09-13",
+            "Content": "无CVE编号 XSS2RCEhttps://github.com/marktext/marktext/issues/2601https://github.com/marktext/marktext/commit/0dd09cc6842d260528c98151c394c5f63d733b62影响 \u003c= 0.16.3 的marktext版本，点击链接触发。POC：123\u003ca href=\"javasc",
+            "PostURL": "https://www.ek1ng.com/MarkdownEditorCVE1.html",
+            "AuthorURL": "https://ek1ng.com/"
+        },
+        {
             "Title": "Zeabur CLI 从设计到实现",
             "Author": "Bird",
             "Date": "2023-09-07",
@@ -216,14 +224,6 @@
             "Content": "这是一篇用于给协会小学弟们分享的文章，粗略从各个角度讲了一讲，有任何问题都欢迎联系我交流，email：ek1ng@qq.com。基础知识🧀在开始之前，你需要能够基本掌握Docker和Kubernetes的使用。基本使用推荐看官方文档，配合一些教程动手尝试。https://www.docker.com/Docker 能区分镜像/容器，能基本使用命令，能写Dockerfile，粗略了解原理即可。htt",
             "PostURL": "https://www.ek1ng.com/cloudsecurity.html",
             "AuthorURL": "https://ek1ng.com/"
-        },
-        {
-            "Title": "开源之旅——OSPP",
-            "Author": "Marlene",
-            "Date": "2023-06-27",
-            "Content": "声明：以下内容仅代表本人观点，具有固有局限性，请辩证看待。任何有问题的地方也恳请指出。开源是什么我一直都认为开源是未来的趋势。用户创作的时代已经到来，作为一名开发者，手里握着强大的武器，个性化的创造自然不在话下。用户创作的目的不是孤芳自赏，而是自媒体式的分享。那么业务、框架的开发与不是自我消化，开源分享或许能够获得更大收益。个人的力量始终有限，我们不是大公司，技术在内部使用也能够逐渐完善。很多内容",
-            "PostURL": "https://blog.marlene.top/index.php/develop/85.html",
-            "AuthorURL": "https://blog.marlene.top/"
         }
     ]
 }
