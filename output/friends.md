@@ -10,7 +10,13 @@
 - [hakuya｜恋恋真可爱，嘿嘿嘿。。。🤤🤤🤤。。。](https://www.hakuya.work)
 
 # Recent Blogs
-## [Markdown Editor CVE  - Marktext](https://www.ek1ng.com/MarkdownEditorCVE1.html)  by [ek1ng](https://ek1ng.com/), 2023-09-13
+## [校园网打洞纪实，绕个普普通通的防火墙](https://baimeow.cn/posts/dn11/travelihdu/)  by [柏喵Sakura](https://baimeow.cn/), 2023-09-16
+
+WireGuard 在 i-HDU 之死 突然集体下线了 前几天接到悲报，说是 Vidar-Team 300b 节点从 DN11 下线了校园网需要走web认证登陆，所以起初我以为是校园网的登陆脚本炸了，找个人把自己账号登上去救一下急就好了后来派煎包去看看，他回来告诉我，Vidar 的 WiFi 有网，网很好校园网也登着这就很让人迷惑了，按理说有网的情况下，万万不该这么多隧道一起炸了由于是暑
+## [2023OSPP大作戦、完結です!](https://blog.marlene.top/index.php/develop/93.html)  by [Marlene](https://blog.marlene.top/), 2023-09-16
+
+项目信息项目名称：AliceBot 插件商店实现项目产出要求：编写一个插件商店用于用户分享自己编写插件和适配器使用 GitHub Workflow 和 GitHub App 自动获取用户提交的信息并更新商店页面界面美观，易于使用。时间规划：2023.7-2023.9项目进度根据项目计划书内容和项目导师要求，本项目已全部完成，功能内容测试完成，已做相关优化。插件商店页面部分要求描述AliceBot使
+## [Markdown editor CVE of Marktext](https://www.ek1ng.com/MarkdownEditorCVE1.html)  by [ek1ng](https://ek1ng.com/), 2023-09-13
 
 无CVE编号 XSS2RCEhttps://github.com/marktext/marktext/issues/2601https://github.com/marktext/marktext/commit/0dd09cc6842d260528c98151c394c5f63d733b62影响 <= 0.16.3 的marktext版本，点击链接触发。POC：123<a href="javasc
 ## [Zeabur CLI 从设计到实现](https://blog.aflybird.cn/2023/09/zeabur-cli/)  by [Bird](https://blog.aflybird.cn/), 2023-09-07
@@ -25,7 +31,7 @@ What is Zeabur? Why We use Zeabur? 也许你像我一样，热爱编程。用技
 ## [Google Summer of Code & Chrome Extensions](https://daidr.me/archives/code-1086.html)  by [戴兜](https://im.daidr.me), 2023-09-04
 
 Original PostI’m a sophomore from China passionate about web development. In my first year, I joined a technical club at our college. This club was my introduction to coding and open source. In th
-## [渗透基本思路总结](https://www.ek1ng.com/Summary%20of%20penetration%20ideas.html)  by [ek1ng](https://ek1ng.com/), 2023-08-29
+## [渗透测试思路总结](https://www.ek1ng.com/Summary%20of%20penetration%20ideas.html)  by [ek1ng](https://ek1ng.com/), 2023-08-29
 
 最近做了一阵子攻防相关的事，正好最近国护结束，做个总结，简单写一下渗透的基本思路（Check List）。不同的标题间内容并不完全独立，在实战中，比如先钓鱼获取到一台个人PC，但这台PC并不在办公网。而后通过收集个人PC的信息，能够登陆外网其他站点的后台，配合一个后台RCE进入办公网/生产网。这其中就有钓鱼，也有外网打点的部分。资产收集资产搜集通俗说就是“了解目标有什么东西”，讲究一个越全越好。路
 ## [🌟 你可能感兴趣的文章｜Posts you might be interested in](https://nickxu.me/posts-you-might-be-interested-in.html)  by [NX](https://nickxu.me/), 2023-08-21
@@ -64,9 +70,3 @@ Latest Resume｜最近在找实习哦Junior｜大三即将到来的生活，充�
 ## [LLM Agent之结构化输出](https://blog.marlene.top/index.php/develop/88.html)  by [Marlene](https://blog.marlene.top/), 2023-07-26
 
 引言自去年年底以来，GPT的迅速发展诞生了一系列大模型。出现了更新、更大、更强的GPT-4。OpenAI不断推出GPT-4，ChatGPT Plugins，代码解释器，Function calling,图片处理等等。7月的WAIC上，笔者也有幸见到了国内一众企业相继展示自家的大模型。在这段时间里，LLM从最初的PE工程走向智能体交互。而笔者从最开始考虑LLM能不能多人协作，思考”一个专家完成所有任
-## [Java RMI 攻击梳理总结](https://www.ek1ng.com/java-rmi-attack.html)  by [ek1ng](https://ek1ng.com/), 2023-07-26
-
-RMI 是什么定义RMI（Remote Method Invocation）是远程方法调用，类似RPC（Remote Procedure Calls）。RPC是打包和传送数据结构，而在Java中，通常传递一个完整的对象，包含数据和操作数据的方法。通过RMI，能够让客户端JVM上的对象，像调用本地对象一样调用服务端JVM上的对象。RMI引入了 Stubs（客户端存根）和 Skeletons（服务端骨
-## [重学 Java 反射机制](https://www.ek1ng.com/java-reflect-learning.html)  by [ek1ng](https://ek1ng.com/), 2023-07-25
-
-近期跟一些java的最新漏洞，发现自己的语言基础太差了，跟着p牛的java安全漫谈重新学一下反射，p牛的文章确实是讲复杂的东西讲的浅显易懂。反射的定义对象可以通过反射获取对应的类，类可以通过反射获取所有方法，拿到的方法可以调用，这种机制就是反射。反射机制在安全方面的意义例如我们要完成RCE，但代码中绝大多数时候并没有Runtime，ProcessBuilder等常见的用于命令执行的类来让我们调用。
