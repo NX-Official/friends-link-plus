@@ -10,6 +10,9 @@
 - [hakuya｜恋恋真可爱，嘿嘿嘿。。。🤤🤤🤤。。。](https://www.hakuya.work)
 
 # Recent Blogs
+## [DN11 使用 EBGP 重分发 IBGP OSPF（同as内部peer）](https://xyxsw.ltd/2023/09/20/DN11%20%E4%BD%BF%E7%94%A8%20EBGP%20%E9%87%8D%E5%88%86%E5%8F%91%20IBGP%20OSPF%EF%BC%88%E5%90%8Cas%E5%86%85%E9%83%A8peer%EF%BC%89/)  by [xyxsw](https://xyxsw.ltd/), 2023-09-19
+
+DN11 使用 EBGP 重分发 IBGP OSPF（同as内部peer）连接 wg peer1.本地机器# wg_aws.conf[Interface]# 你的私钥PrivateKey = <PRIVATEKAY># 你开的端口号（注意防火墙）ListenPort = <PORT>PostUp = /sbin/ip addr add dev %i <your ip> peer <peer ip>
 ## [校园网打洞纪实，绕个普普通通的防火墙](https://baimeow.cn/posts/dn11/travelihdu/)  by [柏喵Sakura](https://baimeow.cn/), 2023-09-16
 
 WireGuard 在 i-HDU 之死 突然集体下线了 前几天接到悲报，说是 Vidar-Team 300b 节点从 DN11 下线了校园网需要走web认证登陆，所以起初我以为是校园网的登陆脚本炸了，找个人把自己账号登上去救一下急就好了后来派煎包去看看，他回来告诉我，Vidar 的 WiFi 有网，网很好校园网也登着这就很让人迷惑了，按理说有网的情况下，万万不该这么多隧道一起炸了由于是暑
@@ -31,9 +34,27 @@ What is Zeabur? Why We use Zeabur? 也许你像我一样，热爱编程。用技
 ## [Google Summer of Code & Chrome Extensions](https://daidr.me/archives/code-1086.html)  by [戴兜](https://im.daidr.me), 2023-09-04
 
 Original PostI’m a sophomore from China passionate about web development. In my first year, I joined a technical club at our college. This club was my introduction to coding and open source. In th
+## [go-zero api文件生成项目框架 ｜ 青训营笔记](https://xyxsw.ltd/2023/08/30/go-zero%20api%E6%96%87%E4%BB%B6%20%EF%BD%9C%20%E9%9D%92%E8%AE%AD%E8%90%A5%E7%AC%94%E8%AE%B0/)  by [xyxsw](https://xyxsw.ltd/), 2023-08-30
+
+go-zero api文件生成项目框架数据结构.api文件是go-zero自创的文件格式，和protobuf的语法有很大不同，但好在不难理解。具体语法介绍可看官网文档：go-zero.dev/docs/tasks/…先编写接口定义，然后直接一次性使用 goctl 生成代码。api文件支持将一个数据结构嵌入另一个结构中，便于编写统一的响应格式。首先定义空请求结构和基础的响应结构：syntax = "
+## [gorm 进阶 ｜ 青训营笔记](https://xyxsw.ltd/2023/08/30/gorm%E8%BF%9B%E9%98%B6%20%EF%BD%9C%20%E9%9D%92%E8%AE%AD%E8%90%A5%E7%AC%94%E8%AE%B0/)  by [xyxsw](https://xyxsw.ltd/), 2023-08-30
+
+gorm关于简单的 gorm 总结 可以看上一篇文章  gorm 初体验 ｜ 青训营笔记软删除Gorm提供了软删除的能力，需要在结构体中定义一个Deleted字段，此时再调用Delete删除函数，则会生成update语句，并将deleted字段赋值为当前删除时间。type Product struct {    ID      uint    Code    string    Price   u
 ## [渗透测试思路总结](https://www.ek1ng.com/Summary%20of%20penetration%20ideas.html)  by [ek1ng](https://ek1ng.com/), 2023-08-29
 
 最近做了一阵子攻防相关的事，正好最近国护结束，做个总结，简单写一下渗透的基本思路（Check List）。不同的标题间内容并不完全独立，在实战中，比如先钓鱼获取到一台个人PC，但这台PC并不在办公网。而后通过收集个人PC的信息，能够登陆外网其他站点的后台，配合一个后台RCE进入办公网/生产网。这其中就有钓鱼，也有外网打点的部分。资产收集资产搜集通俗说就是“了解目标有什么东西”，讲究一个越全越好。路
+## [go字节三件套 ｜ 青训营笔记](https://xyxsw.ltd/2023/08/28/go%E5%AD%97%E8%8A%82%E4%B8%89%E4%BB%B6%E5%A5%97%20%EF%BD%9C%20%E9%9D%92%E8%AE%AD%E8%90%A5%E7%AC%94%E8%AE%B0/)  by [xyxsw](https://xyxsw.ltd/), 2023-08-28
+
+Gorm、Kitex、Hertz：三件套介绍与基本用法GormGorm是Golang中广受欢迎的ORM（对象关系映射）框架，已经发展数十年，具有强大的功能和出色的性能。ORM框架用于将面向对象的概念与数据库中的表相对应，简化数据操作过程。在Golang中，自定义的结构体与数据库表一一对应，结构体的实例对应表中的一条记录。基本用法定义结构体：在Gorm中，定义结构体来映射数据库表。type User
+## [网站安全漏洞 ｜ 青训营笔记](https://xyxsw.ltd/2023/08/26/%E7%BD%91%E7%AB%99%E5%AE%89%E5%85%A8%E6%BC%8F%E6%B4%9E%20%EF%BD%9C%20%E9%9D%92%E8%AE%AD%E8%90%A5%E7%AC%94%E8%AE%B0/)  by [xyxsw](https://xyxsw.ltd/), 2023-08-26
+
+什么是漏洞漏洞是指在网站或网络应用中存在的安全弱点，它们可能由于各种原因而产生，包括编码错误、配置不当或第三方组件的安全性不足。了解一个网站的基本构成是理解漏洞的第一步。网站通常由以下几个关键组成部分构成，而攻击者通常会尝试从这些部分找出弱点进行攻击：前端：使用的技术可能包括HTML、CSS、JavaScript、Vue.js、React.js等。网关：例如nginx或Apache，负责处理进出的
+## [go架构 ｜ 青训营笔记](https://xyxsw.ltd/2023/08/24/go%E6%9E%B6%E6%9E%84%20%EF%BD%9C%20%E9%9D%92%E8%AE%AD%E8%90%A5%E7%AC%94%E8%AE%B0/)  by [xyxsw](https://xyxsw.ltd/), 2023-08-24
+
+什么是架构主要针对互联网服server系统（类似网站）来定义架构：架构是系统的骨架，支撑和链接各个部分，包括组件、连接件、约束规范，以及指导这些内容设计与演化的原理。组件：类似应用服务，独立模块、数据库、nginx等等、连接件：分布式调用、进程间调用、调用使用http协议还是tcp协议、组件之间的交互关系、约束规范： 定规则做限制：例如设计原则、编码规范等等。组件组件是架构的构建块，包括独立模块、
+## [gorm 初体验 ｜ 青训营笔记](https://xyxsw.ltd/2023/08/23/gorm%E5%88%9D%E4%BD%93%E9%AA%8C%20%EF%BD%9C%20%E9%9D%92%E8%AE%AD%E8%90%A5%E7%AC%94%E8%AE%B0/)  by [xyxsw](https://xyxsw.ltd/), 2023-08-23
+
+gormgorm是Golang语言中一款性能极好的ORM库，对开发人员相对是比较友好的。接下来主要学习下gorm库的一些基本使用。功能概览全功能 ORM关联 (Has One，Has Many，Belongs To，Many To Many，多态，单表继承)Create，Save，Update，Delete，Find 中钩子方法支持 Preload、Joins 的预加载事务，嵌套事务，Save P
 ## [🌟 你可能感兴趣的文章｜Posts you might be interested in](https://nickxu.me/posts-you-might-be-interested-in.html)  by [NX](https://nickxu.me/), 2023-08-21
 
 Latest Resume｜最近在找实习哦Junior｜大三即将到来的生活，充满未知与期待Sophomore｜大二阿里云OSS被刷，我交了1000RMB学费！『OSPP2023』我与 OSPP 的故事 —— 从听闻到中选2023五一总结：近况与将来告别ELK！轻量级日志收集系统Grafana Loki初上手第五届字节跳动青训营项目总结写在大二下开学之初『CI/CD』结合GitHub Actions
@@ -49,24 +70,3 @@ Latest Resume｜最近在找实习哦Junior｜大三即将到来的生活，充�
 ## [自我觉察与追寻内心宁静的碎碎念](https://blog.aflybird.cn/2023/08/the-pursuit-of-self-awareness-and-inner-peace/)  by [Bird](https://blog.aflybird.cn/), 2023-08-16
 
 很久没有认真地去做一次自我觉察了。本篇文章更多的是我与自己的对话，如果读者也能从中获得一些启发，无论是增添了几分决心、还是悟到了一些觉察、改变的方式，我倍感荣幸。
-## [『LeetCode-HOT-100』T41～T50](https://nickxu.me/post/leetcode-hot-100-t41-t50.html)  by [NX](https://nickxu.me/), 2023-08-13
-
-二叉树的层序遍历简单的 BFS 练习12345678910111213141516171819202122232425262728293031func levelOrder(root *TreeNode) [][]int {    ans := [][]int{}    if root == nil {        return ans    }    queue := []TreeNode{}
-## [源码分析——Go语言依赖注入库 samber/do](https://blog.aflybird.cn/2023/08/read-open-source-go-dependency-injection-library-samber-do/)  by [Bird](https://blog.aflybird.cn/), 2023-08-05
-
-琢磨设计模式与抽象，可以说是我的最爱之一了。刚学 Go 的时候，我就陶醉于其的 interface 设计。这次，我们来聊聊 Go 语言的依赖注入（DI）库 samber/do。本文不是一行行分析源码，而是尝试一步步复现作者的设计思路。
-## [『LeetCode-HOT-100』T31～T40](https://nickxu.me/post/leetcode-hot-100-t31-t40.html)  by [NX](https://nickxu.me/), 2023-08-05
-
-颜色分类这真的是 Medium 吗，哈哈哈😂123456789101112131415161718192021222324func sortColors(nums []int) {    var red, white, blue int    for i := 0; i < len(nums); i++ {        switch nums[i] {        case 0:
-## [『LeetCode-HOT-100』T21～T30](https://nickxu.me/post/leetcode-hot-100-t21-t30.html)  by [NX](https://nickxu.me/), 2023-08-03
-
-全排列板子题，不解释123456789101112131415161718func permute(nums []int) (ans [][]int) {    var dfs func(begain, end int)    dfs = func(begain, end int) {        if begain == end {            // 切片是引用类型，需要深拷贝一下
-## [『LeetCode-HOT-100』T11～T20](https://nickxu.me/post/leetcode-hot-100-t11-t20.html)  by [NX](https://nickxu.me/), 2023-07-30
-
-有效的括号栈的经典题目了属于是12345678910111213141516171819202122232425262728293031323334353637383940func isValid(s string) bool {    stack := ""    for k := 0; k < len(s); k++ {        i := s[k]        switch i {
-## [解决 gRPC 中 oneof 类型未导出的问题](https://homeboyc.cn/blog/%E8%A7%A3%E5%86%B3-grpc-%E4%B8%AD-oneof-%E7%B1%BB%E5%9E%8B%E6%9C%AA%E5%AF%BC%E5%87%BA%E7%9A%84%E9%97%AE%E9%A2%98/)  by [Atom](https://www.homeboyc.cn/), 2023-07-30
-
-# 场景 proto 中有个项是 oneof，但是最新的 gRPC generator并没有将此字段的接口导出。Proto:message Setting { string item_id = 1; // 设置项的内部唯一id string item_label = 2; // 设置项的名称 SettingItemType item_type = 3; // 设置项的类型 oneof attr
-## [LLM Agent之结构化输出](https://blog.marlene.top/index.php/develop/88.html)  by [Marlene](https://blog.marlene.top/), 2023-07-26
-
-引言自去年年底以来，GPT的迅速发展诞生了一系列大模型。出现了更新、更大、更强的GPT-4。OpenAI不断推出GPT-4，ChatGPT Plugins，代码解释器，Function calling,图片处理等等。7月的WAIC上，笔者也有幸见到了国内一众企业相继展示自家的大模型。在这段时间里，LLM从最初的PE工程走向智能体交互。而笔者从最开始考虑LLM能不能多人协作，思考”一个专家完成所有任
