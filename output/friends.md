@@ -10,6 +10,15 @@
 - [hakuya｜恋恋真可爱，嘿嘿嘿。。。🤤🤤🤤。。。](https://www.hakuya.work)
 
 # Recent Blogs
+## [[简中] Google Summer of Code & Chrome Extensions](https://daidr.me/archives/code-1097.html)  by [戴兜](https://im.daidr.me), 2023-09-25
+
+这篇博客是 https://im.daidr.me/blog/1086 的简中翻译版本。原文地址：https://developer.chrome.com/blog/google-summer-of-code-and-chrome-extensions/我是一名来自中国的大二学生，对Web开发非常感兴趣。在我大一的时候，我加入了一个技术社团（杭电助手），这可以说是让我接触编程和
+## [人生好比修仙](https://blog.aflybird.cn/2023/09/life-is-cultivating-immortality/)  by [Bird](https://blog.aflybird.cn/), 2023-09-24
+
+最近看《凡人修仙传》魔怔了，自认为「悟」出了点人生与修仙的关联。 声明：本人是纯正的唯物主义者，信仰科学。以下对于修仙的描述皆为文学手法。 凡人
+## [IBGP FullMesh 实现多节点自治域](https://baimeow.cn/posts/dn11/configureibgp/)  by [柏喵Sakura](https://baimeow.cn/), 2023-09-23
+
+最近不少群友有把自己的其他服务器也接入自己的 AS 的需求，那这篇教程也是时候该出了。总览 这个事情比较复杂，我们先不急着开始配，先了解一下我们需要一个什么效果。DN11 作为一个发展了有一段时间的实验性网络，我们目前有很大一批人，他们手上都已经有了一个节点，并且在这个节点上配置了 BGP 从而联通到其他节点。那这个情景下，他们的自治域就是由那一个节点组成的单节点自治域。我们现在需要添加一个新
 ## [DN11 使用 EBGP 重分发 IBGP OSPF（同as内部peer）](https://xyxsw.ltd/2023/09/20/DN11%20%E4%BD%BF%E7%94%A8%20EBGP%20%E9%87%8D%E5%88%86%E5%8F%91%20IBGP%20OSPF%EF%BC%88%E5%90%8Cas%E5%86%85%E9%83%A8peer%EF%BC%89/)  by [xyxsw](https://xyxsw.ltd/), 2023-09-19
 
 DN11 使用 EBGP 重分发 IBGP OSPF（同as内部peer）连接 wg peer1.本地机器# wg_aws.conf[Interface]# 你的私钥PrivateKey = <PRIVATEKAY># 你开的端口号（注意防火墙）ListenPort = <PORT>PostUp = /sbin/ip addr add dev %i <your ip> peer <peer ip>
@@ -61,12 +70,3 @@ Latest Resume｜最近在找实习哦Junior｜大三即将到来的生活，充�
 ## [阿里云OSS被刷，我交了1000RMB学费！](https://nickxu.me/post/aliyun-oss-brushed-1000rmb-fees.html)  by [NX](https://nickxu.me/), 2023-08-19
 
 大致经过垂死病中惊坐起😱事情发生在 8 月 8 日凌晨，凌晨三点我突然看见手机上的消息我一开始是疑惑的，我的 OSS 是用来当做图床的，一个月也用不了几个钱账号里记得还有 20 多块钱，怎么会这么快用完然后我进阿里云一看，哇，我被人刷了？最后发现被刷了 3.57 TB，请求了 138 万次哇，我从没想到过这种事情会发生在我的身上而且我停机之后他还一直在刷，根本不带停的（我想，算了，300 块交学费
-## [『Golang』并发编程之通道（Channel）](https://nickxu.me/post/golang-concurrent-programming-channel.html)  by [NX](https://nickxu.me/), 2023-08-17
-
-通道（Channel）通道是什么，为什么使用通道「不要通过共享内存来通信，而应该通过通信来共享内存」通道可以在多个 goroutine 之间传递数据一个通道相当于一个先进先出（FIFO）的队列。也就是说，通道中的各个元素值都是严格地按照发送的顺序排列的，先被发送通道的元素值一定会先被接收。元素值的发送和接收都需要用到操作符 <-。我们也可以叫它接送操作符。一个左尖括号紧接着一个减号形象地代表了元素
-## [组合优于继承](https://homeboyc.cn/blog/%E7%BB%84%E5%90%88%E4%BC%98%E4%BA%8E%E7%BB%A7%E6%89%BF/)  by [Atom](https://www.homeboyc.cn/), 2023-08-17
-
-# 前言 你可能听过“组合优于继承”这个观点，但是这个说法可能有点笼统，所以我想通过这篇文章详细解释一下：组合和继承分别是什么？为什么前者优于后者？# 继承和组合分别是什么 组合和继承都是为了解决同一个问题——“代码复用”。# 继承是什么 当一个类中有你想要复用的功能时，继承便会发生。我们通常会创建一个子类来扩张基类的功能，然后通过注入新的方法来拓展或重写基类的部件。// 基类 abstra
-## [自我觉察与追寻内心宁静的碎碎念](https://blog.aflybird.cn/2023/08/the-pursuit-of-self-awareness-and-inner-peace/)  by [Bird](https://blog.aflybird.cn/), 2023-08-16
-
-很久没有认真地去做一次自我觉察了。本篇文章更多的是我与自己的对话，如果读者也能从中获得一些启发，无论是增添了几分决心、还是悟到了一些觉察、改变的方式，我倍感荣幸。
