@@ -10,6 +10,15 @@
 - [hakuya｜恋恋真可爱，嘿嘿嘿。。。🤤🤤🤤。。。](https://www.hakuya.work)
 
 # Recent Blogs
+## [你还惦记着你那二面呢｜Allow Everything to Happen](https://nickxu.me/post/allow-everything-to-happen.html)  by [NX](https://nickxu.me/), 2023-10-12
+
+「你还惦记着你那二面呢」我真的好累，今天还吐了，感觉病了我消失了很长一段时间，本来我想写一篇长文，记录我从 8 月 22 号返校到现在发生的所有事情但是我真的好累，简单地说，就是诸事不顺，面试、亚运、学业…我不想写我总是想在最后来一波升华，但是我其实并没有走出来，架构不出，我写不出来我太想成功了，但这正是我没法成功的原因就像你找东西，你越找就越找不到，经常是后面不经意的时候突然就冒出来了就我现在这
+## [浅析 JWT Refresh Token](https://nickxu.me/post/jwt-refresh-token.html)  by [NX](https://nickxu.me/), 2023-10-10
+
+最近逛 V 站又看见有人在讨论 JWT，感觉很多人讲的很乱，我想简单记录下我印象中的理解Session最开始应该是 session 方案，就是用户登陆后服务器返回客户端一个存根（token）来标识当前的会话服务器在缓存中保存这个 token，用户请求时需要传递这个 token（不管你是使用 cookie header 还是 query）每次请求服务器都在缓存中查找这个 token，并且找到当前会话
+## [在实验网络中使用 step-ca 签发 SSL 证书](https://baimeow.cn/posts/dn11/acme/)  by [柏喵Sakura](https://baimeow.cn/), 2023-10-08
+
+在真实的互联网中，我们常常会通过校验 SSL 证书的方式创建加密 socket 来访问互联网上的资源，这能够有效阻止他人看到通信的内容。而在 DN11 中，由于每个人都相当于是 ISP，流量可能途径每一个人，随时可能被人抓取，因此使用 SSL 证书这件事就更为重要了。本文将在使用 PDNS 搭建好实验性网络 DNS 的基础上使用 step-ca 搭建 ACME Server 并使用 acme.s
 ## [[简中] Google Summer of Code & Chrome Extensions](https://daidr.me/archives/code-1097.html)  by [戴兜](https://im.daidr.me), 2023-09-25
 
 这篇博客是 https://im.daidr.me/blog/1086 的简中翻译版本。原文地址：https://developer.chrome.com/blog/google-summer-of-code-and-chrome-extensions/我是一名来自中国的大二学生，对Web开发非常感兴趣。在我大一的时候，我加入了一个技术社团（杭电助手），这可以说是让我接触编程和
@@ -31,6 +40,12 @@ WireGuard 在 i-HDU 之死 突然集体下线了 前几天接到悲报，说是 
 ## [Markdown editor CVE of Marktext](https://www.ek1ng.com/MarkdownEditorCVE1.html)  by [ek1ng](https://ek1ng.com/), 2023-09-13
 
 无CVE编号 XSS2RCEhttps://github.com/marktext/marktext/issues/2601https://github.com/marktext/marktext/commit/0dd09cc6842d260528c98151c394c5f63d733b62影响 <= 0.16.3 的marktext版本，点击链接触发。POC：123<a href="javasc
+## [『LeetCode-HOT-100』T61～T70](https://nickxu.me/post/leetcode-hot-100-t61-t70.html)  by [NX](https://nickxu.me/), 2023-09-12
+
+207. 课程表拓扑排序板子1234567891011121314151617181920212223242526272829303132333435363738394041func canFinish(numCourses int, prerequisites [][]int) bool {    n:=len(prerequisites)    rd:=make([]int,numCourse
+## [『LeetCode-HOT-100』T51～T60](https://nickxu.me/post/leetcode-hot-100-t51-t60.html)  by [NX](https://nickxu.me/), 2023-09-12
+
+142. 环形链表 II请见 『算法拾遗』链表（Linked List）146. LRU 缓存标准写法12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879
 ## [Zeabur CLI 从设计到实现](https://blog.aflybird.cn/2023/09/zeabur-cli/)  by [Bird](https://blog.aflybird.cn/), 2023-09-07
 
 What is Zeabur? Why We use Zeabur? 也许你像我一样，热爱编程。用技术改变世界是多么酷的事情！ 但是，我们又不得不花大把时间在服务部署上，无论是配置基础设施，还是频繁
@@ -55,18 +70,3 @@ gorm关于简单的 gorm 总结 可以看上一篇文章  gorm 初体验 ｜ 青
 ## [go字节三件套 ｜ 青训营笔记](https://xyxsw.ltd/2023/08/28/go%E5%AD%97%E8%8A%82%E4%B8%89%E4%BB%B6%E5%A5%97%20%EF%BD%9C%20%E9%9D%92%E8%AE%AD%E8%90%A5%E7%AC%94%E8%AE%B0/)  by [xyxsw](https://xyxsw.ltd/), 2023-08-28
 
 Gorm、Kitex、Hertz：三件套介绍与基本用法GormGorm是Golang中广受欢迎的ORM（对象关系映射）框架，已经发展数十年，具有强大的功能和出色的性能。ORM框架用于将面向对象的概念与数据库中的表相对应，简化数据操作过程。在Golang中，自定义的结构体与数据库表一一对应，结构体的实例对应表中的一条记录。基本用法定义结构体：在Gorm中，定义结构体来映射数据库表。type User
-## [网站安全漏洞 ｜ 青训营笔记](https://xyxsw.ltd/2023/08/26/%E7%BD%91%E7%AB%99%E5%AE%89%E5%85%A8%E6%BC%8F%E6%B4%9E%20%EF%BD%9C%20%E9%9D%92%E8%AE%AD%E8%90%A5%E7%AC%94%E8%AE%B0/)  by [xyxsw](https://xyxsw.ltd/), 2023-08-26
-
-什么是漏洞漏洞是指在网站或网络应用中存在的安全弱点，它们可能由于各种原因而产生，包括编码错误、配置不当或第三方组件的安全性不足。了解一个网站的基本构成是理解漏洞的第一步。网站通常由以下几个关键组成部分构成，而攻击者通常会尝试从这些部分找出弱点进行攻击：前端：使用的技术可能包括HTML、CSS、JavaScript、Vue.js、React.js等。网关：例如nginx或Apache，负责处理进出的
-## [go架构 ｜ 青训营笔记](https://xyxsw.ltd/2023/08/24/go%E6%9E%B6%E6%9E%84%20%EF%BD%9C%20%E9%9D%92%E8%AE%AD%E8%90%A5%E7%AC%94%E8%AE%B0/)  by [xyxsw](https://xyxsw.ltd/), 2023-08-24
-
-什么是架构主要针对互联网服server系统（类似网站）来定义架构：架构是系统的骨架，支撑和链接各个部分，包括组件、连接件、约束规范，以及指导这些内容设计与演化的原理。组件：类似应用服务，独立模块、数据库、nginx等等、连接件：分布式调用、进程间调用、调用使用http协议还是tcp协议、组件之间的交互关系、约束规范： 定规则做限制：例如设计原则、编码规范等等。组件组件是架构的构建块，包括独立模块、
-## [gorm 初体验 ｜ 青训营笔记](https://xyxsw.ltd/2023/08/23/gorm%E5%88%9D%E4%BD%93%E9%AA%8C%20%EF%BD%9C%20%E9%9D%92%E8%AE%AD%E8%90%A5%E7%AC%94%E8%AE%B0/)  by [xyxsw](https://xyxsw.ltd/), 2023-08-23
-
-gormgorm是Golang语言中一款性能极好的ORM库，对开发人员相对是比较友好的。接下来主要学习下gorm库的一些基本使用。功能概览全功能 ORM关联 (Has One，Has Many，Belongs To，Many To Many，多态，单表继承)Create，Save，Update，Delete，Find 中钩子方法支持 Preload、Joins 的预加载事务，嵌套事务，Save P
-## [🌟 你可能感兴趣的文章｜Posts you might be interested in](https://nickxu.me/posts-you-might-be-interested-in.html)  by [NX](https://nickxu.me/), 2023-08-21
-
-Latest Resume｜最近在找实习哦Junior｜大三即将到来的生活，充满未知与期待Sophomore｜大二阿里云OSS被刷，我交了1000RMB学费！『OSPP2023』我与 OSPP 的故事 —— 从听闻到中选2023五一总结：近况与将来告别ELK！轻量级日志收集系统Grafana Loki初上手第五届字节跳动青训营项目总结写在大二下开学之初『CI/CD』结合GitHub Actions
-## [阿里云OSS被刷，我交了1000RMB学费！](https://nickxu.me/post/aliyun-oss-brushed-1000rmb-fees.html)  by [NX](https://nickxu.me/), 2023-08-19
-
-大致经过垂死病中惊坐起😱事情发生在 8 月 8 日凌晨，凌晨三点我突然看见手机上的消息我一开始是疑惑的，我的 OSS 是用来当做图床的，一个月也用不了几个钱账号里记得还有 20 多块钱，怎么会这么快用完然后我进阿里云一看，哇，我被人刷了？最后发现被刷了 3.57 TB，请求了 138 万次哇，我从没想到过这种事情会发生在我的身上而且我停机之后他还一直在刷，根本不带停的（我想，算了，300 块交学费
