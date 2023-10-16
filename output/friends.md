@@ -40,12 +40,6 @@ WireGuard 在 i-HDU 之死 突然集体下线了 前几天接到悲报，说是 
 ## [Markdown editor CVE of Marktext](https://www.ek1ng.com/MarkdownEditorCVE1.html)  by [ek1ng](https://ek1ng.com/), 2023-09-13
 
 无CVE编号 XSS2RCEhttps://github.com/marktext/marktext/issues/2601https://github.com/marktext/marktext/commit/0dd09cc6842d260528c98151c394c5f63d733b62影响 <= 0.16.3 的marktext版本，点击链接触发。POC：123<a href="javasc
-## [『LeetCode-HOT-100』T61～T70](https://nickxu.me/post/leetcode-hot-100-t61-t70.html)  by [NX](https://nickxu.me/), 2023-09-12
-
-207. 课程表拓扑排序板子1234567891011121314151617181920212223242526272829303132333435363738394041func canFinish(numCourses int, prerequisites [][]int) bool {    n:=len(prerequisites)    rd:=make([]int,numCourse
-## [『LeetCode-HOT-100』T51～T60](https://nickxu.me/post/leetcode-hot-100-t51-t60.html)  by [NX](https://nickxu.me/), 2023-09-12
-
-142. 环形链表 II请见 『算法拾遗』链表（Linked List）146. LRU 缓存标准写法12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879
 ## [Zeabur CLI 从设计到实现](https://blog.aflybird.cn/2023/09/zeabur-cli/)  by [Bird](https://blog.aflybird.cn/), 2023-09-07
 
 What is Zeabur? Why We use Zeabur? 也许你像我一样，热爱编程。用技术改变世界是多么酷的事情！ 但是，我们又不得不花大把时间在服务部署上，无论是配置基础设施，还是频繁
@@ -70,3 +64,9 @@ gorm关于简单的 gorm 总结 可以看上一篇文章  gorm 初体验 ｜ 青
 ## [go字节三件套 ｜ 青训营笔记](https://xyxsw.ltd/2023/08/28/go%E5%AD%97%E8%8A%82%E4%B8%89%E4%BB%B6%E5%A5%97%20%EF%BD%9C%20%E9%9D%92%E8%AE%AD%E8%90%A5%E7%AC%94%E8%AE%B0/)  by [xyxsw](https://xyxsw.ltd/), 2023-08-28
 
 Gorm、Kitex、Hertz：三件套介绍与基本用法GormGorm是Golang中广受欢迎的ORM（对象关系映射）框架，已经发展数十年，具有强大的功能和出色的性能。ORM框架用于将面向对象的概念与数据库中的表相对应，简化数据操作过程。在Golang中，自定义的结构体与数据库表一一对应，结构体的实例对应表中的一条记录。基本用法定义结构体：在Gorm中，定义结构体来映射数据库表。type User
+## [网站安全漏洞 ｜ 青训营笔记](https://xyxsw.ltd/2023/08/26/%E7%BD%91%E7%AB%99%E5%AE%89%E5%85%A8%E6%BC%8F%E6%B4%9E%20%EF%BD%9C%20%E9%9D%92%E8%AE%AD%E8%90%A5%E7%AC%94%E8%AE%B0/)  by [xyxsw](https://xyxsw.ltd/), 2023-08-26
+
+什么是漏洞漏洞是指在网站或网络应用中存在的安全弱点，它们可能由于各种原因而产生，包括编码错误、配置不当或第三方组件的安全性不足。了解一个网站的基本构成是理解漏洞的第一步。网站通常由以下几个关键组成部分构成，而攻击者通常会尝试从这些部分找出弱点进行攻击：前端：使用的技术可能包括HTML、CSS、JavaScript、Vue.js、React.js等。网关：例如nginx或Apache，负责处理进出的
+## [go架构 ｜ 青训营笔记](https://xyxsw.ltd/2023/08/24/go%E6%9E%B6%E6%9E%84%20%EF%BD%9C%20%E9%9D%92%E8%AE%AD%E8%90%A5%E7%AC%94%E8%AE%B0/)  by [xyxsw](https://xyxsw.ltd/), 2023-08-24
+
+什么是架构主要针对互联网服server系统（类似网站）来定义架构：架构是系统的骨架，支撑和链接各个部分，包括组件、连接件、约束规范，以及指导这些内容设计与演化的原理。组件：类似应用服务，独立模块、数据库、nginx等等、连接件：分布式调用、进程间调用、调用使用http协议还是tcp协议、组件之间的交互关系、约束规范： 定规则做限制：例如设计原则、编码规范等等。组件组件是架构的构建块，包括独立模块、
