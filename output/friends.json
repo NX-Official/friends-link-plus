@@ -66,6 +66,38 @@
     ],
     "posts": [
         {
+            "Title": "PVE 与 KubeSphere AllInOne 安装坑点与解决方案",
+            "Author": "Atom",
+            "Date": "2024-01-19",
+            "Content": "# 情况 参考pve配置虚拟机教材安装系统 安装系统完成后执行 KubeSphere 的 AllInOne 安装教程 https://kubesphere.io/zh/docs/v3.4/quick-start/all-in-one-on-linux 安装完成后重启虚拟机发现域名解析出错: Unable to connect to the server: dial tcp: lookup lb.k",
+            "PostURL": "https://homeboyc.cn/blog/pve-%E4%B8%8E-kubesphere-allinone-%E5%AE%89%E8%A3%85%E5%9D%91%E7%82%B9%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/",
+            "AuthorURL": "https://www.homeboyc.cn/"
+        },
+        {
+            "Title": "GORM 与 SQLite 的特性、坑点与缓解方式",
+            "Author": "Atom",
+            "Date": "2024-01-13",
+            "Content": "# 前言 近期在用 GORM + SQLite 做客户端信息存储的时候发现了诸如：no such table、table is locked等诸多问题，特总结一篇 GORM 与 SQLite 的特性、坑点与缓",
+            "PostURL": "https://homeboyc.cn/blog/gorm-%E4%B8%8E-sqlite-%E7%9A%84%E7%89%B9%E6%80%A7%E5%9D%91%E7%82%B9%E4%B8%8E%E7%BC%93%E8%A7%A3%E6%96%B9%E5%BC%8F/",
+            "AuthorURL": "https://www.homeboyc.cn/"
+        },
+        {
+            "Title": "再见2023 | 捡起六便士也不忘心中的月亮",
+            "Author": "ek1ng",
+            "Date": "2024-01-01",
+            "Content": "再见2023 | 捡起六便士也不忘心中的月亮写下这篇文章的时候，我刚来到上海入职新公司一周，回看过去一年的竞赛，工作，学习，锻炼等等生活，大体上还是差强人意，但总归有不少值得唏嘘的地方，还得从在北京的生活说起。当时为什么会在北京呢？是去年年末时，有协会学长在群里问有没有学弟想找实习，当时除了CTF以外的经验几乎为零，也从来没有考虑过业界的安全岗都在做什么，我自己想做什么，于是在学长的内推和两轮面试",
+            "PostURL": "https://www.ek1ng.com/Goodbye2023.html",
+            "AuthorURL": "https://ek1ng.com/"
+        },
+        {
+            "Title": "『代码随想录』单调栈（Monotonic Stack）",
+            "Author": "NX",
+            "Date": "2023-12-22",
+            "Content": "DAY 58每日温度12345678910111213func dailyTemperatures(temperatures []int) []int {    n := len(temperatures)    stack := make([]int, 0, n)    ans := make([]int, n)    for i, temperature := range temperatur",
+            "PostURL": "https://nickxu.me/post/programmercarl-monotonic-stack.html",
+            "AuthorURL": "https://nickxu.me/"
+        },
+        {
             "Title": "优雅地实现滚动容器遮罩",
             "Author": "戴兜",
             "Date": "2023-12-09",
@@ -178,22 +210,6 @@
             "AuthorURL": "https://nickxu.me/"
         },
         {
-            "Title": "『代码随想录』链表（Linked List）",
-            "Author": "NX",
-            "Date": "2023-10-27",
-            "Content": "DAY 3本篇部分题目在 『算法拾遗』链表（Linked List） 中已经做过203.移除链表元素还有一个递归版，但是那个空间复杂度是 O(n)12345678910111213func removeElements(head *ListNode, val int) *ListNode {    dummy := \u0026ListNode{Next: head}    curr := dummy",
-            "PostURL": "https://nickxu.me/post/programmercarl-linked-list.html",
-            "AuthorURL": "https://nickxu.me/"
-        },
-        {
-            "Title": "DNS 与 Pdns OpenWrt DNS 递归服务器搭建与 MosDNS 分流",
-            "Author": "xyxsw",
-            "Date": "2023-10-18",
-            "Content": "DNS什么是DNS域名系统（英语：Domain Name System，缩写：DNS）是互联网的一项服务。它作为将域名和IP地址相互映射的一个分布式数据库，能够使人更方便地访问互联网。简单来说就是用域名请求服务器换回来ip地址https://www.nslookup.io/这个网站可以看dns请求的结果、同理还有linux或者windows的nslookup命令DNS records for dn",
-            "PostURL": "https://xyxsw.ltd/2023/10/18/DNS%20%E4%B8%8E%20Pdns%20OpenWrt%20DNS%20%E9%80%92%E5%BD%92%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E4%B8%8E%20MosDNS%20%E5%88%86%E6%B5%81/",
-            "AuthorURL": "https://xyxsw.ltd/"
-        },
-        {
             "Title": "在实验网络中使用 step-ca 签发 SSL 证书",
             "Author": "柏喵Sakura",
             "Date": "2023-10-08",
@@ -208,22 +224,6 @@
             "Content": "这篇博客是 https://im.daidr.me/blog/1086 的简中翻译版本。原文地址：https://developer.chrome.com/blog/google-summer-of-code-and-chrome-extensions/我是一名来自中国的大二学生，对Web开发非常感兴趣。在我大一的时候，我加入了一个技术社团（杭电助手），这可以说是让我接触编程和",
             "PostURL": "https://daidr.me/archives/code-1097.html",
             "AuthorURL": "https://im.daidr.me"
-        },
-        {
-            "Title": "人生好比修仙",
-            "Author": "Bird",
-            "Date": "2023-09-24",
-            "Content": "最近看《凡人修仙传》魔怔了，自认为「悟」出了点人生与修仙的关联。 声明：本人是纯正的唯物主义者，信仰科学。以下对于修仙的描述皆为文学手法。 凡人",
-            "PostURL": "https://blog.aflybird.cn/2023/09/life-is-cultivating-immortality/",
-            "AuthorURL": "https://blog.aflybird.cn/"
-        },
-        {
-            "Title": "IBGP FullMesh 实现多节点自治域",
-            "Author": "柏喵Sakura",
-            "Date": "2023-09-23",
-            "Content": "最近不少群友有把自己的其他服务器也接入自己的 AS 的需求，那这篇教程也是时候该出了。总览 这个事情比较复杂，我们先不急着开始配，先了解一下我们需要一个什么效果。DN11 作为一个发展了有一段时间的实验性网络，我们目前有很大一批人，他们手上都已经有了一个节点，并且在这个节点上配置了 BGP 从而联通到其他节点。那这个情景下，他们的自治域就是由那一个节点组成的单节点自治域。我们现在需要添加一个新",
-            "PostURL": "https://baimeow.cn/posts/dn11/configureibgp/",
-            "AuthorURL": "https://baimeow.cn/"
         }
     ]
 }
