@@ -10,6 +10,12 @@
 - [hakuya｜恋恋真可爱，嘿嘿嘿。。。🤤🤤🤤。。。](https://www.hakuya.work)
 
 # Recent Blogs
+## [再见 2023 ：我的热情，去哪了呢？](https://nickxu.me/post/goodbye-2023-where-is-my-passion.html)  by [NX](https://nickxu.me/), 2024-02-14
+
+在写了在写了去年下半年真的是可怕的一年
+## [Hi! 2024](https://daidr.me/archives/website-1150.html)  by [戴兜](https://im.daidr.me), 2024-02-09
+
+一刻也没有为考试周的忙碌哀悼，立刻赶往战场的是日常实习。前阵子比较忙碌，一直没法抽出时间好好地写写年度总结。不过没关系，农历新年也是新年，只要赶在除夕之前发，就还是2023年度总结（确信2023年虽然没有什么特别的大事件，不过对我而言，确实有许多值得回忆的瞬间。Ⅰ🚊去了这些地方杭州: 西湖五一黄金周去了西湖，疑似有点太城市化了🤧。沿着苏堤一路来到雷峰塔，
 ## [PVE 与 KubeSphere AllInOne 安装坑点与解决方案](https://homeboyc.cn/blog/pve-%E4%B8%8E-kubesphere-allinone-%E5%AE%89%E8%A3%85%E5%9D%91%E7%82%B9%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/)  by [Atom](https://www.homeboyc.cn/), 2024-01-19
 
 # 情况 参考pve配置虚拟机教材安装系统 安装系统完成后执行 KubeSphere 的 AllInOne 安装教程 https://kubesphere.io/zh/docs/v3.4/quick-start/all-in-one-on-linux 安装完成后重启虚拟机发现域名解析出错: Unable to connect to the server: dial tcp: lookup lb.k
@@ -61,12 +67,6 @@ DAY 8344. 反转字符串朴实无华1234567func reverseString(s []byte) {    n 
 ## [浅谈 SAP 安全远程密码](https://homeboyc.cn/blog/%E6%B5%85%E8%B0%88-sap-%E5%AE%89%E5%85%A8%E8%BF%9C%E7%A8%8B%E5%AF%86%E7%A0%81/)  by [Atom](https://www.homeboyc.cn/), 2023-10-31
 
 密码是一个让不少人头疼的问题，大多数人会立即承认密码很难记住和管理，特别是当密码要求变得越来越复杂时。幸运的是，有一些很棒的软件包和浏览器插
-## [『代码随想录』哈希表（Hash Map）](https://nickxu.me/post/programmercarl-hash-map.html)  by [NX](https://nickxu.me/), 2023-10-30
+## [DNS 与 Pdns OpenWrt DNS 递归服务器搭建与 MosDNS 分流](https://xyxsw.ltd/2023/10/18/DNS%20%E4%B8%8E%20Pdns%20OpenWrt%20DNS%20%E9%80%92%E5%BD%92%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E4%B8%8E%20MosDNS%20%E5%88%86%E6%B5%81/)  by [xyxsw](https://xyxsw.ltd/), 2023-10-18
 
-DAY 6242.有效的字母异位词这题没什么好说的12345678910111213141516171819func isAnagram(s string, t string) bool {    m := map[rune]int{}    for _, c := range s {        m[c]++    }    for _, c := range t {        m[c]-
-## [在实验网络中使用 step-ca 签发 SSL 证书](https://baimeow.cn/posts/dn11/acme/)  by [柏喵Sakura](https://baimeow.cn/), 2023-10-08
-
-在真实的互联网中，我们常常会通过校验 SSL 证书的方式创建加密 socket 来访问互联网上的资源，这能够有效阻止他人看到通信的内容。而在 DN11 中，由于每个人都相当于是 ISP，流量可能途径每一个人，随时可能被人抓取，因此使用 SSL 证书这件事就更为重要了。本文将在使用 PDNS 搭建好实验性网络 DNS 的基础上使用 step-ca 搭建 ACME Server 并使用 acme.s
-## [[简中] Google Summer of Code & Chrome Extensions](https://daidr.me/archives/code-1097.html)  by [戴兜](https://im.daidr.me), 2023-09-25
-
-这篇博客是 https://im.daidr.me/blog/1086 的简中翻译版本。原文地址：https://developer.chrome.com/blog/google-summer-of-code-and-chrome-extensions/我是一名来自中国的大二学生，对Web开发非常感兴趣。在我大一的时候，我加入了一个技术社团（杭电助手），这可以说是让我接触编程和
+DNS什么是DNS域名系统（英语：Domain Name System，缩写：DNS）是互联网的一项服务。它作为将域名和IP地址相互映射的一个分布式数据库，能够使人更方便地访问互联网。简单来说就是用域名请求服务器换回来ip地址https://www.nslookup.io/这个网站可以看dns请求的结果、同理还有linux或者windows的nslookup命令DNS records for dn
