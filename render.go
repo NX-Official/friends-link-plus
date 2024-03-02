@@ -39,6 +39,7 @@ func RenderMarkdown(friends []*Friend, posts []Post) []byte {
 	return buffer.Bytes()
 }
 
+// RenderJson 将朋友信息和最近的文章渲染成JSON格式
 func RenderJson(friends []*Friend, posts []Post) []byte {
 	data := RenderStruct{
 		Friends: friends,
