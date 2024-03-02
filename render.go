@@ -8,6 +8,7 @@ import (
 	"text/template"
 )
 
+// RenderStruct     渲染模板的数据结构
 type RenderStruct struct {
 	Friends []*Friend `json:"friends"`
 	Posts   []Post    `json:"posts"`
