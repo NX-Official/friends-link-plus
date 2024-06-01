@@ -66,12 +66,76 @@
     ],
     "posts": [
         {
-            "Title": "再见 2023 ：我的热情，去哪了呢？",
+            "Title": "Recovery From Panic",
             "Author": "NX",
-            "Date": "2024-02-14",
-            "Content": "在写了在写了去年下半年真的是可怕的一年",
-            "PostURL": "https://nickxu.me/post/goodbye-2023-where-is-my-passion.html",
+            "Date": "2024-05-19",
+            "Content": "真丢人，每次都搞成这样子呜呜不行啊，平时和女生讲话太少了，真经验不够我平时圈子就是一群搞技术的大老爷们，真没什么机会和女生说话我大学到目前三年全扑到主线任务上了，这也是我现在能在腾讯实习的原因但是支线是一点都没动啊（我之前其实是有做出些努力的，比如去年杭州亚运会我去做志愿者，朋友圈多了很多女生但是我感觉我真聊不起来哇 （感觉真没什么好聊的）我感觉我现在人际关系多多少少有点问题，我妈也经常说我，她去",
+            "PostURL": "https://nickxu.me/post/recovery-from-panic.html",
             "AuthorURL": "https://nickxu.me/"
+        },
+        {
+            "Title": "CTF是怎么出题的？关于今年 D^3CTF 的 OSPF Enhanced",
+            "Author": "柏喵Sakura",
+            "Date": "2024-05-07",
+            "Content": "前言 今年给 D^3CTF 出了一道 Web 一道 Misc，非常可惜都TMD有非预期，出的最差的一回了。Web 那道题暂且不提，那道题在出题角度来说其实没有任何难度，只是把原项目的Docker镜像稍微重打包了一下交给平台。今给大伙讲讲我们这道 Misc 网络题，这道题前前后后打包容器和平台联调等等，非常有难度，可能耗费了我将近一周的时间。早期构思 其实一早就定下了出一道网络相关的 Misc",
+            "PostURL": "https://baimeow.cn/posts/ctf/ospf/",
+            "AuthorURL": "https://baimeow.cn/"
+        },
+        {
+            "Title": "一种借助PCDN实现隐秘通信的方法",
+            "Author": "柏喵Sakura",
+            "Date": "2024-04-29",
+            "Content": "本文仅供安全研究学习使用前言 早先找实习的时候了解了一下玄武实验室，再读了一遍玄武那篇域前置的文章，这里贴一下链接https://xlab.tencent.com/cn/2021/05/14/domain-borrowing这是篇老老老文章了，这篇文章里提出了利用公共 CDN 服务来做 C2 通信的隐藏的一种手法在防火墙来看，高可信域名+高可信 IP，唯一瑕疵就 DNS 对不上。即使是专门",
+            "PostURL": "https://baimeow.cn/posts/security/pcdniphiding/",
+            "AuthorURL": "https://baimeow.cn/"
+        },
+        {
+            "Title": "我的童年",
+            "Author": "Bird",
+            "Date": "2024-04-10",
+            "Content": "童年对我来说，已经只剩下零星的记忆了，为了防止以后忘得更多，现在先把它们串起来吧~ 时间回不去了，但是记忆可以。",
+            "PostURL": "https://blog.aflybird.cn/2024/04/my-childhood/",
+            "AuthorURL": "https://blog.aflybird.cn/"
+        },
+        {
+            "Title": "简明 Docker + GitHub Actions 自动化部署教程",
+            "Author": "NX",
+            "Date": "2024-03-22",
+            "Content": "我之前其实写过一些 cicd 的教程，但是写的太烂了，这篇算重构直入正题，我会用我的一个 gin-rush-template 来做为 demo 演示你可以模仿下面的过程为自己的项目实现自动化部署我的 demo 的其实写的很烂的，但是你只需要知道它有三个特点，无需关注其他细节：会从 config/config.yaml 读取配置文件需要连接 MySQL 依赖能提供一个 /ping 接口我们先做到让它",
+            "PostURL": "https://nickxu.me/post/docker-cicd-setup-guide.html",
+            "AuthorURL": "https://nickxu.me/"
+        },
+        {
+            "Title": "GOSTv3 扩展开发 —— SM4 加密隧道",
+            "Author": "柏喵Sakura",
+            "Date": "2024-03-15",
+            "Content": "Gost 是什么 Gost 是 Golang 语言编写的网络隧道工具。得益于纯 Go 开发以及 Go 在网络开发以及交叉编译方面的强势，Gost 能够在几乎任何地方近乎零依赖地运行，因此 Gost 最早作为一个方便好用的 socks5 server 启动器在内网渗透等领域开始出名。Gost 即将正式推出他的 v3 版本，这个版本改变之大，几乎相当于是一个独立的应用。不得不承认，Gost 的作者对",
+            "PostURL": "https://baimeow.cn/posts/projects/sm4tunnel/",
+            "AuthorURL": "https://baimeow.cn/"
+        },
+        {
+            "Title": "Kitex 负载均衡源码解读之加权负载均衡算法",
+            "Author": "NX",
+            "Date": "2024-03-09",
+            "Content": "不多废话，直入正题Kitex 的负载均衡相关源码位于 pkg/loadbalance ，具体结构如下12345678910111213141516171819202122nx@NXsMacBook-Pro kitex % tree pkg/loadbalancepkg/loadbalance├── consist.go├── consist_test.go├── dummy_picker.go├─",
+            "PostURL": "https://nickxu.me/post/kitex-loadbalance-weighted-balancer.html",
+            "AuthorURL": "https://nickxu.me/"
+        },
+        {
+            "Title": "如何配置 GPG 密钥",
+            "Author": "NX",
+            "Date": "2024-03-04",
+            "Content": "使用 GPG 签名 commit 最大的好处就是有一个好看的 Verified  标签当然主要是为了安全啦！主要流程就是在本地生成一个，然后修改 git 的配置文件（可以借助 IDE），最后把这个密钥上传到 GitHubhttps://www.jetbrains.com/help/go/2023.3/set-up-GPG-commit-signing.htmlhttps://docs.github",
+            "PostURL": "https://nickxu.me/post/how-to-set-up-GPG-commit-signing.html",
+            "AuthorURL": "https://nickxu.me/"
+        },
+        {
+            "Title": "使用 Bird2 + WireGuard 快速加入 DN11",
+            "Author": "Atom",
+            "Date": "2024-02-18",
+            "Content": "# 前言 鉴于本文被 DN11 群友评价为“误人子弟”，因此如果你想学习更好的配置流程，请向 DN11 群友请教。本文仅作为个人实践出来的配置方案分享，旨在和好友分",
+            "PostURL": "https://homeboyc.cn/blog/%E4%BD%BF%E7%94%A8-bird2--wireguard-%E5%BF%AB%E9%80%9F%E5%8A%A0%E5%85%A5-dn11/",
+            "AuthorURL": "https://www.homeboyc.cn/"
         },
         {
             "Title": "Hi! 2024",
@@ -96,14 +160,6 @@
             "Content": "# 前言 近期在用 GORM + SQLite 做客户端信息存储的时候发现了诸如：no such table、table is locked等诸多问题，特总结一篇 GORM 与 SQLite 的特性、坑点与缓",
             "PostURL": "https://homeboyc.cn/blog/gorm-%E4%B8%8E-sqlite-%E7%9A%84%E7%89%B9%E6%80%A7%E5%9D%91%E7%82%B9%E4%B8%8E%E7%BC%93%E8%A7%A3%E6%96%B9%E5%BC%8F/",
             "AuthorURL": "https://www.homeboyc.cn/"
-        },
-        {
-            "Title": "再见2023 | 捡起六便士也不忘心中的月亮",
-            "Author": "ek1ng",
-            "Date": "2024-01-01",
-            "Content": "再见2023 | 捡起六便士也不忘心中的月亮写下这篇文章的时候，我刚来到上海入职新公司一周，回看过去一年的竞赛，工作，学习，锻炼等等生活，大体上还是差强人意，但总归有不少值得唏嘘的地方，还得从在北京的生活说起。当时为什么会在北京呢？是去年年末时，有协会学长在群里问有没有学弟想找实习，当时除了CTF以外的经验几乎为零，也从来没有考虑过业界的安全岗都在做什么，我自己想做什么，于是在学长的内推和两轮面试",
-            "PostURL": "https://www.ek1ng.com/Goodbye2023.html",
-            "AuthorURL": "https://ek1ng.com/"
         },
         {
             "Title": "『代码随想录』单调栈（Monotonic Stack）",
@@ -168,62 +224,6 @@
             "Content": "DAY 14稍微又复习了一遍二叉树的基础144.二叉树的前序遍历123456789func preorderTraversal(root *TreeNode) []int {if root == nil {return []int{}}ans := []int{root.Val}ans = append(ans, preorderTraversal(root.Left)...)ans = appe",
             "PostURL": "https://nickxu.me/post/programmercarl-binary-tree.html",
             "AuthorURL": "https://nickxu.me/"
-        },
-        {
-            "Title": "Termium 如何保护您的信息安全？",
-            "Author": "Atom",
-            "Date": "2023-11-06",
-            "Content": "在 Termium，我们非常注重保护您的信息安全、以负责任的方式处理您的信息，并确保您拥有控制权。说得容易做的难，我们之所以有信心保护您的信息",
-            "PostURL": "https://homeboyc.cn/blog/termium-%E5%A6%82%E4%BD%95%E4%BF%9D%E6%8A%A4%E6%82%A8%E7%9A%84%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8/",
-            "AuthorURL": "https://www.homeboyc.cn/"
-        },
-        {
-            "Title": "浅谈 OPAQUE 安全远程密码",
-            "Author": "Atom",
-            "Date": "2023-11-06",
-            "Content": "继前一篇谈 SAP 协议之后，我们来浅了解一下 OPAQUE。（一个已经被WhatsAPP用于生产的新兴协议） 和 SAP 的建立于“反复打磨”上的安全性不同，",
-            "PostURL": "https://homeboyc.cn/blog/%E6%B5%85%E8%B0%88-opaque-%E5%AE%89%E5%85%A8%E8%BF%9C%E7%A8%8B%E5%AF%86%E7%A0%81/",
-            "AuthorURL": "https://www.homeboyc.cn/"
-        },
-        {
-            "Title": "Mac Windows 网线直连文件传输",
-            "Author": "NX",
-            "Date": "2023-11-05",
-            "Content": "今天又学到一个小技巧，使用一条网线直连两台 PC 进行文件传输我是把 Mac 上的文件传到 Windows 上，但其实两台 Windows 也大同小异首先当然是网线插上下一步是自己手动改一下 IP 到同一网段，之后 ping 一下，能 ping 通就算没问题传输文件使用 HTTP 其实最方便，直接用 py 起一个 http server12cd /path/to/dirpython3 -m htt",
-            "PostURL": "https://nickxu.me/post/mac-windows-file-copy-by-directly-LAN.html",
-            "AuthorURL": "https://nickxu.me/"
-        },
-        {
-            "Title": "『代码随想录』栈与队列（Stack \u0026 Queue）",
-            "Author": "NX",
-            "Date": "2023-11-03",
-            "Content": "DAY 10232.用栈实现队列因为栈和队列的出队顺序是反的，所以再来个栈倒腾一下就是正的了123456789101112131415161718192021222324252627282930313233343536373839404142type MyQueue struct {    in  []int    out []int}func Constructor() MyQueue {",
-            "PostURL": "https://nickxu.me/post/programmercarl-stack-and-queue.html",
-            "AuthorURL": "https://nickxu.me/"
-        },
-        {
-            "Title": "『代码随想录』字符串（String）",
-            "Author": "NX",
-            "Date": "2023-11-01",
-            "Content": "DAY 8344. 反转字符串朴实无华1234567func reverseString(s []byte) {    n := len(s)    for i := 0; i \u003c n/2; i++ {        s[n-i-1], s[i] = s[i], s[n-i-1]    }}541.反转字符串 II朴实无华的递归1234567891011121314151617181920func",
-            "PostURL": "https://nickxu.me/post/programmercarl-string.html",
-            "AuthorURL": "https://nickxu.me/"
-        },
-        {
-            "Title": "浅谈 SAP 安全远程密码",
-            "Author": "Atom",
-            "Date": "2023-10-31",
-            "Content": "密码是一个让不少人头疼的问题，大多数人会立即承认密码很难记住和管理，特别是当密码要求变得越来越复杂时。幸运的是，有一些很棒的软件包和浏览器插",
-            "PostURL": "https://homeboyc.cn/blog/%E6%B5%85%E8%B0%88-sap-%E5%AE%89%E5%85%A8%E8%BF%9C%E7%A8%8B%E5%AF%86%E7%A0%81/",
-            "AuthorURL": "https://www.homeboyc.cn/"
-        },
-        {
-            "Title": "DNS 与 Pdns OpenWrt DNS 递归服务器搭建与 MosDNS 分流",
-            "Author": "xyxsw",
-            "Date": "2023-10-18",
-            "Content": "DNS什么是DNS域名系统（英语：Domain Name System，缩写：DNS）是互联网的一项服务。它作为将域名和IP地址相互映射的一个分布式数据库，能够使人更方便地访问互联网。简单来说就是用域名请求服务器换回来ip地址https://www.nslookup.io/这个网站可以看dns请求的结果、同理还有linux或者windows的nslookup命令DNS records for dn",
-            "PostURL": "https://xyxsw.ltd/2023/10/18/DNS%20%E4%B8%8E%20Pdns%20OpenWrt%20DNS%20%E9%80%92%E5%BD%92%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E4%B8%8E%20MosDNS%20%E5%88%86%E6%B5%81/",
-            "AuthorURL": "https://xyxsw.ltd/"
         }
     ]
 }
