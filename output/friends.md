@@ -10,6 +10,12 @@
 - [hakuya｜恋恋真可爱，嘿嘿嘿。。。🤤🤤🤤。。。](https://www.hakuya.work)
 
 # Recent Blogs
+## [『七个月的挣扎之路』主线：简历、面试与找工作（上）](https://nickxu.me/post/seven-months-of-struggle-main-part-1.html)  by [NX](https://nickxu.me/), 2024-07-15
+
+长话短说，我其实已经推倒重写好几版了由于时间跨度有些大，没有当时的感觉真的写不出有当时的味道的文字而我现在必须挑重点把这些事情记录下来，质量不能作保证，毕竟真的不能再拖了诸君将就着看吧👀八月｜简历与处女面时间回到 2023 年 8 月 22 日，晚上 8 点 13 分浙江省杭州市钱塘区，1号线文泽路地铁站这个时间点距离开学还有一段时间，我之所以要提前返校（我记得是生活区一开门我就返校了）不仅是因为
+## [『七个月的挣扎之路』前言与自我介绍](https://nickxu.me/post/seven-months-of-struggle-preface.html)  by [NX](https://nickxu.me/), 2024-06-05
+
+PS：真的真的很抱歉拖了这么久才发出来，最近实习事情也不少，我尽量恢复到之前的更新频率吧～七个月的挣扎之路终于结束了，这是我从未承受过的痛苦具体来说，是从去年 2023 年 8 月 22 日返校开始，再到 2024 年 4 月 3 日 腾讯实习 Offer Call 结束，过去了七个月有余这期间发生了很多负面的事情，博客更新也遇到了很大的阻碍，计划的总结文也因为心情一篇没写出来，全是烂尾（我只能
 ## [Recovery From Panic](https://nickxu.me/post/recovery-from-panic.html)  by [NX](https://nickxu.me/), 2024-05-19
 
 真丢人，每次都搞成这样子呜呜不行啊，平时和女生讲话太少了，真经验不够我平时圈子就是一群搞技术的大老爷们，真没什么机会和女生说话我大学到目前三年全扑到主线任务上了，这也是我现在能在腾讯实习的原因但是支线是一点都没动啊（我之前其实是有做出些努力的，比如去年杭州亚运会我去做志愿者，朋友圈多了很多女生但是我感觉我真聊不起来哇 （感觉真没什么好聊的）我感觉我现在人际关系多多少少有点问题，我妈也经常说我，她去
@@ -64,9 +70,3 @@ DAY 38斐波那契数123456789101112func fib(n int) int {    if n == 0 || n == 1
 ## [『代码随想录』贪心（Greedy）](https://nickxu.me/post/programmercarl-greedy.html)  by [NX](https://nickxu.me/), 2023-11-28
 
 DAY 31分发饼干遍历每块饼干，尝试将其分配给胃口最小的那个尚未满足的孩子1234567891011121314func findContentChildren(g []int, s []int) int {    sort.Ints(g)    sort.Ints(s)    n, m := len(g), len(s)    i, j := 0, 0    for i < n && j <
-## [『代码随想录』回溯（Backtracking）](https://nickxu.me/post/programmercarl-backtracking.html)  by [NX](https://nickxu.me/), 2023-11-17
-
-DAY 2477.组合很经典的回溯算法123456789101112131415161718func combine(n int, k int) [][]int {    ans := [][]int{}    curr := []int{}    var dfs func(s int)    dfs = func(s int) {        if len(curr) == k {
-## [『代码随想录』二叉树（Binary Tree）](https://nickxu.me/post/programmercarl-binary-tree.html)  by [NX](https://nickxu.me/), 2023-11-07
-
-DAY 14稍微又复习了一遍二叉树的基础144.二叉树的前序遍历123456789func preorderTraversal(root *TreeNode) []int {if root == nil {return []int{}}ans := []int{root.Val}ans = append(ans, preorderTraversal(root.Left)...)ans = appe

@@ -66,6 +66,22 @@
     ],
     "posts": [
         {
+            "Title": "『七个月的挣扎之路』主线：简历、面试与找工作（上）",
+            "Author": "NX",
+            "Date": "2024-07-15",
+            "Content": "长话短说，我其实已经推倒重写好几版了由于时间跨度有些大，没有当时的感觉真的写不出有当时的味道的文字而我现在必须挑重点把这些事情记录下来，质量不能作保证，毕竟真的不能再拖了诸君将就着看吧👀八月｜简历与处女面时间回到 2023 年 8 月 22 日，晚上 8 点 13 分浙江省杭州市钱塘区，1号线文泽路地铁站这个时间点距离开学还有一段时间，我之所以要提前返校（我记得是生活区一开门我就返校了）不仅是因为",
+            "PostURL": "https://nickxu.me/post/seven-months-of-struggle-main-part-1.html",
+            "AuthorURL": "https://nickxu.me/"
+        },
+        {
+            "Title": "『七个月的挣扎之路』前言与自我介绍",
+            "Author": "NX",
+            "Date": "2024-06-05",
+            "Content": "PS：真的真的很抱歉拖了这么久才发出来，最近实习事情也不少，我尽量恢复到之前的更新频率吧～七个月的挣扎之路终于结束了，这是我从未承受过的痛苦具体来说，是从去年 2023 年 8 月 22 日返校开始，再到 2024 年 4 月 3 日 腾讯实习 Offer Call 结束，过去了七个月有余这期间发生了很多负面的事情，博客更新也遇到了很大的阻碍，计划的总结文也因为心情一篇没写出来，全是烂尾（我只能",
+            "PostURL": "https://nickxu.me/post/seven-months-of-struggle-preface.html",
+            "AuthorURL": "https://nickxu.me/"
+        },
+        {
             "Title": "Recovery From Panic",
             "Author": "NX",
             "Date": "2024-05-19",
@@ -207,22 +223,6 @@
             "Date": "2023-11-28",
             "Content": "DAY 31分发饼干遍历每块饼干，尝试将其分配给胃口最小的那个尚未满足的孩子1234567891011121314func findContentChildren(g []int, s []int) int {    sort.Ints(g)    sort.Ints(s)    n, m := len(g), len(s)    i, j := 0, 0    for i \u003c n \u0026\u0026 j \u003c",
             "PostURL": "https://nickxu.me/post/programmercarl-greedy.html",
-            "AuthorURL": "https://nickxu.me/"
-        },
-        {
-            "Title": "『代码随想录』回溯（Backtracking）",
-            "Author": "NX",
-            "Date": "2023-11-17",
-            "Content": "DAY 2477.组合很经典的回溯算法123456789101112131415161718func combine(n int, k int) [][]int {    ans := [][]int{}    curr := []int{}    var dfs func(s int)    dfs = func(s int) {        if len(curr) == k {",
-            "PostURL": "https://nickxu.me/post/programmercarl-backtracking.html",
-            "AuthorURL": "https://nickxu.me/"
-        },
-        {
-            "Title": "『代码随想录』二叉树（Binary Tree）",
-            "Author": "NX",
-            "Date": "2023-11-07",
-            "Content": "DAY 14稍微又复习了一遍二叉树的基础144.二叉树的前序遍历123456789func preorderTraversal(root *TreeNode) []int {if root == nil {return []int{}}ans := []int{root.Val}ans = append(ans, preorderTraversal(root.Left)...)ans = appe",
-            "PostURL": "https://nickxu.me/post/programmercarl-binary-tree.html",
             "AuthorURL": "https://nickxu.me/"
         }
     ]
